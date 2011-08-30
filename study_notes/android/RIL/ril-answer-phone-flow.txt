@@ -1,0 +1,10 @@
+ril.java:processUnsolicited()->RIL_UNSOL_RESPONSE_CALL_STATE_CHANGED->mNetworkStateRegistrants.notifyRegistrants(new AsyncResult(null, null, null))
+gsmcalltracker.java:handleMessage()->EVENT_CALL_STATE_CHANGE->pollCallsWhenSafe()->cm.getCurrentCalls(lastRelevantPoll)
+ril.java:getCurrentCalls()->send(rr)
+ril.java:processSolicited()->RIL_REQUEST_GET_CURRENT_CALLS->responseCallList()->rr.mResult.sendToTarget()
+gsmcalltracker.java:handleMessage()->EVENT_POLL_CALLS_RESULT->handlePollCalls()->phone.notifyNewRingingConnection(newRinging)
+CallNotifier.java->handleMessage()->PHONE_NEW_RINGING_CONNECTION->onNewRingingConnection()->startIncomingCallQuery(c)->onQueryComplete()->PhoneUtils.hangupRingingCall(mPhone)
+
+
+
+

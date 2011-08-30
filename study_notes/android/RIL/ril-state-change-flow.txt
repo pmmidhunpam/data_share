@@ -1,0 +1,148 @@
+###############################################################################################
+PhoneApp收到一个RIL_UNSOL_RESPONSE_NETWORK_STATE_CHANGED网络状态变化事件。
+发送message到注册的handler上。GsmServiceStateTracker的构造方法将GsmServiceStateTracker对象本身注册到mNetworkStateRegistrants
+###############################################################################################
+PhoneApp->GSMPhone(phone)->RIL(mCM)->RILReceiver(mReceiver)::run()
+    readRilMessage(InputStream is, byte[] buffer)
+        processResponse(Parcel p) 
+            processUnsolicited(Parcel p) 
+                PhoneApp->GSMPhone(phone)->RIL(mCM)->RegistrantList(mNetworkStateRegistrants)::notifyRegistrants(AsyncResult ar)
+
+RIL.java            
+----------------------------------------------------------------------------------------------------
+            case RIL_UNSOL_RESPONSE_NETWORK_STATE_CHANGED:
+                if (RILJ_LOGD) unsljLog(response);
+                Log.d(TAG, ">>>>>>>>>>>> processUnsolicited RIL_UNSOL_RESPONSE_NETWORK_STATE_CHANGED = " + responseToString(response));
+                mNetworkStateRegistrants
+                    .notifyRegistrants(new AsyncResult(null, null, null));
+----------------------------------------------------------------------------------------------------
+                            
+
+                
+###############################################################################################
+GsmServiceStateTracker检测到事件类型为网络状态变，发送主动请求获取新的状态信息等
+############################################################################################### 
+PhoneApp->GSMPhone(phone)->GsmServiceStateTracker(mSST)::handleMessage(Message msg)
+    pollState()
+        cm.getOperator(msg),cm.getGPRSRegistrationState(msg),cm.getRegistrationState(msg),cm.getNetworkSelectionMode(msg)
+
+GsmServiceStateTracker.java 
+----------------------------------------------------------------------------------------------------
+            case EVENT_NETWORK_STATE_CHANGED:
+                Log.d(TAG, ">>>>>>>>>>>> GsmServiceStateTracker handleMessage EVENT_NETWORK_STATE_CHANGED");
+                pollState();
+                break;
+----------------------------------------------------------------------------------------------------
+
+###############################################################################################
+PhoneApp收到请求响应的事件。将事件绑定的消息发回给所属的handler
+###############################################################################################       
+PhoneApp->GSMPhone(phone)->RIL(mCM)->RILReceiver(mReceiver)::run()
+    readRilMessage(InputStream is, byte[] buffer)
+        processResponse(Parcel p) 
+            processSolicited(Parcel p) 
+                rr.mResult.sendToTarget()
+                             
+                             
+###############################################################################################
+GsmServiceStateTracker检测事件类型为网络状态变化响应结果，如果网络类型改变则通过binder调用TelephonyRegistry服务的notifyDataConnection方法。
+###############################################################################################               
+PhoneApp->GSMPhone(phone)->GsmServiceStateTracker(mSST)::handleMessage(Message msg)
+    handlePollStateResult(int what, AsyncResult ar)
+        pollStateDone()
+            if (hasNetworkTypeChanged)phone.notifyDataConnection(null)
+                PhoneApp->GSMPhone(phone)->DefaultPhoneNotifier(mNotifier)::notifyDataConnection()
+                    PhoneApp->GSMPhone(phone)->DefaultPhoneNotifier(mNotifier)->ITelephonyRegistry(mRegistry)::notifyDataConnection()
+                    
+GsmServiceStateTracker.java              
+----------------------------------------------------------------------------------------------------                  
+        if (hasGprsAttached) {
+            Log.d(TAG, ">>>>>>>>>>>> GsmServiceStateTracker pollStateDone hasGprsAttached");
+            gprsAttachedRegistrants.notifyRegistrants();
+        }
+
+        if (hasGprsDetached) {
+                    Log.d(TAG, ">>>>>>>>>>>> GsmServiceStateTracker pollStateDone hasGprsDetached");
+            gprsDetachedRegistrants.notifyRegistrants();
+        }
+
+        if (hasNetworkTypeChanged) {
+                    Log.d(TAG, ">>>>>>>>>>>> GsmServiceStateTracker pollStateDone hasNetworkTypeChanged");
+            phone.notifyDataConnection(null);
+        }
+
+        if (hasRoamingOn) {
+                    Log.d(TAG, ">>>>>>>>>>>> GsmServiceStateTracker pollStateDone hasRoamingOn");
+            roamingOnRegistrants.notifyRegistrants();
+        }
+
+        if (hasRoamingOff) {
+                    Log.d(TAG, ">>>>>>>>>>>> GsmServiceStateTracker pollStateDone hasRoamingOff");
+            roamingOffRegistrants.notifyRegistrants();
+        }
+
+        if (hasLocationChanged) {
+                    Log.d(TAG, ">>>>>>>>>>>> GsmServiceStateTracker pollStateDone hasLocationChanged");
+            phone.notifyLocationChanged();
+        }
+----------------------------------------------------------------------------------------------------
+                    
+###############################################################################################
+SystemServer中的TelephonyRegistry服务notifyDataConnection方法。注意这里的执行上下文在systemserver进程中。
+notifyDataConnection根据条件调用已经注册的callback。
+通过TelephonyManager的ITelephonyRegistry远程代理listen接口能够在TelephonyRegistry服务中注册callback。在SystemServer中通过com.android.server.status.StatusBarPolicy.installIcons(context, statusBar)向TelephonyRegistry服务注册了一个callback。
+callback本身是IPhoneStateListener的一个远程代理对象。（实际上IPhoneStateListener的远程服务也在当前SystemServer进程）
+###############################################################################################      
+TelephonyRegistry::notifyDataConnection()
+    if ((r.events & PhoneStateListener.LISTEN_DATA_CONNECTION_STATE) != 0)r.callback.onDataConnectionStateChanged(state, networkType);
+   
+
+    
+    
+
+###############################################################################################
+callback远程服务执行环境是在SystemServer进程中的。构造一个message发送给mhandler。
+###############################################################################################
+StatusBarPolicy->匿名PhoneStateListener子类(mPhoneStateListener)->匿名binder服务类(callback)::onDataConnectionStateChanged
+    Message.obtain(mHandler, LISTEN_DATA_CONNECTION_STATE, state, networkType, null).sendToTarget();
+
+PhoneStateListener.java
+----------------------------------------------------------------------------------------------------
+        public void onDataConnectionStateChanged(int state, int networkType) {
+            Log.d(TAG, ">>>>>>>>>>>>PhoneStateListener.callback onDataConnectionStateChanged state = " + state + ", networkType = " + networkType);
+            Message.obtain(mHandler, LISTEN_DATA_CONNECTION_STATE, state, networkType, null).
+                    sendToTarget();
+        }
+----------------------------------------------------------------------------------------------------
+
+
+###############################################################################################
+mHandler是StatusBarPolicy->PhoneStateListener成员属性。使用的是主线程的默认loop，也就是SystemServer的主线程。然后调用statusbarservice更新状态栏图标。
+###############################################################################################
+StatusBarPolicy->PhoneStateListener(mPhoneStateListener)->Handler(handler)::handleMessage()
+    PhoneStateListener.this.onDataConnectionStateChanged(msg.arg1, msg.arg2);
+        updateDataNetType(networkType); 
+        updateDataIcon();
+
+
+StatusBarPolicy.java
+----------------------------------------------------------------------------------------------------
+        @Override
+        public void onDataConnectionStateChanged(int state, int networkType) {
+        Log.d(TAG, ">>>>>>>>>>>>StatusBarPolicy.PhoneStateListener onDataConnectionStateChanged state = " + state + ", networkType = " + networkType);
+            mDataState = state;
+            updateDataNetType(networkType);
+            updateDataIcon();
+        }
+----------------------------------------------------------------------------------------------------
+        
+                        
+
+                
+                    
+                    
+
+		
+		
+    	
+

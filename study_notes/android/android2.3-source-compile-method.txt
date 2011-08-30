@@ -1,0 +1,86 @@
+######################################################
+##########解决32位机器限制的问题######################
+修改 build/core/main.mk， 注释掉下面的内容。
+#ifeq ($(BUILD_OS),linux)
+#build_arch := $(shell uname -m)
+#ifneq (i686,$(findstring i686,$(build_arch)))
+#$(warning ************************************************************)
+#$(warning You are attempting to build on a 32-bit system.)
+#$(warning Only 64-bit build environments are supported beyond froyo/2.2.)
+#$(warning ************************************************************)
+#$(error stop)
+#endif
+#endif
+
+
+修改下面这些文件
+external/clearsilver/cgi/Android.mk
+external/clearsilver/java-jni/Android.mk
+external/clearsilver/util/Android.mk
+external/clearsilver/cs/Android.mk
+change
+LOCAL_CFLAGS += -m64
+LOCAL_LDFLAGS += -m64
+to
+LOCAL_CFLAGS += -m32
+LOCAL_LDFLAGS += -m32
+
+
+######################################################
+##########解决缺少头文件的问题########################
+配置apt源
+修改/etc/apt/sources.list文件成下面的内容：（清空原始文件）
+#(hardy 8.04):
+
+deb http://mirrorub.archermind.com/ubuntu/ubuntu hardy main restricted universe multiverse
+deb http://mirrorub.archermind.com/ubuntu/ubuntu hardy-security main restricted universe multiverse
+deb http://mirrorub.archermind.com/ubuntu/ubuntu hardy-updates main restricted universe multiverse
+deb http://mirrorub.archermind.com/ubuntu/ubuntu hardy-proposed main restricted universe multiverse
+deb http://mirrorub.archermind.com/ubuntu/ubuntu hardy-backports main restricted universe multiverse
+deb-src http://mirrorub.archermind.com/ubuntu/ubuntu hardy main restricted universe multiverse
+deb-src http://mirrorub.archermind.com/ubuntu/ubuntu hardy-security main restricted universe multiverse
+deb-src http://mirrorub.archermind.com/ubuntu/ubuntu hardy-updates main restricted universe multiverse
+deb-src http://mirrorub.archermind.com/ubuntu/ubuntu hardy-proposed main restricted universe multiverse
+deb-src http://mirrorub.archermind.com/ubuntu/ubuntu hardy-backports main restricted universe multiverse
+
+执行：
+sudo apt-get update
+sudo apt-get install lib64z1-dev libc6-dev-amd64 g++-multilib lib64stdc++6
+
+
+######################################################
+#####解决１.５的java某些语法报错的问题################
+安装java 1.6
+sudo apt-get install sun-java6-jdk
+
+设置环境变量
+修改~/.bashrc增加下面的内容：
+export JAVA_HOME=/usr/lib/jvm/java-6-sun
+export PATH=/usr/lib/jvm/java-6-sun/bin:$PATH
+export CLASSPATH=/usr/lib/jvm/java-6-sun/lib/tools.jar:/usr/lib/jvm/java-6-sun/lib/dt.jar:/usr/lib/jvm/java-6-sun/lib/rt.jar:/usr/lib/jvm/java-6-sun/lib/
+
+执行命令
+source ~/.bash_profile
+
+
+######################################################
+#############解决arm-eabi-gcc版本问题#################
+mv prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3.old
+mv prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/
+
+
+######################################################
+################模块编译方法##########################
+在android根目录下，配置环境变量，执行
+. build/envsetup.sh
+choosecombo 1 1 pnx6715_refd eng
+cd到某一个模块下（有Android.mk文件）
+mm
+
+
+#########################################################
+###############解决typeinfo 未定义的问题#################
+out/target/product/generic/obj/lib/libOpenSLES.so: undefined reference to `typeinfo for android::SortedVectorImpl'
+执行：
+mv system/media/opensles/libopensles/IAndroidEffect.c system/media/opensles/libopensles/IAndroidEffect.cpp
+修改system/media/opensles/libopensles/Android.mk将IAndroidEffect.c 改为IAndroidEffect.cpp
