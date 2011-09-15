@@ -1,0 +1,124 @@
+input事件android层的处理。
+1. systemserver.java
+   Slog.i(TAG, "Window Manager");
+   wm = WindowManagerService.main(context, power,
+           factoryTest != SystemServer.FACTORY_TEST_LOW_LEVEL);
+   ServiceManager.addService(Context.WINDOW_SERVICE, wm);
+            
+                        
+2. WindowManagerService.java
+   WMThread thr = new WMThread(context, pm, haveInputMethods);    //里面new WindowManagerService(),然后进入了loop循环。
+   thr.start();
+        
+        
+3. WindowManagerService.java
+   WindowManagerService(Context context, PowerManagerService pm, boolean haveInputMethods) {
+   	mInputManager = new InputManager(context, this);
+   	PolicyThread thr = new PolicyThread(mPolicy, this, context, pm);
+        thr.start();
+        //等待PolicyThread进入运行状态
+        mInputManager.start();
+   }      
+   
+
+4. InputManager.java
+   nativeInit(), nativeStart()
+   
+   
+5. InputManager.cpp
+   InputManager::InputManager(
+        const sp<EventHubInterface>& eventHub,
+        const sp<InputReaderPolicyInterface>& readerPolicy,
+        const sp<InputDispatcherPolicyInterface>& dispatcherPolicy) {
+    mDispatcher = new InputDispatcher(dispatcherPolicy);  //做了一个inputDispatcher
+    mReader = new InputReader(eventHub, readerPolicy, mDispatcher); //通过dispatcher做了一个inputReader，在inputReader里面添加inputDevice的时候就关联到了这个inputDispatcher
+    initialize();
+   }
+
+   void InputManager::initialize() {
+       mReaderThread = new InputReaderThread(mReader); 
+       mDispatcherThread = new InputDispatcherThread(mDispatcher);
+   }
+   
+   status_t InputManager::start() {
+       mReaderThread->run("InputReader", PRIORITY_URGENT_DISPLAY);          //这个线程不断读取input事件并且放到dispatcher队列
+       mDispatcherThread->run("InputDispatcher", PRIORITY_URGENT_DISPLAY);  //这个线程处理inputReader线程产过来的事件。
+       return OK;
+   }
+   下面按照逻辑关系依次说明inputReader和inputDispatcher线程。
+
+
+6. InputReader.cpp   
+   bool InputReaderThread::threadLoop() {
+    mReader->loopOnce();
+    return true;
+   }
+   
+   void InputReader::loopOnce() {
+	RawEvent rawEvent;
+	mEventHub->getEvent(& rawEvent);  //获取一个RawEvent事件，就是通过EventHub来poll所有的input设备文件并且读取数据。
+	process(& rawEvent);              //调用相应的InputDevice的process方法处理一个事件，然后又调用了所有的InputMapper对应的process方法。
+   }
+   
+   如果是EV_KEY类型的事件，会调用到KeyboardInputMapper::process方法。
+   void KeyboardInputMapper::process(const RawEvent* rawEvent) {
+    switch (rawEvent->type) {
+    case EV_KEY: {
+        int32_t scanCode = rawEvent->scanCode;
+        if (isKeyboardOrGamepadKey(scanCode)) {
+            processKey(rawEvent->when, rawEvent->value != 0, rawEvent->keyCode, scanCode,
+                    rawEvent->flags);
+        }
+        break;
+    }
+    }
+   }
+   //processKey会找到该InputMapper所属的InputDevice相关联的InputDispatcher，并且调用notifykey将事件压入到队列等待inputdispatcher线程进一步处理。
+   getDispatcher()->notifyKey(when, getDeviceId(), AINPUT_SOURCE_KEYBOARD, policyFlags, down ? AKEY_EVENT_ACTION_DOWN : AKEY_EVENT_ACTION_UP, AKEY_EVENT_FLAG_FROM_SYSTEM, keyCode, scanCode, newMetaState, downTime);
+   
+   //notifyKey除了将事件加入到队列还将调用了policy的interceptKeyBeforeDispatching方法。明显policy是NativeInputManager的对象。最终这个方法会做android自定义的home、search、menu等特殊按键的处理。
+   //notifykey同时也会wakeup通过pollOnce正在睡眠的
+  
+  
+7. InputDispatcher.cpp
+   bool InputDispatcherThread::threadLoop() {
+     mDispatcher->dispatchOnce();
+     return true;
+   }
+   void InputDispatcher::dispatchOnce() {
+    nsecs_t keyRepeatTimeout = mPolicy->getKeyRepeatTimeout();   //500ms,触发长按事件的超时事件
+    nsecs_t keyRepeatDelay = mPolicy->getKeyRepeatDelay();       //50ms，长按事件的重复执行频率
+
+    nsecs_t nextWakeupTime = LONG_LONG_MAX;
+    { // acquire lock
+        AutoMutex _l(mLock);
+        dispatchOnceInnerLocked(keyRepeatTimeout, keyRepeatDelay, & nextWakeupTime);
+
+        if (runCommandsLockedInterruptible()) {
+            nextWakeupTime = LONG_LONG_MIN;  // force next poll to wake up immediately
+        }
+    } // release lock
+
+    // Wait for callback or timeout or wake.  (make sure we round up, not down)
+    nsecs_t currentTime = now();
+    int32_t timeoutMillis;
+    if (nextWakeupTime > currentTime) {
+        uint64_t timeout = uint64_t(nextWakeupTime - currentTime);
+        timeout = (timeout + 999999LL) / 1000000LL;
+        timeoutMillis = timeout > INT_MAX ? -1 : int32_t(timeout);
+    } else {
+        timeoutMillis = 0;
+    }
+
+    mLooper->pollOnce(timeoutMillis);  //睡眠timeoutMills，使得长按事件按时间正确的执行。或者没有事件时睡眠一个很大时间知道在inputReaderThread中通过notifyXXX来唤醒。
+   }
+
+   dispatchOnceInnerLocked()方法最终会将该事件发给相应的所有connections，并且执行pokeUserActivityLocked()
+   -->pokeUserActivityLocked()
+   -->android_server_PowerManagerService_userActivity()
+   -->调用java方法。PowerManagerService::userActivity(long time, boolean noChangeLights, int eventType, boolean force)
+
+   
+   
+
+
