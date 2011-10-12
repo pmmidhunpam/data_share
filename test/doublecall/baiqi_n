@@ -1,0 +1,1315 @@
+--------- beginning of /dev/log/system
+04-25 10:10:56.663 I/Vold    ( 1553): Vold 2.1 (the revenge) firing up
+04-25 10:10:56.673 D/Vold    ( 1553): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+04-25 10:10:56.793 D/Vold    ( 1553): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+04-25 10:10:56.803 D/Vold    ( 1553): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+04-25 10:11:16.503 I/SystemServer( 1604): Entered the Android system server!
+04-25 10:11:16.503 I/SystemServer( 1604): Entropy Service
+04-25 10:11:16.563 I/SystemServer( 1604): Power Manager
+04-25 10:11:16.573 I/SystemServer( 1604): Activity Manager
+04-25 10:11:16.623 I/ActivityManager( 1604): Memory class: 16
+04-25 10:11:17.403 I/SystemServer( 1604): Telephony Registry
+04-25 10:11:17.403 I/SystemServer( 1604): Package Manager
+04-25 10:11:17.443 I/Installer( 1604): connecting...
+04-25 10:11:18.453 W/PackageManager( 1604): Running ENG build: no pre-dexopt!
+04-25 10:11:23.813 W/PackageManager( 1604): Package obg1.PhotafPro desires unavailable shared library com.google.android.maps; ignoring!
+04-25 10:11:25.953 W/PackageManager( 1604): Package com.example.android.apis desires unavailable shared library com.example.will.never.exist; ignoring!
+04-25 10:11:26.043 I/PackageManager( 1604): Time to scan packages: 7.594 seconds
+04-25 10:11:26.053 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.contacts
+04-25 10:11:26.053 W/PackageManager( 1604): Not granting permission android.permission.DEVICE_POWER to package com.tencent.qq (protectionLevel=2 flags=0xa444)
+04-25 10:11:26.053 W/PackageManager( 1604): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+04-25 10:11:26.063 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+04-25 10:11:26.063 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+04-25 10:11:26.063 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+04-25 10:11:26.063 W/PackageManager( 1604): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x1be45)
+04-25 10:11:26.073 W/PackageManager( 1604): Unknown permission com.google.android.gm.permission.WRITE_GMAIL in package com.android.settings
+04-25 10:11:26.073 W/PackageManager( 1604): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.android.settings
+04-25 10:11:26.073 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+04-25 10:11:26.073 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.contacts
+04-25 10:11:26.073 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cp in package com.android.providers.contacts
+04-25 10:11:26.083 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+04-25 10:11:26.083 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+04-25 10:11:26.083 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+04-25 10:11:26.083 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+04-25 10:11:26.093 W/PackageManager( 1604): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0xbe45)
+04-25 10:11:26.093 W/PackageManager( 1604): Not granting permission android.permission.SET_PREFERRED_APPLICATIONS to package com.uc.browser (protectionLevel=2 flags=0xbe44)
+04-25 10:11:26.423 I/SystemServer( 1604): Account Manager
+04-25 10:11:26.533 I/SystemServer( 1604): Content Manager
+04-25 10:11:26.653 I/SystemServer( 1604): System Content Providers
+04-25 10:11:26.723 I/SystemServer( 1604): Battery Service
+04-25 10:11:26.763 I/SystemServer( 1604): Lights Service
+04-25 10:11:26.763 I/SystemServer( 1604): Vibrator Service
+04-25 10:11:26.813 I/SystemServer( 1604): Alarm Manager
+04-25 10:11:26.823 I/SystemServer( 1604): Init Watchdog
+04-25 10:11:26.833 I/SystemServer( 1604): Sensor Service
+04-25 10:11:26.843 I/SystemServer( 1604): Window Manager
+04-25 10:11:26.923 I/KeyInputQueue( 1604): Device added: id=0x10005, name=U6XXX-Keypad, classes=1
+04-25 10:11:26.923 I/KeyInputQueue( 1604): Device added: id=0x10004, name=U6XXX-RAW-Keypad, classes=1
+04-25 10:11:26.923 I/KeyInputQueue( 1604): Ignoring non-input device: id=0x10003, name=compass
+04-25 10:11:26.923 I/KeyInputQueue( 1604): Ignoring non-input device: id=0x10002, name=acc
+04-25 10:11:26.923 I/KeyInputQueue( 1604): Device added: id=0x10001, name=mcs6000-touch, classes=4
+04-25 10:11:26.923 I/KeyInputQueue( 1604):   X: min=0 max=240 flat=0 fuzz=0
+04-25 10:11:26.923 I/KeyInputQueue( 1604):   Y: min=0 max=400 flat=0 fuzz=0
+04-25 10:11:26.923 I/KeyInputQueue( 1604):   Pressure: min=0 max=255 flat=0 fuzz=0
+04-25 10:11:26.923 I/KeyInputQueue( 1604):   Size: min=0 max=15 flat=0 fuzz=0
+04-25 10:11:26.923 I/KeyInputQueue( 1604): No virtual keys found
+04-25 10:11:26.923 I/KeyInputQueue( 1604): Device added: id=0x0, name=U6XXX-PMU events, classes=1
+04-25 10:11:27.033 I/SystemServer( 1604): Bluetooth Service
+04-25 10:11:27.083 I/SystemServer( 1604): Device Policy
+04-25 10:11:27.083 I/SystemServer( 1604): Status Bar
+04-25 10:11:27.273 I/SystemServer( 1604): Clipboard Service
+04-25 10:11:27.273 I/SystemServer( 1604): Input Method Service
+04-25 10:11:27.313 I/InputManagerService( 1604): Enabled input methods: com.android.inputmethod.pinyin/.PinyinIME:jp.co.omronsoft.openwnn/.OpenWnnJAJP:com.android.inputmethod.latin/.LatinIME:com.example.android.softkeyboard/.SoftKeyboard
+04-25 10:11:27.323 I/SystemServer( 1604): NetStat Service
+04-25 10:11:27.323 I/SystemServer( 1604): NetworkManagement Service
+04-25 10:11:27.323 I/SystemServer( 1604): Connectivity Service
+04-25 10:11:27.333 V/ConnectivityService( 1604): ConnectivityService starting up
+04-25 10:11:27.353 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:11:27.363 V/ConnectivityService( 1604): Starting Wifi Service.
+04-25 10:11:27.403 I/WifiService( 1604): WifiService starting up with Wi-Fi disabled
+04-25 10:11:27.413 D/NetworkManagmentService( 1604): Registering observer
+04-25 10:11:27.433 I/SystemServer( 1604): Throttle Service
+04-25 10:11:27.433 I/SystemServer( 1604): Accessibility Manager
+04-25 10:11:27.443 I/SystemServer( 1604): Mount Service
+04-25 10:11:27.453 I/SystemServer( 1604): Notification Manager
+04-25 10:11:27.473 D/VoldCmdListener( 1553): volume list
+04-25 10:11:27.483 D/VoldCmdListener( 1553): share status ums
+04-25 10:11:27.493 I/SystemServer( 1604): Device Storage Monitor
+04-25 10:11:27.503 I/SystemServer( 1604): Location Manager
+04-25 10:11:27.513 I/SystemServer( 1604): Search Service
+04-25 10:11:27.513 I/SystemServer( 1604): DropBox Service
+04-25 10:11:27.523 I/SystemServer( 1604): Wallpaper Service
+04-25 10:11:27.683 I/SystemServer( 1604): Audio Service
+04-25 10:11:27.933 I/SystemServer( 1604): Headset Observer
+04-25 10:11:27.933 I/SystemServer( 1604): Dock Observer
+04-25 10:11:27.943 W/DockObserver( 1604): This kernel does not have dock station support
+04-25 10:11:27.943 I/SystemServer( 1604): UI Mode Manager Service
+04-25 10:11:27.983 I/SystemServer( 1604): Backup Service
+04-25 10:11:28.023 V/BackupManagerService( 1604): No ancestral data
+04-25 10:11:28.153 I/BackupManagerService( 1604): Found stale backup journal, scheduling:
+04-25 10:11:28.153 I/BackupManagerService( 1604):     + com.android.inputmethod.latin
+04-25 10:11:28.153 I/BackupManagerService( 1604):     + com.android.browser
+04-25 10:11:28.153 I/BackupManagerService( 1604):     + com.android.providers.userdictionary
+04-25 10:11:28.153 I/BackupManagerService( 1604):     + android
+04-25 10:11:28.153 I/BackupManagerService( 1604):     + com.android.providers.settings
+04-25 10:11:28.193 I/BackupManagerService( 1604): Backup enabled => false
+04-25 10:11:28.193 I/SystemServer( 1604): AppWidget Service
+04-25 10:11:28.203 I/SystemServer( 1604): Recognition Service
+04-25 10:11:28.213 D/VoldCmdListener( 1553): share status ums
+04-25 10:11:28.223 D/StorageNotification( 1604): Startup with UMS connection false (media state unmounted)
+04-25 10:11:28.233 I/SystemServer( 1604): DiskStats Service
+04-25 10:11:28.253 W/DevicePolicyManagerService( 1604): failed parsing /data/system/device_policies.xml java.io.FileNotFoundException: /data/system/device_policies.xml (No such file or directory)
+04-25 10:11:28.283 I/ActivityManager( 1604): Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=3/1/2 nav=1/1 orien=1 layout=34 uiMode=0 seq=1}
+04-25 10:11:28.363 D/PowerManagerService( 1604): system ready!
+04-25 10:11:28.363 I/ActivityManager( 1604): Sending system update to: ComponentInfo{com.android.providers.calendar/com.android.providers.calendar.CalendarUpgradeReceiver}
+04-25 10:11:28.383 I/ActivityManager( 1604): Sending system update to: ComponentInfo{com.android.providers.contacts/com.android.providers.contacts.ContactsUpgradeReceiver}
+04-25 10:11:28.413 I/ActivityManager( 1604): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarUpgradeReceiver: pid=1648 uid=10022 gids={3003}
+04-25 10:11:28.653 I/ActivityManager( 1604): Launching preboot mode app: ProcessRecord{43dcef38 1648:com.android.providers.calendar/10022}
+04-25 10:11:28.703 W/StatusBar( 1604): No icon ID for slot ime
+04-25 10:11:29.143 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.launcher/com.android.launcher2.Launcher }
+04-25 10:11:29.273 I/ActivityManager( 1604): Start proc android.process.acore for broadcast com.android.providers.contacts/.ContactsUpgradeReceiver: pid=1656 uid=10002 gids={3003, 1015}
+04-25 10:11:29.563 I/ActivityManager( 1604): Launching preboot mode app: ProcessRecord{43e003a0 1656:android.process.acore/10002}
+04-25 10:11:29.993 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:11:30.003 I/ActivityManager( 1604): Removing system update proc: ProcessRecord{43dcef38 1648:com.android.providers.calendar/10022}
+04-25 10:11:30.003 I/ActivityManager( 1604): Removing system update proc: ProcessRecord{43e003a0 1656:android.process.acore/10002}
+04-25 10:11:30.003 I/ActivityManager( 1604): System now ready
+04-25 10:11:30.093 I/SystemServer( 1604): Making services ready
+04-25 10:11:30.093 I/ActivityManager( 1604): Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=3/1/2 nav=1/1 orien=1 layout=34 uiMode=17 seq=2}
+04-25 10:11:30.153 W/RecognitionManagerService( 1604): no available voice recognition services found
+04-25 10:11:30.513 I/ActivityManager( 1604): Start proc com.example.android.softkeyboard for service com.example.android.softkeyboard/.SoftKeyboard: pid=1665 uid=10035 gids={}
+04-25 10:11:30.533 D/NetworkManagmentService( 1604): Registering observer
+04-25 10:11:30.583 I/ActivityManager( 1604): Start proc com.android.phone for added application com.android.phone: pid=1670 uid=1001 gids={3002, 3001, 3003, 1015}
+04-25 10:11:30.603 I/ActivityManager( 1604): Start proc com.android.launcher for activity com.android.launcher/com.android.launcher2.Launcher: pid=1673 uid=10029 gids={}
+04-25 10:11:30.673 I/ActivityManager( 1604): Start proc com.android.settings for broadcast com.android.settings/.widget.SettingsAppWidgetProvider: pid=1676 uid=1000 gids={3002, 3001, 3003}
+04-25 10:11:31.863 W/ActivityManager( 1604): Unable to start service Intent { act=@0 }: not found
+04-25 10:11:31.863 W/ActivityManager( 1604): Unable to start service Intent { act=@0 }: not found
+04-25 10:11:34.083 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:11:34.283 I/ActivityManager( 1604): Start proc android.process.acore for content provider com.android.providers.contacts/.CallLogProvider: pid=1713 uid=10002 gids={3003, 1015}
+04-25 10:11:34.533 W/ActivityManager( 1604): Unable to start service Intent { act=com.android.ussd.IExtendedNetworkService }: not found
+04-25 10:11:36.863 D/PowerManagerService( 1604): bootCompleted
+04-25 10:11:37.073 D/VoldCmdListener( 1553): volume mount /mnt/sdcard
+04-25 10:11:37.073 I/Vold    ( 1553): /dev/block/vold/179:1 being considered for volume sdcard
+04-25 10:11:37.073 D/Vold    ( 1553): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+04-25 10:11:37.263 I/StorageNotification( 1604): Media {/mnt/sdcard} state changed from {unmounted} -> {checking}
+04-25 10:11:37.913 I/WifiService( 1604): WifiService trying to setNumAllowed to 13 with persist set to true
+04-25 10:11:38.033 I/ActivityManager( 1604): Config changed: { scale=1.0 imsi=460/0 loc=en_US touch=3 keys=3/1/2 nav=1/1 orien=1 layout=34 uiMode=17 seq=3}
+04-25 10:11:38.163 I/UsageStats( 1604): Unexpected resume of com.android.launcher while already resumed in com.android.launcher
+04-25 10:11:38.883 I/Vold    ( 1553): Filesystem check completed OK
+04-25 10:11:38.953 I/Vold    ( 1553): Device /dev/block/vold/179:1, target /mnt/sdcard mounted @ /mnt/secure/staging
+04-25 10:11:38.973 D/Vold    ( 1553): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+04-25 10:11:39.023 D/VoldCmdListener( 1553): asec list
+04-25 10:11:39.203 D/VoldCmdListener( 1553): asec path alterforce.engine-1
+04-25 10:11:39.233 D/VoldCmdListener( 1553): asec path com.irafa.deadrider-1
+04-25 10:11:39.393 D/VoldCmdListener( 1553): asec mount com.irafa.deadrider-1 {} 1000
+04-25 10:11:40.153 E/Vold    ( 1553): ASEC mount failed (No such file or directory)
+04-25 10:11:40.403 E/PackageManager( 1604): Failed to mount cid : com.irafa.deadrider-1 when installing from sdcard
+04-25 10:11:40.733 D/VoldCmdListener( 1553): asec mount alterforce.engine-1 {} 1000
+04-25 10:11:40.783 I/StorageNotification( 1604): Media {/mnt/sdcard} state changed from {checking} -> {mounted}
+04-25 10:11:40.893 I/ActivityManager( 1604): Start proc com.android.email for broadcast com.android.email/com.android.exchange.BootReceiver: pid=1766 uid=10010 gids={3003, 1015}
+04-25 10:11:41.073 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTING/CONNECTING
+04-25 10:11:41.393 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTED/CONNECTED
+04-25 10:11:42.043 D/ConnectivityService( 1604): ConnectivityChange for mobile: DISCONNECTED/DISCONNECTED
+04-25 10:11:42.073 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:11:42.203 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTING/CONNECTING
+04-25 10:11:42.223 I/ActivityManager( 1604): Start proc android.process.media for content provider com.android.providers.downloads/.DownloadProvider: pid=1780 uid=10014 gids={1015, 2001, 3003}
+04-25 10:11:42.243 D/VoldCmdListener( 1553): asec path alterforce.engine-1
+04-25 10:11:44.983 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.contacts
+04-25 10:11:44.983 W/PackageManager( 1604): Not granting permission android.permission.DEVICE_POWER to package com.tencent.qq (protectionLevel=2 flags=0xa444)
+04-25 10:11:44.983 W/PackageManager( 1604): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+04-25 10:11:45.013 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+04-25 10:11:45.013 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+04-25 10:11:45.013 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+04-25 10:11:45.013 W/PackageManager( 1604): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x1be45)
+04-25 10:11:45.033 W/PackageManager( 1604): Unknown permission com.google.android.gm.permission.WRITE_GMAIL in package com.android.settings
+04-25 10:11:45.033 W/PackageManager( 1604): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.android.settings
+04-25 10:11:45.033 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+04-25 10:11:45.043 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.contacts
+04-25 10:11:45.043 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cp in package com.android.providers.contacts
+04-25 10:11:45.043 W/PackageManager( 1604): Unknown permission com.android.vending.CHECK_LICENSE in package alterforce.engine
+04-25 10:11:45.043 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+04-25 10:11:45.043 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+04-25 10:11:45.043 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+04-25 10:11:45.043 W/PackageManager( 1604): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+04-25 10:11:45.043 W/PackageManager( 1604): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0xbe45)
+04-25 10:11:45.063 W/PackageManager( 1604): Not granting permission android.permission.SET_PREFERRED_APPLICATIONS to package com.uc.browser (protectionLevel=2 flags=0xbe44)
+04-25 10:11:45.903 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTED/CONNECTED
+04-25 10:11:46.403 I/ActivityManager( 1604): Start proc com.android.bluetooth for broadcast com.android.bluetooth/.opp.BluetoothOppReceiver: pid=1790 uid=10012 gids={3003, 3002, 3001, 1015}
+04-25 10:11:46.453 W/RecognitionManagerService( 1604): no available voice recognition services found
+04-25 10:11:47.793 I/ActivityManager( 1604): Start proc com.android.deskclock for broadcast com.android.deskclock/.AlarmInitReceiver: pid=1804 uid=10018 gids={}
+04-25 10:11:49.133 I/ActivityManager( 1604): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarReceiver: pid=1815 uid=10022 gids={3003}
+04-25 10:11:49.853 I/ActivityManager( 1604): Start proc com.android.mms for broadcast com.android.mms/.transaction.MmsSystemEventReceiver: pid=1825 uid=10036 gids={3003, 1015}
+04-25 10:11:51.083 I/ActivityManager( 1604): Start proc com.android.voicedialer for broadcast com.android.voicedialer/.VoiceDialerReceiver: pid=1839 uid=10039 gids={3002}
+04-25 10:11:51.993 I/ActivityManager( 1604): Start proc com.android.music for broadcast com.android.music/.MediaAppWidgetProvider: pid=1846 uid=10006 gids={3003, 1015}
+04-25 10:11:52.463 I/ActivityManager( 1604): Start proc com.android.quicksearchbox for broadcast com.android.quicksearchbox/.SearchWidgetProvider: pid=1854 uid=10032 gids={3003}
+04-25 10:11:53.633 I/ActivityManager( 1604): Start proc com.cooliris.media for broadcast com.cooliris.media/com.cooliris.cache.BootReceiver: pid=1864 uid=10041 gids={1015, 3003}
+04-25 10:11:54.303 I/ActivityManager( 1604): Starting activity: Intent { flg=0x58840000 cmp=com.android.stk/.StkDialogActivity (has extras) }
+04-25 10:11:59.283 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.contacts/.ContactsLaunchActivity }
+04-25 10:12:12.223 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:1-318-282-7869 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:12:12.533 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL dat=tel:1-318-282-7869 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:12:14.113 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:12:14.703 D/ConnectivityService( 1604): ConnectivityChange for mobile: SUSPENDED/SUSPENDED
+04-25 10:12:14.703 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:12:28.293 I/ActivityManager( 1604): moveTaskToBack: 6
+04-25 10:12:29.353 W/WindowManager( 1604): Event timeout during app switch: dropping KeyEvent{action=1 code=4 repeat=0 meta=0 scancode=158 mFlags=8}
+04-25 10:12:29.353 W/WindowManager( 1604): No focus window, dropping: KeyEvent{action=1 code=4 repeat=0 meta=0 scancode=158 mFlags=8}
+04-25 10:12:29.543 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher }
+04-25 10:12:33.293 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen bnds=[0,93][240,141] }
+04-25 10:12:33.453 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:12:36.563 W/InputManagerService( 1604): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43ed93b0
+04-25 10:12:36.753 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTED/CONNECTED
+04-25 10:12:36.923 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.VIEW typ=vnd.android.cursor.dir/calls flg=0x10000 cmp=com.android.contacts/.DialtactsActivity }
+04-25 10:12:37.003 I/ActivityManager( 1604): moveTaskToBack: 6
+04-25 10:12:37.753 W/InputManagerService( 1604): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43ec2a80
+04-25 10:13:00.933 E/ThrottleService( 1604): Error reading data file
+04-25 10:13:05.363 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher }
+04-25 10:13:05.673 W/InputManagerService( 1604): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43dbf970
+04-25 10:13:07.913 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.contacts/.ContactsLaunchActivity }
+04-25 10:13:07.953 W/InputManagerService( 1604): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43c6d588
+04-25 10:13:12.923 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:13:13.213 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:13:13.323 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:13:14.223 D/ConnectivityService( 1604): ConnectivityChange for mobile: SUSPENDED/SUSPENDED
+04-25 10:13:14.223 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:13:33.333 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:13:33.443 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:14:09.113 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:14:09.233 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:14:42.523 I/ActivityManager( 1604): moveTaskToBack: 6
+04-25 10:14:43.033 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTED/CONNECTED
+04-25 10:14:43.063 W/ActivityManager( 1604): Activity pause timeout for HistoryRecord{43dd60e0 com.android.phone/.InCallScreen}
+04-25 10:14:46.263 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.contacts/.ContactsLaunchActivity }
+04-25 10:14:46.773 W/InputManagerService( 1604): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43e00770
+04-25 10:14:50.723 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:14:50.923 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:14:51.053 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:14:51.303 D/ConnectivityService( 1604): ConnectivityChange for mobile: SUSPENDED/SUSPENDED
+04-25 10:14:51.303 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:15:10.393 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:15:10.513 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:15:40.203 W/InputManagerService( 1604): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43dfe230
+04-25 10:16:00.083 I/ActivityManager( 1604): moveTaskToBack: 6
+04-25 10:16:00.283 I/UsageStats( 1604): Something wrong here, didn't expect com.android.launcher to be paused
+04-25 10:16:00.323 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:16:00.693 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTED/CONNECTED
+04-25 10:27:20.943 I/UsageStats( 1604): Unexpected resume of com.android.launcher while already resumed in com.android.launcher
+04-25 10:27:33.833 W/InputManagerService( 1604): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43c75e50
+04-25 10:27:36.543 I/StorageNotification( 1604): UMS connection changed to true (media state mounted)
+04-25 10:27:40.753 I/StorageNotification( 1604): UMS connection changed to false (media state mounted)
+04-25 10:27:44.813 I/StorageNotification( 1604): UMS connection changed to true (media state mounted)
+04-25 10:28:42.873 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:30:06.053 W/WindowManager( 1604): No focus window, dropping: KeyEvent{action=1 code=82 repeat=0 meta=0 scancode=139 mFlags=8}
+04-25 10:30:12.983 W/InputManagerService( 1604): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43e33e68
+04-25 10:30:18.623 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ste.com.testmemory/.TestNandActivity }
+04-25 10:30:18.753 I/ActivityManager( 1604): Start proc ste.com.testmemory for activity ste.com.testmemory/.TestNandActivity: pid=2082 uid=10040 gids={}
+04-25 10:30:26.013 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.contacts/.ContactsLaunchActivity }
+04-25 10:30:26.583 W/InputManagerService( 1604): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43d36cc8
+04-25 10:30:31.733 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:30:32.033 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+--------- beginning of /dev/log/main
+04-25 10:30:32.133 V/AudioPolicyManagerALSA( 1595): checkAndSetVolume() cannot set stream 6 volume with force use = 0 for comm
+04-25 10:30:32.133 V/AudioPolicyManagerALSA( 1595): setPhoneState() in call state management: new state is 2
+04-25 10:30:32.133 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 2 starting 1 device 1 stateChange 1
+04-25 10:30:32.133 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 4 starting 1 device 1 stateChange 1
+04-25 10:30:32.133 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 5 starting 1 device 1 stateChange 1
+04-25 10:30:32.133 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 7 starting 1 device 1 stateChange 1
+04-25 10:30:32.143 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 0, index 4
+04-25 10:30:32.143 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 8, index 12
+04-25 10:30:32.143 D/InCallScreen( 1670): onResume()...
+04-25 10:30:32.143 D/PhoneApp( 1670): disable status bar
+04-25 10:30:32.153 D/PhoneApp( 1670): StatusBarManager.DISABLE_EXPAND
+04-25 10:30:32.153 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:30:32.163 D/InCallScreen( 1670): - onResume: initial status = SUCCESS
+04-25 10:30:32.163 D/InCallScreen( 1670): setInCallScreenMode: NORMAL
+04-25 10:30:32.163 D/InCallScreen( 1670): syncWithPhoneState()...
+04-25 10:30:32.163 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:30:32.163 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = OFFHOOK
+04-25 10:30:32.163 D/PhoneUtils( 1670):   - FG call: DIALING isAlive true isRinging false isDialing true isIdle false hasConnections true
+04-25 10:30:32.163 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:30:32.163 D/PhoneUtils( 1670):   - RINGING call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:30:32.163 D/PhoneUtils( 1670):   - hasRingingCall false hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:30:32.163 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:30:32.163 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:32.163 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:32.173 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:32.193 I/power   ( 1604): *** set_screen_state 1
+04-25 10:30:32.223 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:32.223 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:30:32.263 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:30:32.263 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:30:32.263 D/Ringer  ( 1670): stopRing()...
+04-25 10:30:32.273 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:30:32.303 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:30:32.303 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:32.303 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:32.313 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:32.333 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:32.333 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:30:32.363 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:30:32.363 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:30:32.363 D/Ringer  ( 1670): stopRing()...
+04-25 10:30:32.373 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:30:32.403 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:30:32.403 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:32.403 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:32.413 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:32.433 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:32.433 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:30:32.433 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:30:32.433 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:30:32.433 D/Ringer  ( 1670): stopRing()...
+04-25 10:30:32.433 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:30:32.473 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:30:32.473 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:32.473 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:32.483 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:32.483 D/MobileDataStateTracker( 1604): default Received state= SUSPENDED, old= CONNECTED, reason= 2GVoiceCallStarted, apnTypeList= default
+04-25 10:30:32.483 D/NetworkStateTracker( 1604): setDetailed state, old =CONNECTED and new state=SUSPENDED
+04-25 10:30:32.483 D/ConnectivityService( 1604): ConnectivityChange for mobile: SUSPENDED/SUSPENDED
+04-25 10:30:32.483 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:30:32.493 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:32.493 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:30:32.833 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:30:32.863 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:30:32.863 D/Ringer  ( 1670): stopRing()...
+04-25 10:30:32.873 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:30:32.983 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:30:32.983 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:32.983 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:33.013 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:33.023 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:33.023 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:30:33.063 W/IInputConnectionWrapper( 1713): showStatusIcon on inactive InputConnection
+04-25 10:30:33.073 D/Tethering( 1604): Tethering got CONNECTIVITY_ACTION
+04-25 10:30:33.073 D/Tethering( 1604): MasterInitialState.processMessage what=3
+04-25 10:30:33.073 E/HierarchicalStateMachine( 1604): TetherMaster - unhandledMessage: msg.what=3
+04-25 10:30:37.883 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:30:37.893 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:30:37.893 D/Ringer  ( 1670): stopRing()...
+04-25 10:30:37.893 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:30:37.973 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:30:37.973 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:37.973 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:38.013 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:38.043 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:38.043 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:30:38.263 D/dalvikvm( 1673): GC_EXPLICIT freed 2586 objects / 138056 bytes in 83ms
+04-25 10:30:43.343 D/dalvikvm( 1713): GC_EXPLICIT freed 3361 objects / 230032 bytes in 159ms
+04-25 10:30:46.913 I/AudioService( 1604):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:30:46.923 D/CallNotifier( 1670): RINGING... (new)
+04-25 10:30:46.923 D/CallNotifier( 1670): onNewRingingConnection():  incoming: true state: WAITING post dial state: NOT_STARTED
+04-25 10:30:46.963 D/AudioFlinger( 1595): <<<<<<<<<<<FM CANT START<<<<<<<<<<<<<<<
+04-25 10:30:46.963 V/AudioPolicyManagerALSA( 1595): startOutput() output 1, stream 0
+04-25 10:30:46.963 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:30:46.963 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:30:46.963 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:30:46.963 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 1
+04-25 10:30:46.973 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:30:46.993 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:30:46.993 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:46.993 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:46.993 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:47.033 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:30:47.033 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:47.033 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:30:47.033 D/InCallScreen( 1670): onPause()...
+04-25 10:30:47.043 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:30:47.043 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:30:47.053 D/PhoneApp( 1670): re-enable status bar
+04-25 10:30:47.053 D/PhoneApp( 1670): StatusBarManager.DISABLE_NONE
+04-25 10:30:47.053 D/PhoneApp( 1670): updateWakeState: callscreen false, dialer false, speaker false...
+04-25 10:30:47.053 W/AudioHardwareALSA( 1595): Write request but device is in state SND_PCM_STATE_SETUP
+04-25 10:30:47.053 D/AudioHardwareALSA( 1595): call snd_pcm_prepare
+04-25 10:30:47.063 W/AudioHardwareALSA( 1595): Wait for correct device state
+04-25 10:30:47.063 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:30:47.063 D/InCallScreen( 1670): onNewIntent: intent=Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:30:47.073 D/InCallScreen( 1670): internalResolveIntent: action=android.intent.action.MAIN
+04-25 10:30:47.073 D/InCallScreen( 1670): onResume()...
+04-25 10:30:47.073 D/PhoneApp( 1670): disable status bar
+04-25 10:30:47.073 D/PhoneApp( 1670): StatusBarManager.DISABLE_EXPAND
+04-25 10:30:47.103 D/InCallScreen( 1670): - onResume: initial status = SUCCESS
+04-25 10:30:47.103 D/InCallScreen( 1670): setInCallScreenMode: NORMAL
+04-25 10:30:47.103 D/InCallScreen( 1670): syncWithPhoneState()...
+04-25 10:30:47.103 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:30:47.103 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = RINGING
+04-25 10:30:47.103 D/PhoneUtils( 1670):   - FG call: ACTIVE isAlive true isRinging false isDialing false isIdle false hasConnections true
+04-25 10:30:47.103 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:30:47.103 D/PhoneUtils( 1670):   - RINGING call: WAITING isAlive true isRinging true isDialing false isIdle false hasConnections true
+04-25 10:30:47.103 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:30:47.113 D/PhoneUtils( 1670):   - hasRingingCall true hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:30:47.113 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:30:47.113 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:47.113 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:47.113 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:47.113 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:30:47.113 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:47.123 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:30:47.173 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:30:47.173 D/InCallScreen( 1670): updateScreen()...
+04-25 10:30:47.173 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:30:47.173 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:30:47.193 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:30:47.193 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:30:47.193 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:30:47.203 I/power   ( 1604): *** set_screen_state 1
+04-25 10:30:52.053 D/dalvikvm( 1780): GC_EXPLICIT freed 762 objects / 40656 bytes in 76ms
+04-25 10:30:54.803 D/dalvikvm( 1670): GC_FOR_MALLOC freed 13873 objects / 766840 bytes in 110ms
+04-25 10:30:57.103 D/dalvikvm( 1676): GC_EXPLICIT freed 34 objects / 1864 bytes in 131ms
+04-25 10:31:02.053 D/dalvikvm( 1604): GC_EXPLICIT freed 17370 objects / 893568 bytes in 432ms
+04-25 10:31:02.063 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:31:02.203 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:31:02.453 D/InCallTouchUi( 1670): onDialTrigger(whichHandle = 1)...
+04-25 10:31:02.453 D/InCallScreen( 1670): handleOnscreenButtonClick(id 2131099670)...
+04-25 10:31:02.453 D/InCallScreen( 1670): internalAnswerCall: answering...
+04-25 10:31:02.453 D/Ringer  ( 1670): stopRing()...
+04-25 10:31:02.473 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:31:02.563 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 0, index 4
+04-25 10:31:02.573 D/InCallTouchUi( 1670): updateState: Too soon after last action; not drawing!
+04-25 10:31:02.583 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 8, index 12
+04-25 10:31:03.123 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:31:03.553 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:31:06.773 D/dalvikvm( 1670): GC_FOR_MALLOC freed 11150 objects / 792624 bytes in 121ms
+04-25 10:31:13.133 I/AudioService( 1604):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:31:13.143 D/CallNotifier( 1670): DISCONNECT
+04-25 10:31:13.143 D/CallNotifier( 1670): - onDisconnect: cause = INCOMING_MISSED, incoming = true, date = 1303727446916
+04-25 10:31:13.143 D/CallNotifier( 1670): stopRing()... (onDisconnect)
+04-25 10:31:13.143 D/Ringer  ( 1670): stopRing()...
+04-25 10:31:13.143 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:31:13.153 D/CallNotifier( 1670): - onDisconnect(): logNumber set to: 13182827869
+04-25 10:31:13.153 D/CallNotifier( 1670): - getPresentation(): ignoring connection's presentation: 1
+04-25 10:31:13.153 D/CallNotifier( 1670): - getPresentation: presentation: 1
+04-25 10:31:13.193 D/InCallScreen( 1670): onDisconnect:  incoming: true state: DISCONNECTED post dial state: NOT_STARTED, cause=INCOMING_MISSED
+04-25 10:31:13.193 D/InCallScreen( 1670): updateScreen()...
+04-25 10:31:13.193 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:31:13.273 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:31:13.283 D/AudioFlinger( 1595): <<<<<<<<<<<FM CAN START<<<<<<<<<<<<<<<<
+04-25 10:31:13.283 V/AudioPolicyManagerALSA( 1595): stopOutput() output 1, stream 0
+04-25 10:31:13.283 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 0
+04-25 10:31:13.283 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:31:13.283 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 1116
+04-25 10:31:13.283 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:31:13.323 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:31:15.323 D/InCallScreen( 1670): - delayedCleanupAfterDisconnect: staying on the InCallScreen...
+04-25 10:31:15.323 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:31:15.323 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = OFFHOOK
+04-25 10:31:15.323 D/PhoneUtils( 1670):   - FG call: ACTIVE isAlive true isRinging false isDialing false isIdle false hasConnections true
+04-25 10:31:15.323 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:31:15.323 D/PhoneUtils( 1670):   - RINGING call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:31:15.323 D/PhoneUtils( 1670):   - hasRingingCall false hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:31:15.323 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:31:15.323 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:31:15.323 D/Ringer  ( 1670): stopRing()...
+04-25 10:31:15.323 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:31:15.363 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:31:15.363 D/InCallScreen( 1670): updateScreen()...
+04-25 10:31:15.363 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:31:15.373 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:31:15.383 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:31:15.383 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:31:25.563 D/dalvikvm( 1670): GC_FOR_MALLOC freed 11494 objects / 796712 bytes in 192ms
+04-25 10:31:30.633 I/power   ( 1604): *** set_screen_state 0
+04-25 10:31:30.655 D/SurfaceFlinger( 1557): About to give-up screen, flinger = 0xa810
+04-25 10:31:30.663 E/Sensors ( 1604): sensors_control_activate active=00000001 sensor=00000000 new_sensors=0 changed=1
+04-25 10:31:30.663 E/Sensors ( 1604): using /dev/input/event3 (name=compass)
+04-25 10:31:30.723 D/InCallScreen( 1670): onPause()...
+04-25 10:31:30.763 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:31:30.763 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:31:30.773 D/PhoneApp( 1670): re-enable status bar
+04-25 10:31:30.773 D/PhoneApp( 1670): StatusBarManager.DISABLE_NONE
+04-25 10:31:30.793 D/PhoneApp( 1670): updateWakeState: callscreen false, dialer false, speaker false...
+04-25 10:31:30.813 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:31:41.303 I/AudioService( 1604):  AudioFocus  abandonAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:31:41.343 D/CallNotifier( 1670): DISCONNECT
+04-25 10:31:41.343 D/CallNotifier( 1670): - onDisconnect: cause = ERROR_UNSPECIFIED, incoming = false, date = 1303727432092
+04-25 10:31:41.343 D/CallNotifier( 1670): stopRing()... (onDisconnect)
+04-25 10:31:41.343 D/Ringer  ( 1670): stopRing()...
+04-25 10:31:41.353 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:31:41.353 D/CallNotifier( 1670): - DisconnectCause is ERROR_UNSPECIFIED: play TONE_CALL_ENDED!
+04-25 10:31:41.383 D/InCallScreen( 1670): finish()...
+04-25 10:31:41.383 I/ActivityManager( 1604): moveTaskToBack: 6
+04-25 10:31:41.513 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:31:41.513 I/UsageStats( 1604): Something wrong here, didn't expect com.android.launcher to be paused
+04-25 10:31:41.553 D/CallNotifier( 1670): - onDisconnect(): logNumber set to: 10086
+04-25 10:31:41.553 D/CallNotifier( 1670): - getPresentation(): ignoring connection's presentation: 1
+04-25 10:31:41.553 D/CallNotifier( 1670): - getPresentation: presentation: 1
+04-25 10:31:41.573 D/InCallScreen( 1670): Handler: handling message { what=102 when=1257306 obj=android.os.AsyncResult@43d6c568 } while not in foreground
+04-25 10:31:41.573 D/InCallScreen( 1670): onDisconnect:  incoming: false state: DISCONNECTED post dial state: COMPLETE, cause=ERROR_UNSPECIFIED
+04-25 10:31:41.573 D/InCallScreen( 1670): updateScreen()...
+04-25 10:31:41.573 D/InCallScreen( 1670): - updateScreen: not the foreground Activity! Bailing out...
+04-25 10:31:41.573 D/InCallScreen( 1670): setInCallScreenMode: CALL_ENDED
+04-25 10:31:41.593 D/AGpsPhoneListener( 1604): DATA_CONNECTED
+04-25 10:31:41.603 D/MobileDataStateTracker( 1604): replacing old mInterfaceName (pdp_ip0) with pdp_ip0 for hipri
+04-25 10:31:41.613 D/AudioFlinger( 1595): <<<<<<<<<<<FM CANT START<<<<<<<<<<<<<<<
+04-25 10:31:41.613 V/AudioPolicyManagerALSA( 1595): startOutput() output 1, stream 0
+04-25 10:31:41.613 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:31:41.613 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:31:41.613 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:31:41.613 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 1
+04-25 10:31:41.623 D/MobileDataStateTracker( 1604): default Received state= CONNECTED, old= SUSPENDED, reason= 2GVoiceCallEnded, apnTypeList= default
+04-25 10:31:41.623 D/NetworkStateTracker( 1604): setDetailed state, old =SUSPENDED and new state=CONNECTED
+04-25 10:31:41.623 V/NetworkStateTracker( 1604): Setting TCP values: [4093,26280,35040,4096,16384,35040] which comes from [net.tcp.buffersize.edge]
+04-25 10:31:41.623 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTED/CONNECTED
+04-25 10:31:41.643 D/InCallScreen( 1670): Handler: handling message { what=101 when=1257352 obj=android.os.AsyncResult@43d6c610 } while not in foreground
+04-25 10:31:41.643 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:31:41.643 D/InCallScreen( 1670): onPhoneStateChanged: Activity not in foreground! Bailing out...
+04-25 10:31:41.713 W/AudioHardwareALSA( 1595): Write request but device is in state SND_PCM_STATE_SETUP
+04-25 10:31:41.713 D/AudioHardwareALSA( 1595): call snd_pcm_prepare
+04-25 10:31:41.713 W/AudioHardwareALSA( 1595): Wait for correct device state
+04-25 10:31:41.713 D/AudioFlinger( 1595): <<<<<<<<<<<FM CAN START<<<<<<<<<<<<<<<<
+04-25 10:31:41.713 V/AudioPolicyManagerALSA( 1595): stopOutput() output 1, stream 0
+04-25 10:31:41.713 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 0
+04-25 10:31:41.713 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:31:41.713 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 1116
+04-25 10:31:41.713 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:31:41.743 D/InCallScreen( 1670): onStop()...
+04-25 10:31:41.743 D/InCallScreen( 1670): onStop: state = IDLE
+04-25 10:31:41.763 D/Tethering( 1604): Tethering got CONNECTIVITY_ACTION
+04-25 10:31:41.763 D/Tethering( 1604): MasterInitialState.processMessage what=3
+04-25 10:31:41.763 E/HierarchicalStateMachine( 1604): TetherMaster - unhandledMessage: msg.what=3
+04-25 10:31:41.843 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:31:41.843 V/AudioPolicyManagerALSA( 1595): setForceUse() usage 0, config 0, mPhoneState 2
+04-25 10:31:41.843 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:31:41.843 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:31:41.843 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:31:41.843 D/PhoneApp( 1670): updateWakeState: callscreen false, dialer false, speaker false...
+04-25 10:31:41.843 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:31:41.853 D/AudioHardwareInterface( 1595): setMode(NORMAL)
+04-25 10:31:41.853 D/ALSAModule( 1595): route called for devices 00000001 in mode 0...
+04-25 10:31:41.853 D/ALSAModule( 1595): force route called for devices 00000001 in mode 0...
+04-25 10:31:41.853 E/AudioHardwareALSA( 1595): ALSALib error external/alsa-lib/src/pcm/pcm.c:2210:(snd_pcm_open_noupdate) Unknown PCM Dummy_AndroidPlayback_Earpiece_normal
+04-25 10:31:41.853 E/ALSAModule( 1595): open pcm device Dummy_AndroidPlayback_Earpiece_normal returned status -2. handler 0x0
+04-25 10:31:41.853 E/ALSAModule( 1595): open pcm device Dummy_AndroidPlayback_Earpiece returned status 0. handler 0x3e738
+04-25 10:31:41.863 E/ALSAModule( 1595): pcm device Dummy_AndroidPlayback_Earpiece closed
+04-25 10:31:41.863 D/ALSAModule( 1595): route called for devices 00000000 in mode 0...
+04-25 10:31:41.863 D/ALSAModule( 1595): force route called for devices 00000000 in mode 0...
+04-25 10:31:41.863 E/ALSAModule( 1595): open pcm device Dummy_AndroidRecord returned status 0. handler 0x3e738
+04-25 10:31:41.863 E/ALSAModule( 1595): pcm device Dummy_AndroidRecord closed
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): setPhoneState() state 0
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): setPhoneState() in call state management: new state is 0
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 2 starting 0 device 1 stateChange 1
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 4 starting 0 device 1 stateChange 1
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 5 starting 0 device 1 stateChange 1
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 7 starting 0 device 1 stateChange 1
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 3, device 1
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 2, device 1
+04-25 10:31:41.863 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:31:41.903 V/AudioHardwareALSA( 1595): setParameters() routing=1
+04-25 10:31:41.903 D/ALSAModule( 1595): route called for devices 00000001 in mode 0...
+04-25 10:31:41.903 D/ALSAModule( 1595): route already up to date for devices 00000001 in mode 0...
+04-25 10:31:41.903 V/AudioPolicyManagerALSA( 1595): applyStreamVolumes() for output 1 and device 1
+04-25 10:31:41.903 V/AudioPolicyManagerALSA( 1595): checkAndSetVolume() cannot set stream 6 volume with force use = 0 for comm
+04-25 10:31:42.263 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 2, index 5
+04-25 10:31:42.263 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 5, index 5
+04-25 10:31:43.576 D/InCallScreen( 1670): Handler: handling message { what=108 when=1259583 } while not in foreground
+04-25 10:31:43.576 D/InCallScreen( 1670): - delayedCleanupAfterDisconnect: phone is idle...
+04-25 10:31:43.583 D/InCallScreen( 1670): Handler: handling message { what=101 when=1259584 obj=android.os.AsyncResult@43c300e8 } while not in foreground
+04-25 10:31:43.583 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:31:43.583 D/InCallScreen( 1670): onPhoneStateChanged: Activity not in foreground! Bailing out...
+04-25 10:31:54.923 D/onServiceStateChanged( 1604): STATE_IN_SERVICE
+04-25 10:31:55.213 D/sendNewMobileInfo( 1604): imsi : 460001493545932
+04-25 10:31:55.233 D/sendNewMobileInfo( 1604): msisdn : 
+04-25 10:31:55.233 D/sendNewMobileInfo( 1604): cellId : 3867
+04-25 10:31:55.233 D/sendNewMobileInfo( 1604): LAC : 20954
+04-25 10:31:55.233 D/sendNewMobileInfo( 1604): network operator : 46000
+04-25 10:31:55.233 D/sendNewMobileInfo( 1604): mcc : 460, mnc : 0
+04-25 10:31:55.233 D/sendNewMobileInfo( 1604): native_agps_mobile_info
+04-25 10:31:55.233 D/agpsclient( 1604): IMSI : 460001493545932, MSISDN : 
+04-25 10:31:55.233 D/agpsclient( 1604): agpsClient_TcpIp_Conn_Open(): Sending SOCKET_AGPS_SUPL_MOBILE_INFO_IND to Socket server
+04-25 10:31:55.233 D/clientutils( 1604): Entering clientUtils_SendCommandToServer
+04-25 10:31:55.233 D/agpscodec( 1604): Copying data length
+04-25 10:31:55.233 D/agpscodec( 1604): Data : 1D00000048000000CC0100001B0F0000DA5100000034363030303134393335343539333200000000C47F9880C47F988068F834004F8D6548F905948008D9130008D913003CDA9680B5059480B8CD2900
+04-25 10:31:55.233 D/clientutils( 1604): ClientThread: Sending the data
+04-25 10:31:55.233 D/AgpsServer( 1376): Activity on connection
+04-25 10:31:55.233 D/AgpsServer( 1376): 80 Bytes Read
+04-25 10:31:55.233 D/AgpsServer( 1376): Bytes Decoded=80 Bytes read =80
+04-25 10:31:55.233 D/AgpsServer( 1376): Recvd Command SOCKET_AGPS_SUPL_MOBILE_INFO_IND
+04-25 10:31:55.233 D/AgpsServer( 1376): Processing command SOCKET_AGPS_SUPL_MOBILE_INFO_IND
+04-25 10:31:55.233 D/AgpsServer( 1376): IMSI : 460001493545932 , MSISDN : 
+04-25 10:31:55.233 D/AGPS_FSM( 1376): MSG 129 -> 128 : 810203
+04-25 10:31:55.233 D/        ( 1376): Message EnQueueing Event : 810203
+04-25 10:31:55.233 D/        ( 1376): Message EnQueued Event : 810203
+04-25 10:31:55.233 D/agpscodec( 1376): Copying data length
+04-25 10:31:55.233 D/agpscodec( 1376): Data : 000000000400000000000000
+04-25 10:31:55.233 D/AgpsServer( 1376): Command : SOCKET_AGPS_STATUS , Payload Len : 4 , buffer size 12
+04-25 10:31:55.233 D/AgpsServer( 1376): Command processed. 
+04-25 10:31:55.233 D/        ( 1376): Message DeQueued Event : 810203
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Event : 0x810203
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800a03
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800103
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800203
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800e00
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x801200
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810001
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810201
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810203
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Found Event Handler in Table
+04-25 10:31:55.233 D/CGPS    ( 1376): Start : CGPS5_05AdpMobileInfo(
+04-25 10:31:55.233 D/CGPS    ( 1376): CGPS5_05AdpMobileInfo: MCC : 460(
+04-25 10:31:55.233 D/CGPS    ( 1376): CGPS5_05AdpMobileInfo: SUPL address = h-slp.mnc000.mcc460.pub.3gppnetwork.org, Length = 39, Old length = 39 (
+04-25 10:31:55.233 D/AGPS_FSM( 1376): MSG 128 -> 129 : 800204
+04-25 10:31:55.233 D/        ( 1376): Message EnQueueing Event : 800204
+04-25 10:31:55.233 D/        ( 1376): Message EnQueued Event : 800204
+04-25 10:31:55.233 D/CGPS    ( 1376): End : CGPS5_05AdpMobileInfo(
+04-25 10:31:55.233 D/        ( 1376): Message DeQueued Event : 800204
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Event : 0x800204
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800000
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800100
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800400
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800700
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800500
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800600
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800900
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800200
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Search if event id is 0xfffffffd
+04-25 10:31:55.233 D/AGPS_FSM( 1376): FSM handler Did not find Event Handler in Table
+04-25 10:31:55.233 D/        ( 1376): Ignored Message 8389124 from process 128
+04-25 10:31:55.233 D/clientutils( 1604): Data sent
+04-25 10:31:55.233 D/clientutils( 1604): Exiting clientUtils_SendCommandToServer
+04-25 10:31:55.233 D/clientutils( 1604): Data received, No. of bytes received is 12
+04-25 10:31:55.233 D/clientutils( 1604): Received data : 12 bytes decoded to command
+04-25 10:31:55.233 D/agpsclient( 1604): Received data is an status message, sending it for processing
+04-25 10:31:55.233 D/clientutils( 1604): clientUtils_ProcessStatus: status : 0
+04-25 10:31:55.233 D/agpsclient( 1604): Status message processed
+04-25 10:31:55.243 D/sendNewMobileInfo( 1604): imsi : 460001493545932
+04-25 10:31:55.253 D/sendNewMobileInfo( 1604): msisdn : 
+04-25 10:31:55.253 D/sendNewMobileInfo( 1604): cellId : 3867
+04-25 10:31:55.253 D/sendNewMobileInfo( 1604): LAC : 20954
+04-25 10:31:55.253 D/sendNewMobileInfo( 1604): network operator : 46000
+04-25 10:31:55.253 D/sendNewMobileInfo( 1604): mcc : 460, mnc : 0
+04-25 10:31:55.253 D/sendNewMobileInfo( 1604): native_agps_mobile_info
+04-25 10:31:55.253 D/agpsclient( 1604): IMSI : 460001493545932, MSISDN : 
+04-25 10:31:55.253 D/agpsclient( 1604): agpsClient_TcpIp_Conn_Open(): Sending SOCKET_AGPS_SUPL_MOBILE_INFO_IND to Socket server
+04-25 10:31:55.253 D/clientutils( 1604): Entering clientUtils_SendCommandToServer
+04-25 10:31:55.253 D/agpscodec( 1604): Copying data length
+04-25 10:31:55.253 D/agpscodec( 1604): Data : 1D00000048000000CC0100001B0F0000DA5100000034363030303134393335343539333200000000C47F9880C47F988068F834004F8D6548F905948008D9130008D913003CDA9680B5059480B8CD2900
+04-25 10:31:55.253 D/clientutils( 1604): ClientThread: Sending the data
+04-25 10:31:55.253 D/AgpsServer( 1376): Activity on connection
+04-25 10:31:55.253 D/AgpsServer( 1376): 80 Bytes Read
+04-25 10:31:55.253 D/AgpsServer( 1376): Bytes Decoded=80 Bytes read =80
+04-25 10:31:55.253 D/AgpsServer( 1376): Recvd Command SOCKET_AGPS_SUPL_MOBILE_INFO_IND
+04-25 10:31:55.253 D/AgpsServer( 1376): Processing command SOCKET_AGPS_SUPL_MOBILE_INFO_IND
+04-25 10:31:55.253 D/AgpsServer( 1376): IMSI : 460001493545932 , MSISDN : 
+04-25 10:31:55.253 D/AGPS_FSM( 1376): MSG 129 -> 128 : 810203
+04-25 10:31:55.253 D/        ( 1376): Message EnQueueing Event : 810203
+04-25 10:31:55.253 D/        ( 1376): Message EnQueued Event : 810203
+04-25 10:31:55.253 D/agpscodec( 1376): Copying data length
+04-25 10:31:55.253 D/agpscodec( 1376): Data : 000000000400000000000000
+04-25 10:31:55.253 D/AgpsServer( 1376): Command : SOCKET_AGPS_STATUS , Payload Len : 4 , buffer size 12
+04-25 10:31:55.253 D/AgpsServer( 1376): Command processed. 
+04-25 10:31:55.253 D/        ( 1376): Message DeQueued Event : 810203
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Event : 0x810203
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800a03
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800103
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800203
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800e00
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x801200
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810001
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810201
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810203
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Found Event Handler in Table
+04-25 10:31:55.253 D/CGPS    ( 1376): Start : CGPS5_05AdpMobileInfo(
+04-25 10:31:55.253 D/CGPS    ( 1376): CGPS5_05AdpMobileInfo: MCC : 460(
+04-25 10:31:55.253 D/CGPS    ( 1376): CGPS5_05AdpMobileInfo: SUPL address = h-slp.mnc000.mcc460.pub.3gppnetwork.org, Length = 39, Old length = 39 (
+04-25 10:31:55.253 D/AGPS_FSM( 1376): MSG 128 -> 129 : 800204
+04-25 10:31:55.253 D/        ( 1376): Message EnQueueing Event : 800204
+04-25 10:31:55.253 D/        ( 1376): Message EnQueued Event : 800204
+04-25 10:31:55.253 D/CGPS    ( 1376): End : CGPS5_05AdpMobileInfo(
+04-25 10:31:55.253 D/        ( 1376): Message DeQueued Event : 800204
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Event : 0x800204
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800000
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800100
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800400
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800700
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800500
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800600
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800900
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800200
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Search if event id is 0xfffffffd
+04-25 10:31:55.253 D/AGPS_FSM( 1376): FSM handler Did not find Event Handler in Table
+04-25 10:31:55.253 D/        ( 1376): Ignored Message 8389124 from process 128
+04-25 10:31:55.253 D/clientutils( 1604): Data sent
+04-25 10:31:55.253 D/clientutils( 1604): Data received, No. of bytes received is 12
+04-25 10:31:55.253 D/clientutils( 1604): Received data : 12 bytes decoded to command
+04-25 10:31:55.253 D/agpsclient( 1604): Received data is an status message, sending it for processing
+04-25 10:31:55.253 D/clientutils( 1604): clientUtils_ProcessStatus: status : 0
+04-25 10:31:55.253 D/agpsclient( 1604): Status message processed
+04-25 10:31:55.253 D/clientutils( 1604): Exiting clientUtils_SendCommandToServer
+04-25 10:32:23.243 D/sendNewMobileInfo( 1604): imsi : 460001493545932
+04-25 10:32:23.243 D/sendNewMobileInfo( 1604): msisdn : 
+04-25 10:32:23.243 D/sendNewMobileInfo( 1604): cellId : 3869
+04-25 10:32:23.243 D/sendNewMobileInfo( 1604): LAC : 20954
+04-25 10:32:23.243 D/sendNewMobileInfo( 1604): network operator : 46000
+04-25 10:32:23.243 D/sendNewMobileInfo( 1604): mcc : 460, mnc : 0
+04-25 10:32:23.243 D/sendNewMobileInfo( 1604): native_agps_mobile_info
+04-25 10:32:23.243 D/agpsclient( 1604): IMSI : 460001493545932, MSISDN : 
+04-25 10:32:23.243 D/agpsclient( 1604): agpsClient_TcpIp_Conn_Open(): Sending SOCKET_AGPS_SUPL_MOBILE_INFO_IND to Socket server
+04-25 10:32:23.243 D/clientutils( 1604): Entering clientUtils_SendCommandToServer
+04-25 10:32:23.243 D/agpscodec( 1604): Copying data length
+04-25 10:32:23.243 D/agpscodec( 1604): Data : 1D00000048000000CC0100001D0F0000DA5100000034363030303134393335343539333200000000C47F9880C47F988068F834004F8D6548F905948008D9130008D913003CDA9680B5059480B8CD2900
+04-25 10:32:23.243 D/clientutils( 1604): ClientThread: Sending the data
+04-25 10:32:23.243 D/AgpsServer( 1376): Activity on connection
+04-25 10:32:23.243 D/AgpsServer( 1376): 80 Bytes Read
+04-25 10:32:23.243 D/AgpsServer( 1376): Bytes Decoded=80 Bytes read =80
+04-25 10:32:23.243 D/AgpsServer( 1376): Recvd Command SOCKET_AGPS_SUPL_MOBILE_INFO_IND
+04-25 10:32:23.243 D/AgpsServer( 1376): Processing command SOCKET_AGPS_SUPL_MOBILE_INFO_IND
+04-25 10:32:23.243 D/AgpsServer( 1376): IMSI : 460001493545932 , MSISDN : 
+04-25 10:32:23.243 D/AGPS_FSM( 1376): MSG 129 -> 128 : 810203
+04-25 10:32:23.243 D/        ( 1376): Message EnQueueing Event : 810203
+04-25 10:32:23.243 D/        ( 1376): Message EnQueued Event : 810203
+04-25 10:32:23.243 D/agpscodec( 1376): Copying data length
+04-25 10:32:23.243 D/agpscodec( 1376): Data : 000000000400000000000000
+04-25 10:32:23.243 D/AgpsServer( 1376): Command : SOCKET_AGPS_STATUS , Payload Len : 4 , buffer size 12
+04-25 10:32:23.243 D/AgpsServer( 1376): Command processed. 
+04-25 10:32:23.243 D/        ( 1376): Message DeQueued Event : 810203
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Event : 0x810203
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800a03
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800103
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800203
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800e00
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x801200
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810001
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810201
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x810203
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Found Event Handler in Table
+04-25 10:32:23.243 D/CGPS    ( 1376): Start : CGPS5_05AdpMobileInfo(
+04-25 10:32:23.243 D/CGPS    ( 1376): CGPS5_05AdpMobileInfo: MCC : 460(
+04-25 10:32:23.243 D/CGPS    ( 1376): CGPS5_05AdpMobileInfo: SUPL address = h-slp.mnc000.mcc460.pub.3gppnetwork.org, Length = 39, Old length = 39 (
+04-25 10:32:23.243 D/AGPS_FSM( 1376): MSG 128 -> 129 : 800204
+04-25 10:32:23.243 D/        ( 1376): Message EnQueueing Event : 800204
+04-25 10:32:23.243 D/        ( 1376): Message EnQueued Event : 800204
+04-25 10:32:23.243 D/CGPS    ( 1376): End : CGPS5_05AdpMobileInfo(
+04-25 10:32:23.243 D/        ( 1376): Message DeQueued Event : 800204
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Event : 0x800204
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800000
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800100
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800400
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800700
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800500
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800600
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800900
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0x800200
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Search if event id is 0xfffffffd
+04-25 10:32:23.243 D/AGPS_FSM( 1376): FSM handler Did not find Event Handler in Table
+04-25 10:32:23.243 D/        ( 1376): Ignored Message 8389124 from process 128
+04-25 10:32:23.243 D/clientutils( 1604): Data sent
+04-25 10:32:23.243 D/clientutils( 1604): Exiting clientUtils_SendCommandToServer
+04-25 10:32:23.243 D/clientutils( 1604): Data received, No. of bytes received is 12
+04-25 10:32:23.243 D/clientutils( 1604): Received data : 12 bytes decoded to command
+04-25 10:32:23.243 D/agpsclient( 1604): Received data is an status message, sending it for processing
+04-25 10:32:23.243 D/clientutils( 1604): clientUtils_ProcessStatus: status : 0
+04-25 10:32:23.243 D/agpsclient( 1604): Status message processed
+04-25 10:32:33.863 D/SntpClient( 1604): request time failed: java.net.SocketTimeoutException: Connection timed out
+04-25 10:32:47.443 D/KeyguardViewMediator( 1604): wakeWhenReadyLocked(4)
+04-25 10:32:47.443 D/KeyguardViewMediator( 1604): handleWakeWhenReady(4)
+04-25 10:32:47.453 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:47.463 I/power   ( 1604): *** set_screen_state 1
+04-25 10:32:47.903 D/SurfaceFlinger( 1557): Screen about to return, flinger = 0xa810
+04-25 10:32:47.973 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:47.983 W/WindowManager( 1604): No focus window, dropping: KeyEvent{action=1 code=4 repeat=0 meta=0 scancode=158 mFlags=8}
+04-25 10:32:47.993 E/Sensors ( 1604): using /dev/input/event3 (name=compass)
+04-25 10:32:48.073 E/Sensors ( 1604): sensors_control_activate active=00000000 sensor=00000001 new_sensors=1 changed=1
+04-25 10:32:48.113 I/UsageStats( 1604): Unexpected resume of com.android.launcher while already resumed in com.android.launcher
+04-25 10:32:48.233 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:48.233 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:48.453 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:51.083 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:51.143 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:51.893 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:52.043 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:52.073 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.contacts/.ContactsLaunchActivity }
+04-25 10:32:52.753 W/InputManagerService( 1604): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43e94500
+04-25 10:32:53.023 D/dalvikvm( 1604): GC_EXPLICIT freed 16253 objects / 871056 bytes in 143ms
+04-25 10:32:53.143 I/ActivityManager( 1604): Displayed activity com.android.contacts/.ContactsLaunchActivity: 899 ms (total 141243 ms)
+04-25 10:32:56.243 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:56.303 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:56.974 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:57.035 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:32:57.063 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:32:57.203 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:32:57.283 V/OutgoingCallBroadcaster( 1670): onCreate: this = com.android.phone.OutgoingCallBroadcaster@43cdd558, icicle = null
+04-25 10:32:57.283 V/OutgoingCallBroadcaster( 1670):  - getIntent() = Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:32:57.283 V/OutgoingCallBroadcaster( 1670):  - configuration = { scale=1.0 imsi=460/0 loc=en_US touch=3 keys=3/1/2 nav=1/1 orien=1 layout=34 uiMode=17 seq=3}
+04-25 10:32:57.283 D/PhoneApp( 1670): pulse screen lock
+04-25 10:32:57.293 D/PhoneUtils( 1670): checkAndCopyPhoneProviderExtras: some or all extras are missing.
+04-25 10:32:57.293 V/OutgoingCallBroadcaster( 1670): Broadcasting intent Intent { act=android.intent.action.NEW_OUTGOING_CALL (has extras) }.
+04-25 10:32:57.343 V/OutgoingCallReceiver( 1670): doReceive: Intent { act=android.intent.action.NEW_OUTGOING_CALL (has extras) }
+04-25 10:32:57.343 V/OutgoingCallReceiver( 1670): CALL to 10086 proceeding.
+04-25 10:32:57.343 D/PhoneUtils( 1670): checkAndCopyPhoneProviderExtras: some or all extras are missing.
+04-25 10:32:57.343 V/OutgoingCallReceiver( 1670): doReceive(): calling startActivity: Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:32:57.353 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:32:57.403 D/InCallScreen( 1670): onNewIntent: intent=Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10c00000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:32:57.403 D/InCallScreen( 1670): internalResolveIntent: action=android.intent.action.CALL
+04-25 10:32:57.443 I/AudioService( 1604):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:32:57.453 D/AudioHardwareInterface( 1595): setMode(IN_CALL)
+04-25 10:32:57.453 D/ALSAModule( 1595): route called for devices 00000001 in mode 2...
+04-25 10:32:57.453 D/ALSAModule( 1595): force route called for devices 00000001 in mode 2...
+04-25 10:32:57.453 E/ALSAModule( 1595): open pcm device Dummy_AndroidPlayback_Earpiece_incall returned status 0. handler 0x3e1c0
+04-25 10:32:57.463 E/ALSAModule( 1595): pcm device Dummy_AndroidPlayback_Earpiece_incall closed
+04-25 10:32:57.463 D/ALSAModule( 1595): route called for devices 00000000 in mode 2...
+04-25 10:32:57.463 D/ALSAModule( 1595): force route called for devices 00000000 in mode 2...
+04-25 10:32:57.463 E/ALSAModule( 1595): open pcm device Dummy_AndroidRecord returned status 0. handler 0x39388
+04-25 10:32:57.463 E/ALSAModule( 1595): pcm device Dummy_AndroidRecord closed
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): setPhoneState() state 2
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 0, device 2
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 3, device 2
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 2, device 2
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:32:57.463 V/AudioHardwareALSA( 1595): setParameters() routing=1
+04-25 10:32:57.463 D/ALSAModule( 1595): route called for devices 00000001 in mode 2...
+04-25 10:32:57.463 D/ALSAModule( 1595): route already up to date for devices 00000001 in mode 2...
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): applyStreamVolumes() for output 1 and device 1
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): checkAndSetVolume() cannot set stream 6 volume with force use = 0 for comm
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): setPhoneState() in call state management: new state is 2
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 2 starting 1 device 1 stateChange 1
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 4 starting 1 device 1 stateChange 1
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 5 starting 1 device 1 stateChange 1
+04-25 10:32:57.463 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 7 starting 1 device 1 stateChange 1
+04-25 10:32:57.473 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 0, index 4
+04-25 10:32:57.473 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 8, index 12
+04-25 10:32:57.473 D/InCallScreen( 1670): onResume()...
+04-25 10:32:57.473 D/PhoneApp( 1670): disable status bar
+04-25 10:32:57.473 D/PhoneApp( 1670): StatusBarManager.DISABLE_EXPAND
+04-25 10:32:57.483 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:32:57.493 D/InCallScreen( 1670): - onResume: initial status = SUCCESS
+04-25 10:32:57.493 D/InCallScreen( 1670): setInCallScreenMode: NORMAL
+04-25 10:32:57.493 D/InCallScreen( 1670): syncWithPhoneState()...
+04-25 10:32:57.493 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:32:57.493 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = OFFHOOK
+04-25 10:32:57.493 D/PhoneUtils( 1670):   - FG call: DIALING isAlive true isRinging false isDialing true isIdle false hasConnections true
+04-25 10:32:57.493 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:32:57.493 D/PhoneUtils( 1670):   - RINGING call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:32:57.493 D/PhoneUtils( 1670):   - hasRingingCall false hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:32:57.493 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:32:57.493 D/InCallScreen( 1670): updateScreen()...
+04-25 10:32:57.493 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:32:57.503 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:32:57.543 I/power   ( 1604): *** set_screen_state 1
+04-25 10:32:57.563 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:32:57.563 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:32:57.603 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:32:57.603 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:32:57.603 D/Ringer  ( 1670): stopRing()...
+04-25 10:32:57.603 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:32:57.643 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:32:57.643 D/InCallScreen( 1670): updateScreen()...
+04-25 10:32:57.643 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:32:57.653 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:32:57.673 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:32:57.673 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:32:57.713 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:32:57.713 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:32:57.713 D/Ringer  ( 1670): stopRing()...
+04-25 10:32:57.713 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:32:57.743 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:32:57.743 D/InCallScreen( 1670): updateScreen()...
+04-25 10:32:57.743 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:32:57.763 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:32:57.773 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:32:57.773 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:32:57.773 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:32:57.773 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:32:57.773 D/Ringer  ( 1670): stopRing()...
+04-25 10:32:57.783 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:32:57.813 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:32:57.813 D/InCallScreen( 1670): updateScreen()...
+04-25 10:32:57.813 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:32:57.833 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:32:57.833 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:32:57.833 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:32:58.153 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:32:58.153 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:32:58.153 D/Ringer  ( 1670): stopRing()...
+04-25 10:32:58.183 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:32:58.303 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:32:58.303 D/InCallScreen( 1670): updateScreen()...
+04-25 10:32:58.313 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:32:58.323 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:32:58.363 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:32:58.363 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:32:58.363 D/MobileDataStateTracker( 1604): default Received state= SUSPENDED, old= CONNECTED, reason= 2GVoiceCallStarted, apnTypeList= default
+04-25 10:32:58.383 D/NetworkStateTracker( 1604): setDetailed state, old =CONNECTED and new state=SUSPENDED
+04-25 10:32:58.383 D/ConnectivityService( 1604): ConnectivityChange for mobile: SUSPENDED/SUSPENDED
+04-25 10:32:58.383 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:32:58.423 W/IInputConnectionWrapper( 1713): showStatusIcon on inactive InputConnection
+04-25 10:32:58.713 D/Tethering( 1604): Tethering got CONNECTIVITY_ACTION
+04-25 10:32:58.713 D/Tethering( 1604): MasterInitialState.processMessage what=3
+04-25 10:32:58.713 E/HierarchicalStateMachine( 1604): TetherMaster - unhandledMessage: msg.what=3
+04-25 10:33:02.733 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:33:02.763 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:33:02.763 D/Ringer  ( 1670): stopRing()...
+04-25 10:33:02.793 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:33:02.843 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:33:02.843 D/InCallScreen( 1670): updateScreen()...
+04-25 10:33:02.843 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:33:02.863 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:33:02.873 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:33:02.873 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:33:09.203 D/dalvikvm( 1673): GC_EXPLICIT freed 809 objects / 41128 bytes in 150ms
+04-25 10:33:12.363 I/AudioService( 1604):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:33:12.383 D/CallNotifier( 1670): RINGING... (new)
+04-25 10:33:12.383 D/CallNotifier( 1670): onNewRingingConnection():  incoming: true state: WAITING post dial state: NOT_STARTED
+04-25 10:33:12.413 D/AudioFlinger( 1595): <<<<<<<<<<<FM CANT START<<<<<<<<<<<<<<<
+04-25 10:33:12.413 V/AudioPolicyManagerALSA( 1595): startOutput() output 1, stream 0
+04-25 10:33:12.413 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:33:12.413 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:33:12.413 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:33:12.413 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 1
+04-25 10:33:12.423 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:33:12.453 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:33:12.453 D/InCallScreen( 1670): updateScreen()...
+04-25 10:33:12.453 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:33:12.453 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:33:12.493 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:33:12.493 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:33:12.493 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:33:12.513 W/AudioHardwareALSA( 1595): Write request but device is in state SND_PCM_STATE_SETUP
+04-25 10:33:12.513 D/AudioHardwareALSA( 1595): call snd_pcm_prepare
+04-25 10:33:12.513 W/AudioHardwareALSA( 1595): Wait for correct device state
+04-25 10:33:12.523 D/InCallScreen( 1670): onPause()...
+04-25 10:33:12.523 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:33:12.523 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:33:12.543 D/PhoneApp( 1670): re-enable status bar
+04-25 10:33:12.543 D/PhoneApp( 1670): StatusBarManager.DISABLE_NONE
+04-25 10:33:12.543 D/PhoneApp( 1670): updateWakeState: callscreen false, dialer false, speaker false...
+04-25 10:33:12.553 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:33:12.553 D/InCallScreen( 1670): onNewIntent: intent=Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:33:12.553 D/InCallScreen( 1670): internalResolveIntent: action=android.intent.action.MAIN
+04-25 10:33:12.553 D/InCallScreen( 1670): onResume()...
+04-25 10:33:12.553 D/PhoneApp( 1670): disable status bar
+04-25 10:33:12.553 D/PhoneApp( 1670): StatusBarManager.DISABLE_EXPAND
+04-25 10:33:12.553 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:33:12.573 D/InCallScreen( 1670): - onResume: initial status = SUCCESS
+04-25 10:33:12.573 D/InCallScreen( 1670): setInCallScreenMode: NORMAL
+04-25 10:33:12.573 D/InCallScreen( 1670): syncWithPhoneState()...
+04-25 10:33:12.573 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:33:12.573 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = RINGING
+04-25 10:33:12.573 D/PhoneUtils( 1670):   - FG call: ACTIVE isAlive true isRinging false isDialing false isIdle false hasConnections true
+04-25 10:33:12.573 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:33:12.583 D/PhoneUtils( 1670):   - RINGING call: WAITING isAlive true isRinging true isDialing false isIdle false hasConnections true
+04-25 10:33:12.583 D/PhoneUtils( 1670):   - hasRingingCall true hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:33:12.583 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:33:12.583 D/InCallScreen( 1670): updateScreen()...
+04-25 10:33:12.583 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:33:12.583 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:33:12.583 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:33:12.583 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:33:12.583 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:33:12.643 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:33:12.643 D/InCallScreen( 1670): updateScreen()...
+04-25 10:33:12.643 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:33:12.643 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:33:12.653 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:33:12.653 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:33:12.653 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:33:12.663 I/power   ( 1604): *** set_screen_state 1
+04-25 10:33:17.603 D/dalvikvm( 1713): GC_EXPLICIT freed 2725 objects / 194240 bytes in 166ms
+04-25 10:33:21.903 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:33:22.423 D/InCallTouchUi( 1670): onDialTrigger(whichHandle = 1)...
+04-25 10:33:22.423 D/InCallScreen( 1670): handleOnscreenButtonClick(id 2131099670)...
+04-25 10:33:22.423 D/InCallScreen( 1670): internalAnswerCall: answering...
+04-25 10:33:22.423 D/Ringer  ( 1670): stopRing()...
+04-25 10:33:22.433 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:33:22.493 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 0, index 4
+04-25 10:33:22.493 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 8, index 12
+04-25 10:33:22.493 D/InCallTouchUi( 1670): updateState: Too soon after last action; not drawing!
+04-25 10:33:22.553 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:33:22.673 D/dalvikvm( 1780): GC_EXPLICIT freed 764 objects / 40960 bytes in 240ms
+04-25 10:33:25.223 D/dalvikvm( 1670): GC_FOR_MALLOC freed 12409 objects / 754496 bytes in 123ms
+04-25 10:33:29.313 D/dalvikvm( 1676): GC_EXPLICIT freed 62 objects / 3536 bytes in 180ms
+04-25 10:33:31.023 D/dalvikvm( 1604): GC_EXPLICIT freed 10695 objects / 510800 bytes in 155ms
+04-25 10:33:31.763 I/AudioService( 1604):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:33:31.773 D/CallNotifier( 1670): DISCONNECT
+04-25 10:33:31.773 D/CallNotifier( 1670): - onDisconnect: cause = INCOMING_MISSED, incoming = true, date = 1303727592367
+04-25 10:33:31.773 D/CallNotifier( 1670): stopRing()... (onDisconnect)
+04-25 10:33:31.773 D/Ringer  ( 1670): stopRing()...
+04-25 10:33:31.783 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:33:31.783 D/CallNotifier( 1670): - onDisconnect(): logNumber set to: 13182827869
+04-25 10:33:31.783 D/CallNotifier( 1670): - getPresentation(): ignoring connection's presentation: 1
+04-25 10:33:31.783 D/CallNotifier( 1670): - getPresentation: presentation: 1
+04-25 10:33:31.843 D/InCallScreen( 1670): onDisconnect:  incoming: true state: DISCONNECTED post dial state: NOT_STARTED, cause=INCOMING_MISSED
+04-25 10:33:31.843 D/InCallScreen( 1670): updateScreen()...
+04-25 10:33:31.843 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:33:31.843 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:33:31.953 D/AudioFlinger( 1595): <<<<<<<<<<<FM CAN START<<<<<<<<<<<<<<<<
+04-25 10:33:31.953 V/AudioPolicyManagerALSA( 1595): stopOutput() output 1, stream 0
+04-25 10:33:31.953 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 0
+04-25 10:33:31.953 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:33:31.953 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 1116
+04-25 10:33:31.953 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:33:31.973 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:33:33.923 D/InCallScreen( 1670): - delayedCleanupAfterDisconnect: staying on the InCallScreen...
+04-25 10:33:33.923 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:33:33.923 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = OFFHOOK
+04-25 10:33:33.923 D/PhoneUtils( 1670):   - FG call: ACTIVE isAlive true isRinging false isDialing false isIdle false hasConnections true
+04-25 10:33:33.923 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:33:33.923 D/PhoneUtils( 1670):   - RINGING call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:33:33.923 D/PhoneUtils( 1670):   - hasRingingCall false hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:33:33.923 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:33:33.923 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:33:33.923 D/Ringer  ( 1670): stopRing()...
+04-25 10:33:33.933 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:33:33.993 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:33:33.993 D/InCallScreen( 1670): updateScreen()...
+04-25 10:33:33.993 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:33:34.013 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:33:34.043 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:33:34.043 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:33:49.303 I/power   ( 1604): *** set_screen_state 0
+04-25 10:33:49.323 D/SurfaceFlinger( 1557): About to give-up screen, flinger = 0xa810
+04-25 10:33:49.333 E/Sensors ( 1604): sensors_control_activate active=00000001 sensor=00000000 new_sensors=0 changed=1
+04-25 10:33:49.333 E/Sensors ( 1604): using /dev/input/event3 (name=compass)
+04-25 10:33:49.393 D/InCallScreen( 1670): onPause()...
+04-25 10:33:49.413 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:33:49.413 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:33:49.433 D/PhoneApp( 1670): re-enable status bar
+04-25 10:33:49.433 D/PhoneApp( 1670): StatusBarManager.DISABLE_NONE
+04-25 10:33:49.433 D/PhoneApp( 1670): updateWakeState: callscreen false, dialer false, speaker false...
+04-25 10:33:49.433 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:34:06.163 I/AudioService( 1604):  AudioFocus  abandonAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:34:06.213 D/CallNotifier( 1670): DISCONNECT
+04-25 10:34:06.213 D/CallNotifier( 1670): - onDisconnect: cause = ERROR_UNSPECIFIED, incoming = false, date = 1303727577416
+04-25 10:34:06.213 D/CallNotifier( 1670): stopRing()... (onDisconnect)
+04-25 10:34:06.213 D/Ringer  ( 1670): stopRing()...
+04-25 10:34:06.223 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:34:06.223 D/CallNotifier( 1670): - DisconnectCause is ERROR_UNSPECIFIED: play TONE_CALL_ENDED!
+04-25 10:34:06.263 D/InCallScreen( 1670): finish()...
+04-25 10:34:06.263 I/ActivityManager( 1604): moveTaskToBack: 6
+04-25 10:34:06.513 I/UsageStats( 1604): Something wrong here, didn't expect com.android.launcher to be paused
+04-25 10:34:06.623 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:34:06.643 D/CallNotifier( 1670): - onDisconnect(): logNumber set to: 10086
+04-25 10:34:06.643 D/CallNotifier( 1670): - getPresentation(): ignoring connection's presentation: 1
+04-25 10:34:06.643 D/CallNotifier( 1670): - getPresentation: presentation: 1
+04-25 10:34:06.663 D/InCallScreen( 1670): Handler: handling message { what=102 when=1402169 obj=android.os.AsyncResult@43d5a708 } while not in foreground
+04-25 10:34:06.673 D/InCallScreen( 1670): onDisconnect:  incoming: false state: DISCONNECTED post dial state: COMPLETE, cause=ERROR_UNSPECIFIED
+04-25 10:34:06.673 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:06.673 D/InCallScreen( 1670): - updateScreen: not the foreground Activity! Bailing out...
+04-25 10:34:06.673 D/InCallScreen( 1670): setInCallScreenMode: CALL_ENDED
+04-25 10:34:06.723 D/AudioFlinger( 1595): <<<<<<<<<<<FM CANT START<<<<<<<<<<<<<<<
+04-25 10:34:06.723 V/AudioPolicyManagerALSA( 1595): startOutput() output 1, stream 0
+04-25 10:34:06.723 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:34:06.723 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:34:06.723 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:34:06.723 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 1
+04-25 10:34:06.733 D/AGpsPhoneListener( 1604): DATA_CONNECTED
+04-25 10:34:06.743 D/MobileDataStateTracker( 1604): replacing old mInterfaceName (pdp_ip0) with pdp_ip0 for hipri
+04-25 10:34:06.813 W/AudioHardwareALSA( 1595): Write request but device is in state SND_PCM_STATE_SETUP
+04-25 10:34:06.813 D/AudioHardwareALSA( 1595): call snd_pcm_prepare
+04-25 10:34:06.823 W/AudioHardwareALSA( 1595): Wait for correct device state
+04-25 10:34:06.823 D/AudioFlinger( 1595): <<<<<<<<<<<FM CAN START<<<<<<<<<<<<<<<<
+04-25 10:34:06.823 V/AudioPolicyManagerALSA( 1595): stopOutput() output 1, stream 0
+04-25 10:34:06.823 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 0
+04-25 10:34:06.823 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:34:06.823 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 1116
+04-25 10:34:06.823 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:34:06.843 D/InCallScreen( 1670): Handler: handling message { what=101 when=1402222 obj=android.os.AsyncResult@43d5a7c8 } while not in foreground
+04-25 10:34:06.843 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:06.843 D/InCallScreen( 1670): onPhoneStateChanged: Activity not in foreground! Bailing out...
+04-25 10:34:06.933 D/MobileDataStateTracker( 1604): default Received state= CONNECTED, old= SUSPENDED, reason= 2GVoiceCallEnded, apnTypeList= default
+04-25 10:34:06.933 D/NetworkStateTracker( 1604): setDetailed state, old =SUSPENDED and new state=CONNECTED
+04-25 10:34:06.933 D/ConnectivityService( 1604): ConnectivityChange for mobile: CONNECTED/CONNECTED
+04-25 10:34:06.943 V/NetworkStateTracker( 1604): Setting TCP values: [4093,26280,35040,4096,16384,35040] which comes from [net.tcp.buffersize.edge]
+04-25 10:34:06.963 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:34:06.973 V/AudioPolicyManagerALSA( 1595): setForceUse() usage 0, config 0, mPhoneState 2
+04-25 10:34:06.973 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:34:06.973 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:34:06.973 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:34:06.983 D/PhoneApp( 1670): updateWakeState: callscreen false, dialer false, speaker false...
+04-25 10:34:06.983 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:34:06.993 D/AudioHardwareInterface( 1595): setMode(NORMAL)
+04-25 10:34:06.993 D/ALSAModule( 1595): route called for devices 00000001 in mode 0...
+04-25 10:34:06.993 D/ALSAModule( 1595): force route called for devices 00000001 in mode 0...
+04-25 10:34:06.993 E/AudioHardwareALSA( 1595): ALSALib error external/alsa-lib/src/pcm/pcm.c:2210:(snd_pcm_open_noupdate) Unknown PCM Dummy_AndroidPlayback_Earpiece_normal
+04-25 10:34:06.993 E/ALSAModule( 1595): open pcm device Dummy_AndroidPlayback_Earpiece_normal returned status -2. handler 0x0
+04-25 10:34:07.013 E/ALSAModule( 1595): open pcm device Dummy_AndroidPlayback_Earpiece returned status 0. handler 0x39b88
+04-25 10:34:07.053 E/ALSAModule( 1595): pcm device Dummy_AndroidPlayback_Earpiece closed
+04-25 10:34:07.053 D/ALSAModule( 1595): route called for devices 00000000 in mode 0...
+04-25 10:34:07.053 D/ALSAModule( 1595): force route called for devices 00000000 in mode 0...
+04-25 10:34:07.053 E/ALSAModule( 1595): open pcm device Dummy_AndroidRecord returned status 0. handler 0x39b88
+04-25 10:34:07.053 E/ALSAModule( 1595): pcm device Dummy_AndroidRecord closed
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): setPhoneState() state 0
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): setPhoneState() in call state management: new state is 0
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 2 starting 0 device 1 stateChange 1
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 4 starting 0 device 1 stateChange 1
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 5 starting 0 device 1 stateChange 1
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 7 starting 0 device 1 stateChange 1
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 3, device 1
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 2, device 1
+04-25 10:34:07.053 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:34:07.073 D/InCallScreen( 1670): onStop()...
+04-25 10:34:07.073 D/InCallScreen( 1670): onStop: state = IDLE
+04-25 10:34:07.103 V/AudioHardwareALSA( 1595): setParameters() routing=1
+04-25 10:34:07.103 D/ALSAModule( 1595): route called for devices 00000001 in mode 0...
+04-25 10:34:07.103 D/ALSAModule( 1595): route already up to date for devices 00000001 in mode 0...
+04-25 10:34:07.103 V/AudioPolicyManagerALSA( 1595): applyStreamVolumes() for output 1 and device 1
+04-25 10:34:07.103 V/AudioPolicyManagerALSA( 1595): checkAndSetVolume() cannot set stream 6 volume with force use = 0 for comm
+04-25 10:34:07.133 D/Tethering( 1604): Tethering got CONNECTIVITY_ACTION
+04-25 10:34:07.133 D/Tethering( 1604): MasterInitialState.processMessage what=3
+04-25 10:34:07.133 E/HierarchicalStateMachine( 1604): TetherMaster - unhandledMessage: msg.what=3
+04-25 10:34:07.483 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 2, index 5
+04-25 10:34:07.493 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 5, index 5
+04-25 10:34:08.673 D/InCallScreen( 1670): Handler: handling message { what=108 when=1404689 } while not in foreground
+04-25 10:34:08.683 D/InCallScreen( 1670): - delayedCleanupAfterDisconnect: phone is idle...
+04-25 10:34:08.693 D/InCallScreen( 1670): Handler: handling message { what=101 when=1404690 obj=android.os.AsyncResult@43d1a608 } while not in foreground
+04-25 10:34:08.693 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:08.693 D/InCallScreen( 1670): onPhoneStateChanged: Activity not in foreground! Bailing out...
+04-25 10:34:20.403 D/KeyguardViewMediator( 1604): wakeWhenReadyLocked(4)
+04-25 10:34:20.403 D/KeyguardViewMediator( 1604): handleWakeWhenReady(4)
+04-25 10:34:20.403 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:20.423 I/power   ( 1604): *** set_screen_state 1
+04-25 10:34:20.603 D/SurfaceFlinger( 1557): Screen about to return, flinger = 0xa810
+04-25 10:34:20.633 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:20.633 W/WindowManager( 1604): No focus window, dropping: KeyEvent{action=1 code=4 repeat=0 meta=0 scancode=158 mFlags=8}
+04-25 10:34:20.643 E/Sensors ( 1604): using /dev/input/event3 (name=compass)
+04-25 10:34:20.663 E/Sensors ( 1604): sensors_control_activate active=00000000 sensor=00000001 new_sensors=1 changed=1
+04-25 10:34:20.713 I/UsageStats( 1604): Unexpected resume of com.android.launcher while already resumed in com.android.launcher
+04-25 10:34:21.003 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:21.013 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:21.163 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:22.573 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:22.573 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:22.693 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:22.723 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:24.143 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:24.196 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:24.283 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.contacts/.ContactsLaunchActivity }
+04-25 10:34:24.833 W/InputManagerService( 1604): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43cb7c70
+04-25 10:34:25.033 I/ActivityManager( 1604): Displayed activity com.android.contacts/.ContactsLaunchActivity: 629 ms (total 87818 ms)
+04-25 10:34:26.253 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:26.365 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:30.213 D/dalvikvm( 1673): GC_EXPLICIT freed 457 objects / 24896 bytes in 157ms
+04-25 10:34:32.463 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:32.573 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:32.603 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:34:32.853 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:34:33.023 V/OutgoingCallBroadcaster( 1670): onCreate: this = com.android.phone.OutgoingCallBroadcaster@43d45b38, icicle = null
+04-25 10:34:33.033 V/OutgoingCallBroadcaster( 1670):  - getIntent() = Intent { act=android.intent.action.CALL_PRIVILEGED dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.PrivilegedOutgoingCallBroadcaster }
+04-25 10:34:33.043 V/OutgoingCallBroadcaster( 1670):  - configuration = { scale=1.0 imsi=460/0 loc=en_US touch=3 keys=3/1/2 nav=1/1 orien=1 layout=34 uiMode=17 seq=3}
+04-25 10:34:33.053 D/PhoneApp( 1670): pulse screen lock
+04-25 10:34:33.083 D/PhoneUtils( 1670): checkAndCopyPhoneProviderExtras: some or all extras are missing.
+04-25 10:34:33.083 V/OutgoingCallBroadcaster( 1670): Broadcasting intent Intent { act=android.intent.action.NEW_OUTGOING_CALL (has extras) }.
+04-25 10:34:33.093 V/OutgoingCallReceiver( 1670): doReceive: Intent { act=android.intent.action.NEW_OUTGOING_CALL (has extras) }
+04-25 10:34:33.103 V/OutgoingCallReceiver( 1670): CALL to 10086 proceeding.
+04-25 10:34:33.113 D/PhoneUtils( 1670): checkAndCopyPhoneProviderExtras: some or all extras are missing.
+04-25 10:34:33.113 V/OutgoingCallReceiver( 1670): doReceive(): calling startActivity: Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:34:33.113 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10000000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:34:33.163 D/InCallScreen( 1670): onNewIntent: intent=Intent { act=android.intent.action.CALL dat=tel:10086 flg=0x10c00000 cmp=com.android.phone/.InCallScreen (has extras) }
+04-25 10:34:33.163 D/InCallScreen( 1670): internalResolveIntent: action=android.intent.action.CALL
+04-25 10:34:33.213 I/AudioService( 1604):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:34:33.223 D/AudioHardwareInterface( 1595): setMode(IN_CALL)
+04-25 10:34:33.223 D/ALSAModule( 1595): route called for devices 00000001 in mode 2...
+04-25 10:34:33.223 D/ALSAModule( 1595): force route called for devices 00000001 in mode 2...
+04-25 10:34:33.223 E/ALSAModule( 1595): open pcm device Dummy_AndroidPlayback_Earpiece_incall returned status 0. handler 0x39360
+04-25 10:34:33.223 E/ALSAModule( 1595): pcm device Dummy_AndroidPlayback_Earpiece_incall closed
+04-25 10:34:33.233 D/ALSAModule( 1595): route called for devices 00000000 in mode 2...
+04-25 10:34:33.233 D/ALSAModule( 1595): force route called for devices 00000000 in mode 2...
+04-25 10:34:33.233 E/ALSAModule( 1595): open pcm device Dummy_AndroidRecord returned status 0. handler 0x395a0
+04-25 10:34:33.253 E/ALSAModule( 1595): pcm device Dummy_AndroidRecord closed
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): setPhoneState() state 2
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 0, device 2
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 3, device 2
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 2, device 2
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:34:33.253 V/AudioHardwareALSA( 1595): setParameters() routing=1
+04-25 10:34:33.253 D/ALSAModule( 1595): route called for devices 00000001 in mode 2...
+04-25 10:34:33.253 D/ALSAModule( 1595): route already up to date for devices 00000001 in mode 2...
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): applyStreamVolumes() for output 1 and device 1
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): checkAndSetVolume() cannot set stream 6 volume with force use = 0 for comm
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): setPhoneState() in call state management: new state is 2
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 2 starting 1 device 1 stateChange 1
+04-25 10:34:33.253 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 4 starting 1 device 1 stateChange 1
+04-25 10:34:33.263 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 5 starting 1 device 1 stateChange 1
+04-25 10:34:33.263 V/AudioPolicyManagerALSA( 1595): handleIncallSonification() stream 7 starting 1 device 1 stateChange 1
+04-25 10:34:33.273 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 0, index 4
+04-25 10:34:33.273 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 8, index 12
+04-25 10:34:33.283 D/InCallScreen( 1670): onResume()...
+04-25 10:34:33.283 D/PhoneApp( 1670): disable status bar
+04-25 10:34:33.283 D/PhoneApp( 1670): StatusBarManager.DISABLE_EXPAND
+04-25 10:34:33.283 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:34:33.303 D/InCallScreen( 1670): - onResume: initial status = SUCCESS
+04-25 10:34:33.303 D/InCallScreen( 1670): setInCallScreenMode: NORMAL
+04-25 10:34:33.303 D/InCallScreen( 1670): syncWithPhoneState()...
+04-25 10:34:33.313 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:34:33.313 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = OFFHOOK
+04-25 10:34:33.313 D/PhoneUtils( 1670):   - FG call: DIALING isAlive true isRinging false isDialing true isIdle false hasConnections true
+04-25 10:34:33.313 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:34:33.313 D/PhoneUtils( 1670):   - RINGING call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:34:33.313 D/PhoneUtils( 1670):   - hasRingingCall false hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:34:33.313 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:34:33.313 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:33.313 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:33.323 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:33.363 I/power   ( 1604): *** set_screen_state 1
+04-25 10:34:33.393 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:33.393 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:34:33.443 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:34:33.443 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:34:33.443 D/Ringer  ( 1670): stopRing()...
+04-25 10:34:33.453 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:34:33.493 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:33.493 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:33.493 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:33.493 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:33.513 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:33.513 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:34:33.553 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:34:33.553 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:34:33.553 D/Ringer  ( 1670): stopRing()...
+04-25 10:34:33.553 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:34:33.593 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:33.593 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:33.593 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:33.603 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:33.623 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:33.623 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:34:33.633 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:34:33.633 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:34:33.633 D/Ringer  ( 1670): stopRing()...
+04-25 10:34:33.643 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:34:33.673 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:33.673 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:33.673 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:33.683 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:33.703 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:33.703 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:34:33.723 D/MobileDataStateTracker( 1604): default Received state= SUSPENDED, old= CONNECTED, reason= 2GVoiceCallStarted, apnTypeList= default
+04-25 10:34:33.733 D/NetworkStateTracker( 1604): setDetailed state, old =CONNECTED and new state=SUSPENDED
+04-25 10:34:33.733 D/ConnectivityService( 1604): ConnectivityChange for mobile: SUSPENDED/SUSPENDED
+04-25 10:34:33.743 D/ConnectivityService( 1604): getMobileDataEnabled returning true
+04-25 10:34:33.983 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:34:33.993 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:34:33.993 D/Ringer  ( 1670): stopRing()...
+04-25 10:34:34.003 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:34:34.153 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:34.153 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:34.163 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:34.183 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:34.193 D/Tethering( 1604): Tethering got CONNECTIVITY_ACTION
+04-25 10:34:34.193 D/Tethering( 1604): MasterInitialState.processMessage what=3
+04-25 10:34:34.193 E/HierarchicalStateMachine( 1604): TetherMaster - unhandledMessage: msg.what=3
+04-25 10:34:34.243 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:34.243 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging false, isDialing true, showingDisc false)
+04-25 10:34:34.453 D/dalvikvm( 1670): GC_FOR_MALLOC freed 12558 objects / 782216 bytes in 193ms
+04-25 10:34:34.473 W/IInputConnectionWrapper( 1713): showStatusIcon on inactive InputConnection
+04-25 10:34:39.763 D/dalvikvm( 1713): GC_EXPLICIT freed 2415 objects / 170000 bytes in 230ms
+04-25 10:34:39.943 D/BT HS/HF( 1670): audioOn(): headset is not connected!
+04-25 10:34:39.953 D/CallNotifier( 1670): stopRing()... (OFFHOOK state)
+04-25 10:34:39.953 D/Ringer  ( 1670): stopRing()...
+04-25 10:34:39.963 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:34:40.043 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:40.043 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:40.053 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:40.073 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:40.193 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:40.193 D/PhoneApp( 1670): updateWakeState: keepScreenOn = false (isRinging false, isDialing false, showingDisc false)
+04-25 10:34:47.603 I/AudioService( 1604):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+04-25 10:34:47.613 D/CallNotifier( 1670): RINGING... (new)
+04-25 10:34:47.613 D/CallNotifier( 1670): onNewRingingConnection():  incoming: true state: WAITING post dial state: NOT_STARTED
+04-25 10:34:47.663 D/AudioFlinger( 1595): <<<<<<<<<<<FM CANT START<<<<<<<<<<<<<<<
+04-25 10:34:47.663 V/AudioPolicyManagerALSA( 1595): startOutput() output 1, stream 0
+04-25 10:34:47.663 V/AudioPolicyManagerALSA( 1595): getDeviceForStrategy() strategy 1, device 1
+04-25 10:34:47.663 V/AudioPolicyManagerALSA( 1595): setOutputDevice() output 1 device 1 delayMs 0
+04-25 10:34:47.663 V/AudioPolicyManagerALSA( 1595): setOutputDevice() setting same device 1 for output 1
+04-25 10:34:47.663 V/AudioPolicyManagerALSA( 1595): changeRefCount() stream 0, count 1
+04-25 10:34:47.693 I/ActivityManager( 1604): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:34:47.713 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:47.713 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:47.713 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:47.713 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:47.733 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:34:47.753 W/AudioHardwareALSA( 1595): Write request but device is in state SND_PCM_STATE_SETUP
+04-25 10:34:47.753 D/AudioHardwareALSA( 1595): call snd_pcm_prepare
+04-25 10:34:47.763 W/AudioHardwareALSA( 1595): Wait for correct device state
+04-25 10:34:47.763 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:47.763 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:34:47.763 D/InCallScreen( 1670): onPause()...
+04-25 10:34:47.773 V/AudioPolicyManagerALSA( 1595): releaseOutput() 1
+04-25 10:34:47.773 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:34:47.793 D/PhoneApp( 1670): re-enable status bar
+04-25 10:34:47.793 D/PhoneApp( 1670): StatusBarManager.DISABLE_NONE
+04-25 10:34:47.803 D/PhoneApp( 1670): updateWakeState: callscreen false, dialer false, speaker false...
+04-25 10:34:47.813 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:34:47.813 D/InCallScreen( 1670): onNewIntent: intent=Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.phone/.InCallScreen }
+04-25 10:34:47.813 D/InCallScreen( 1670): internalResolveIntent: action=android.intent.action.MAIN
+04-25 10:34:47.813 D/InCallScreen( 1670): onResume()...
+04-25 10:34:47.813 D/PhoneApp( 1670): disable status bar
+04-25 10:34:47.813 D/PhoneApp( 1670): StatusBarManager.DISABLE_EXPAND
+04-25 10:34:47.813 D/StatusBar( 1604): DISABLE_EXPAND: yes
+04-25 10:34:47.833 D/InCallScreen( 1670): - onResume: initial status = SUCCESS
+04-25 10:34:47.833 D/InCallScreen( 1670): setInCallScreenMode: NORMAL
+04-25 10:34:47.853 D/InCallScreen( 1670): syncWithPhoneState()...
+04-25 10:34:47.853 D/PhoneUtils( 1670): dumpCallState():
+04-25 10:34:47.853 D/PhoneUtils( 1670): - Phone: Handler{43c52850}, name = GSM, state = RINGING
+04-25 10:34:47.853 D/PhoneUtils( 1670):   - FG call: ACTIVE isAlive true isRinging false isDialing false isIdle false hasConnections true
+04-25 10:34:47.853 D/PhoneUtils( 1670):   - BG call: IDLE isAlive false isRinging false isDialing false isIdle true hasConnections false
+04-25 10:34:47.853 D/PhoneUtils( 1670):   - RINGING call: WAITING isAlive true isRinging true isDialing false isIdle false hasConnections true
+04-25 10:34:47.853 D/PhoneUtils( 1670):   - hasRingingCall true hasActiveCall true hasHoldingCall false allLinesTaken false
+04-25 10:34:47.853 D/PhoneUtils( 1670):   - Ringer state: false
+04-25 10:34:47.853 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:47.853 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:47.853 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:47.863 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:34:47.863 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:47.873 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:34:47.923 D/InCallScreen( 1670): onPhoneStateChanged()...
+04-25 10:34:47.923 D/InCallScreen( 1670): updateScreen()...
+04-25 10:34:47.923 D/InCallScreen( 1670): - updateScreen: updating menu items...
+04-25 10:34:47.933 D/InCallScreen( 1670): - updateScreen: updating the in-call UI...
+04-25 10:34:47.963 D/InCallScreen( 1670): dismissAllDialogs()...
+04-25 10:34:47.963 D/PhoneApp( 1670): updateWakeState: callscreen true, dialer false, speaker false...
+04-25 10:34:47.963 D/PhoneApp( 1670): updateWakeState: keepScreenOn = true (isRinging true, isDialing false, showingDisc false)
+04-25 10:34:47.973 I/power   ( 1604): *** set_screen_state 1
+04-25 10:34:52.763 D/dalvikvm( 1780): GC_EXPLICIT freed 886 objects / 48168 bytes in 76ms
+04-25 10:34:53.955 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:54.693 D/InCallTouchUi( 1670): onDialTrigger(whichHandle = 1)...
+04-25 10:34:54.693 D/InCallScreen( 1670): handleOnscreenButtonClick(id 2131099670)...
+04-25 10:34:54.693 D/InCallScreen( 1670): internalAnswerCall: answering...
+04-25 10:34:54.693 D/Ringer  ( 1670): stopRing()...
+04-25 10:34:54.693 D/Ringer  ( 1670): - stopRing: null mRingHandler!
+04-25 10:34:54.723 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 0, index 4
+04-25 10:34:54.733 V/AudioPolicyManagerALSA( 1595): setStreamVolumeIndex() stream 8, index 12
+04-25 10:34:54.733 D/InCallTouchUi( 1670): updateState: Too soon after last action; not drawing!
+04-25 10:34:54.803 D/KeyguardViewMediator( 1604): pokeWakelock(5000)
+04-25 10:34:57.803 D/dalvikvm( 1676): GC_EXPLICIT freed 63 objects / 3568 bytes in 114ms

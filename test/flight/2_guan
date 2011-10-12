@@ -1,0 +1,88 @@
+04-13 11:02:27.492 D/RILJ    ( 1678): [0082]> RADIO_POWER
+04-13 11:02:27.492 D/RILC    ( 1552): [0082]> RADIO_POWER (0)
+04-13 11:02:27.492 D/RIL     ( 1552): onRequest: RADIO_POWER
+04-13 11:02:27.492 D/AT      ( 1552): AT> AT+CFUN=4,0
+04-13 11:02:27.508 D/GSM     ( 1678): GSMDataConnTrack handleMessage { what=34 when=120939 arg1=1 obj=radioTurnedOff }
+04-13 11:02:27.508 D/GSM     ( 1678): [GsmDataConnectionTracker] Clean up connection due to radioTurnedOff
+04-13 11:02:27.508 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: DISCONNECTING
+04-13 11:02:27.518 D/GSM     ( 1678): [GsmDataConnectionTracker] cleanUpConnection: teardown, call conn.disconnect
+04-13 11:02:27.518 D/GSM     ( 1678): [GsmDataConnection-1] DcActiveState msg.what=EVENT_DISCONNECT
+04-13 11:02:27.518 D/GSM     ( 1678): [GsmDataConnection-1] tearDownData radio is on, call deactivateDataCall
+04-13 11:02:27.518 D/RILJ    ( 1678): [0083]> DEACTIVATE_DATA_CALL 1
+04-13 11:02:27.528 D/GSM     ( 1678): [DataConnection] Stop poll NetStat
+04-13 11:02:29.218 D/AT      ( 1552): AT< OK
+04-13 11:02:29.218 D/AT      ( 1552): AT< +CREG: 0
+04-13 11:02:29.218 D/RIL     ( 1552): restrictionState updated: 4
+04-13 11:02:29.218 D/RILC    ( 1552): [UNSL]< UNSOL_RESPONSE_NETWORK_STATE_CHANGED 
+04-13 11:02:29.218 D/AT      ( 1552): AT< *IPACT: 0,1
+04-13 11:02:29.218 D/AT      ( 1552): AT< +CGREG: 0
+04-13 11:02:29.218 D/RIL     ( 1552): restrictionState updated: 20
+04-13 11:02:29.218 D/RILC    ( 1552): [UNSL]< UNSOL_RESPONSE_NETWORK_STATE_CHANGED 
+04-13 11:02:29.218 D/RILC    ( 1552): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED  {RADIO_OFF}
+04-13 11:02:29.218 D/RILC    ( 1552): [0082]< RADIO_POWER
+04-13 11:02:29.218 D/RILC    ( 1552): [0083]> DEACTIVATE_DATA_CALL (1)
+04-13 11:02:29.218 D/RIL     ( 1552): onRequest: DEACTIVATE_DATA_CALL
+04-13 11:02:29.218 D/RILC    ( 1552): [0083]< DEACTIVATE_DATA_CALL fails by E_RAIDO_NOT_AVAILABLE
+04-13 11:02:29.218 D/RILC    ( 1552): [UNSL]< UNSOL_RESTRICTED_STATE_CHANGED {20}
+04-13 11:02:29.218 D/AT      ( 1552): AT> AT+CGACT?
+04-13 11:02:29.218 D/RILJ    ( 1678): [UNSL]< UNSOL_RESPONSE_NETWORK_STATE_CHANGED
+04-13 11:02:29.218 D/RILJ    ( 1678): [UNSL]< UNSOL_RESPONSE_NETWORK_STATE_CHANGED
+04-13 11:02:29.218 D/RILB    ( 1678): Notifying: radio off or not available
+04-13 11:02:29.218 D/RILJ    ( 1678): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_OFF
+04-13 11:02:29.228 D/GSM     ( 1678): Poll ServiceState done:  oldSS=[0 home CHINA UNICOM GSM CHINA UNICOM GSM 46001  UMTS CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] newSS=[3 home null null null  Unknown CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] oldGprs=0 newGprs=0 oldType=UMTS newType=UMTS
+04-13 11:02:29.228 D/AT      ( 1552): AT< +CGACT: 1,0
+04-13 11:02:29.228 D/AT      ( 1552): AT< OK
+04-13 11:02:29.228 D/AT      ( 1552): AT> AT+CGDCONT?
+04-13 11:02:29.228 D/AT      ( 1552): AT< +CGDCONT: 1,"IP","uninet","0.0.0.0",0,0
+04-13 11:02:29.228 D/AT      ( 1552): AT< OK
+04-13 11:02:29.228 D/RILC    ( 1552): [UNSL]< UNSOL_DATA_CALL_LIST_CHANGED {[cid=1,down,IP,uninet,0.0.0.0]}
+04-13 11:02:29.228 D/RILC    ( 1552): [UNSL]< UNSOL_RESTRICTED_STATE_CHANGED {20}
+04-13 11:02:29.257 D/RILJ    ( 1678): [0082]< RADIO_POWER 
+04-13 11:02:29.257 D/RILJ    ( 1678): [0083]< DEACTIVATE_DATA_CALL error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+04-13 11:02:29.267 D/GSM     ( 1678): [GsmDataConnection-1] DcDisconnectingState msg.what=EVENT_DEACTIVATE_DONE
+04-13 11:02:29.267 D/GSM     ( 1678): [GsmDataConnection-1] DcInactiveState: setEnterNoticationParams dp
+04-13 11:02:29.267 D/GSM     ( 1678): [GsmDataConnection-1] DcInactiveState: enter notifyDisconnectCompleted
+04-13 11:02:29.267 D/GSM     ( 1678): [GsmDataConnection-1] NotifyDisconnectCompleted
+04-13 11:02:29.267 D/GSM     ( 1678): [GsmDataConnection-1] msg.what=25 msg.obj=radioTurnedOff
+04-13 11:02:29.267 D/GSM     ( 1678): [GsmDataConnection-1] clearSettings
+04-13 11:02:29.308 V/RILJ    ( 1678): [UNSL]< UNSOL_RESTRICTED_STATE_CHANGED {20}
+04-13 11:02:29.318 D/RILJ    ( 1678): [UNSL]< UNSOL_DATA_CALL_LIST_CHANGED [DataCallState: { cid: 1, active: 0, type: IP, apn: uninet, address: 0.0.0.0 }]
+04-13 11:02:29.328 D/GSM     ( 1678): Poll ServiceState done:  oldSS=[3 home null null null  Unknown CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] newSS=[3 home null null null  Unknown CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] oldGprs=0 newGprs=0 oldType=UMTS newType=UMTS
+04-13 11:02:29.338 V/RILJ    ( 1678): [UNSL]< UNSOL_RESTRICTED_STATE_CHANGED {20}
+04-13 11:02:29.348 D/GSM     ( 1678): Poll ServiceState done:  oldSS=[3 home null null null  Unknown CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] newSS=[3 home null null null  Unknown CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] oldGprs=0 newGprs=0 oldType=UMTS newType=UMTS
+04-13 11:02:29.368 D/GSM     ( 1678): GSMDataConnTrack handleMessage { what=12 when=124179 obj=android.os.AsyncResult@43c226b0 }
+04-13 11:02:29.368 D/GSM     ( 1678): [GsmDataConnectionTracker] Radio is off and clean up all connection
+04-13 11:02:29.378 D/GSM     ( 1678): [GsmDataConnectionTracker] Clean up connection due to radioTurnedOff
+04-13 11:02:29.378 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: DISCONNECTING
+04-13 11:02:29.378 D/GSM     ( 1678): [GsmDataConnectionTracker] cleanUpConnection: !tearDown, call conn.resetSynchronously
+04-13 11:02:29.378 D/GSM     ( 1678): [GsmDataConnection-1] DcInactiveState: msg.what=EVENT_RESET, ignore we're already reset
+04-13 11:02:29.378 D/GSM     ( 1678): [GsmDataConnection-1] NotifyDisconnectCompleted
+04-13 11:02:29.398 D/GSM     ( 1678): [DataConnection] Stop poll NetStat
+04-13 11:02:29.398 D/GSM     ( 1678): [GsmDataConnectionTracker] cleanupConnection: !notificationDeferred
+04-13 11:02:29.398 D/GSM     ( 1678): [GsmDataConnectionTracker] gotoIdleAndNotifyDataConnection: reason=radioTurnedOff
+04-13 11:02:29.398 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: IDLE
+04-13 11:02:29.398 D/GSM     ( 1678): [GsmDataConnection-1] clearSettings
+04-13 11:02:29.418 D/GSM     ( 1678): [IccCard] Broadcasting intent ACTION_SIM_STATE_CHANGED NOT_READY reason null
+04-13 11:02:29.438 D/GSM     ( 1678): GSMDataConnTrack handleMessage { what=25 when=124229 obj=android.os.AsyncResult@43c22a90 }
+04-13 11:02:29.438 D/GSM     ( 1678): [GsmDataConnectionTracker] EVENT_DISCONNECT_DONE
+04-13 11:02:29.438 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: IDLE
+04-13 11:02:29.488 D/GSM     ( 1678): [DSAC DEB] EVENT_RESTRICTED_STATE_CHANGED
+04-13 11:02:29.488 D/GSM     ( 1678): [DSAC DEB] onRestrictedStateChanged
+04-13 11:02:29.488 D/GSM     ( 1678): [DSAC DEB] current rs at enter Restricted State CS: none PS:false
+04-13 11:02:29.497 D/GSM     ( 1678): [DSAC DEB] new rs Restricted State CS: emergency PS:false
+04-13 11:02:29.497 D/GSM     ( 1678): [DSAC DEB] create notification 1006
+04-13 11:02:29.508 D/GSM     ( 1678): [DSAC DEB] put notification Restricted access changed / Emergency service is blocked.
+04-13 11:02:29.528 D/GSM     ( 1678): [DSAC DEB] current rs at return Restricted State CS: emergency PS:false
+04-13 11:02:29.528 D/GSM     ( 1678): GSMDataConnTrack handleMessage { what=6 when=124286 obj=android.os.AsyncResult@43c2f8c0 }
+04-13 11:02:29.528 D/GSM     ( 1678): [DSAC DEB] EVENT_RESTRICTED_STATE_CHANGED
+04-13 11:02:29.528 D/GSM     ( 1678): [DSAC DEB] onRestrictedStateChanged
+04-13 11:02:29.528 D/GSM     ( 1678): [DSAC DEB] current rs at enter Restricted State CS: emergency PS:false
+04-13 11:02:29.538 D/GSM     ( 1678): [DSAC DEB] new rs Restricted State CS: emergency PS:false
+04-13 11:02:29.538 D/GSM     ( 1678): [DSAC DEB] create notification 1004
+04-13 11:02:29.548 D/GSM     ( 1678): [DSAC DEB] put notification Restricted access changed / 
+04-13 11:02:29.548 D/GSM     ( 1678): [DSAC DEB] current rs at return Restricted State CS: emergency PS:false
+04-13 11:02:37.168 D/RILJ    ( 1678): [0084]> SIGNAL_STRENGTH
+04-13 11:02:37.178 D/RILC    ( 1552): [0084]> SIGNAL_STRENGTH 
+04-13 11:02:37.178 D/RIL     ( 1552): onRequest: SIGNAL_STRENGTH
+04-13 11:02:37.178 D/RILC    ( 1552): [0084]< SIGNAL_STRENGTH fails by E_RAIDO_NOT_AVAILABLE
+04-13 11:02:37.178 D/RILJ    ( 1678): [0084]< SIGNAL_STRENGTH error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE

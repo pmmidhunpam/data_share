@@ -1,0 +1,62 @@
+04-13 11:03:11.278 D/RILJ    ( 1678): [0161]> RADIO_POWER
+04-13 11:03:11.278 D/RILC    ( 1552): [0161]> RADIO_POWER (0)
+04-13 11:03:11.278 D/RIL     ( 1552): onRequest: RADIO_POWER
+04-13 11:03:11.278 D/AT      ( 1552): AT> AT+CFUN=4,0
+04-13 11:03:11.288 D/GSM     ( 1678): GSMDataConnTrack handleMessage { what=34 when=164729 arg1=1 obj=radioTurnedOff }
+04-13 11:03:11.288 D/GSM     ( 1678): [GsmDataConnectionTracker] Clean up connection due to radioTurnedOff
+04-13 11:03:11.288 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: DISCONNECTING
+04-13 11:03:11.288 D/GSM     ( 1678): [GsmDataConnectionTracker] cleanUpConnection: teardown, call conn.disconnect
+04-13 11:03:11.298 D/GSM     ( 1678): [GsmDataConnection-1] DcActiveState msg.what=EVENT_DISCONNECT
+04-13 11:03:11.298 D/GSM     ( 1678): [GsmDataConnection-1] tearDownData radio is on, call deactivateDataCall
+04-13 11:03:11.298 D/RILJ    ( 1678): [0162]> DEACTIVATE_DATA_CALL 1
+04-13 11:03:11.298 D/GSM     ( 1678): [DataConnection] Stop poll NetStat
+04-13 11:03:13.047 D/AT      ( 1552): AT< OK
+04-13 11:03:13.047 D/RILC    ( 1552): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED  {RADIO_OFF}
+04-13 11:03:13.047 D/RILC    ( 1552): [0161]< RADIO_POWER
+04-13 11:03:13.047 D/RILC    ( 1552): [0162]> DEACTIVATE_DATA_CALL (1)
+04-13 11:03:13.047 D/RIL     ( 1552): onRequest: DEACTIVATE_DATA_CALL
+04-13 11:03:13.047 D/RILC    ( 1552): [0162]< DEACTIVATE_DATA_CALL fails by E_RAIDO_NOT_AVAILABLE
+04-13 11:03:13.047 D/RILB    ( 1678): Notifying: radio off or not available
+04-13 11:03:13.047 D/RILJ    ( 1678): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_OFF
+04-13 11:03:13.047 D/RILJ    ( 1678): [0161]< RADIO_POWER 
+04-13 11:03:13.047 D/RILJ    ( 1678): [0162]< DEACTIVATE_DATA_CALL error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+04-13 11:03:13.047 D/GSM     ( 1678): Poll ServiceState done:  oldSS=[0 home CHINA UNICOM GSM CHINA UNICOM GSM 46001  UMTS CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] newSS=[3 home null null null  Unknown CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false] oldGprs=0 newGprs=0 oldType=UMTS newType=UMTS
+04-13 11:03:13.088 D/GSM     ( 1678): [GsmDataConnection-1] DcDisconnectingState msg.what=EVENT_DEACTIVATE_DONE
+04-13 11:03:13.088 D/GSM     ( 1678): [GsmDataConnection-1] DcInactiveState: setEnterNoticationParams dp
+04-13 11:03:13.088 D/GSM     ( 1678): [GsmDataConnection-1] DcInactiveState: enter notifyDisconnectCompleted
+04-13 11:03:13.088 D/GSM     ( 1678): [GsmDataConnection-1] NotifyDisconnectCompleted
+04-13 11:03:13.088 D/GSM     ( 1678): [GsmDataConnection-1] msg.what=25 msg.obj=radioTurnedOff
+04-13 11:03:13.088 D/GSM     ( 1678): [GsmDataConnection-1] clearSettings
+04-13 11:03:13.138 D/GSM     ( 1678): GSMDataConnTrack handleMessage { what=12 when=168002 obj=android.os.AsyncResult@43c77300 }
+04-13 11:03:13.148 D/GSM     ( 1678): [GsmDataConnectionTracker] Radio is off and clean up all connection
+04-13 11:03:13.148 D/GSM     ( 1678): [GsmDataConnectionTracker] Clean up connection due to radioTurnedOff
+04-13 11:03:13.148 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: DISCONNECTING
+04-13 11:03:13.148 D/GSM     ( 1678): [GsmDataConnectionTracker] cleanUpConnection: !tearDown, call conn.resetSynchronously
+04-13 11:03:13.158 D/GSM     ( 1678): [GsmDataConnection-1] DcInactiveState: msg.what=EVENT_RESET, ignore we're already reset
+04-13 11:03:13.158 D/GSM     ( 1678): [GsmDataConnection-1] NotifyDisconnectCompleted
+04-13 11:03:13.168 D/GSM     ( 1678): [DataConnection] Stop poll NetStat
+04-13 11:03:13.168 D/GSM     ( 1678): [GsmDataConnectionTracker] cleanupConnection: !notificationDeferred
+04-13 11:03:13.168 D/GSM     ( 1678): [GsmDataConnectionTracker] gotoIdleAndNotifyDataConnection: reason=radioTurnedOff
+04-13 11:03:13.168 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: IDLE
+04-13 11:03:13.168 D/GSM     ( 1678): [GsmDataConnection-1] clearSettings
+04-13 11:03:13.198 D/GSM     ( 1678): [IccCard] Broadcasting intent ACTION_SIM_STATE_CHANGED NOT_READY reason null
+04-13 11:03:13.218 D/GSM     ( 1678): GSMDataConnTrack handleMessage { what=25 when=168043 obj=android.os.AsyncResult@43cd5170 }
+04-13 11:03:13.218 D/GSM     ( 1678): [GsmDataConnectionTracker] EVENT_DISCONNECT_DONE
+04-13 11:03:13.228 D/GSM     ( 1678): [GsmDataConnectionTracker] setState: IDLE
+04-13 11:03:15.147 D/RILJ    ( 1678): [0163]> SCREEN_STATE: false
+04-13 11:03:15.158 D/RILC    ( 1552): [0163]> SCREEN_STATE (0)
+04-13 11:03:15.158 D/RIL     ( 1552): onRequest: SCREEN_STATE
+04-13 11:03:15.158 D/RILC    ( 1552): [0163]< SCREEN_STATE fails by E_RAIDO_NOT_AVAILABLE
+04-13 11:03:15.158 D/RILJ    ( 1678): [0163]< SCREEN_STATE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+04-13 11:03:15.198 D/GSM     ( 1678): [DataConnection] Stop poll NetStat
+04-13 11:03:18.918 D/RILJ    ( 1678): [0164]> SCREEN_STATE: true
+04-13 11:03:18.927 D/RILC    ( 1552): [0164]> SCREEN_STATE (1)
+04-13 11:03:18.927 D/RIL     ( 1552): onRequest: SCREEN_STATE
+04-13 11:03:18.927 D/RILC    ( 1552): [0164]< SCREEN_STATE fails by E_RAIDO_NOT_AVAILABLE
+04-13 11:03:18.927 D/RILJ    ( 1678): [0164]< SCREEN_STATE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+04-13 11:03:18.938 D/GSM     ( 1678): [DataConnection] Stop poll NetStat
+04-13 11:03:19.478 D/RILJ    ( 1678): [0165]> SIGNAL_STRENGTH
+04-13 11:03:19.488 D/RILC    ( 1552): [0165]> SIGNAL_STRENGTH 
+04-13 11:03:19.488 D/RIL     ( 1552): onRequest: SIGNAL_STRENGTH
+04-13 11:03:19.488 D/RILC    ( 1552): [0165]< SIGNAL_STRENGTH fails by E_RAIDO_NOT_AVAILABLE
+04-13 11:03:19.488 D/RILJ    ( 1678): [0165]< SIGNAL_STRENGTH error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
