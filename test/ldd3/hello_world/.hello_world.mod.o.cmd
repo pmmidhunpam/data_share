@@ -1,7 +1,7 @@
-cmd_/home/work/Desktop/test/ldd3/hello_world/hello_world.mod.o := gcc -Wp,-MD,/home/work/Desktop/test/ldd3/hello_world/.hello_world.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include  -Iinclude  -I/usr/src/linux-headers-2.6.32-21-generic/arch/x86/include -include include/linux/autoconf.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i586 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -fstack-protector -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello_world.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(hello_world)"  -DMODULE -c -o /home/work/Desktop/test/ldd3/hello_world/hello_world.mod.o /home/work/Desktop/test/ldd3/hello_world/hello_world.mod.c
+cmd_/home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.o := gcc -Wp,-MD,/home/work/Desktop/data_share/test/ldd3/hello_world/.hello_world.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include  -Iinclude  -I/usr/src/linux-headers-2.6.32-21-generic/arch/x86/include -include include/linux/autoconf.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i586 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -fstack-protector -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-dwarf2-cfi-asm -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello_world.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(hello_world)"  -DMODULE -c -o /home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.o /home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.c
 
-deps_/home/work/Desktop/test/ldd3/hello_world/hello_world.mod.o := \
-  /home/work/Desktop/test/ldd3/hello_world/hello_world.mod.c \
+deps_/home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.o := \
+  /home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.c \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
@@ -437,6 +437,6 @@ deps_/home/work/Desktop/test/ldd3/hello_world/hello_world.mod.o := \
   include/linux/vermagic.h \
   include/linux/utsrelease.h \
 
-/home/work/Desktop/test/ldd3/hello_world/hello_world.mod.o: $(deps_/home/work/Desktop/test/ldd3/hello_world/hello_world.mod.o)
+/home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.o: $(deps_/home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.o)
 
-$(deps_/home/work/Desktop/test/ldd3/hello_world/hello_world.mod.o):
+$(deps_/home/work/Desktop/data_share/test/ldd3/hello_world/hello_world.mod.o):
