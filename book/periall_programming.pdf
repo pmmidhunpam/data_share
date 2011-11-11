@@ -1,0 +1,5365 @@
+%PDF-1.4
+%ĞÔÅØ
+1 0 obj
+<< /S /GoTo /D (chapter.1) >>
+endobj
+4 0 obj
+(1 Introduction)
+endobj
+5 0 obj
+<< /S /GoTo /D (section.1.1) >>
+endobj
+8 0 obj
+(1.1 Historic Parallel Programming Difficulties)
+endobj
+9 0 obj
+<< /S /GoTo /D (section.1.2) >>
+endobj
+12 0 obj
+(1.2 Parallel Programming Goals)
+endobj
+13 0 obj
+<< /S /GoTo /D (subsection.1.2.1) >>
+endobj
+16 0 obj
+(1.2.1 Performance)
+endobj
+17 0 obj
+<< /S /GoTo /D (subsection.1.2.2) >>
+endobj
+20 0 obj
+(1.2.2 Productivity)
+endobj
+21 0 obj
+<< /S /GoTo /D (subsection.1.2.3) >>
+endobj
+24 0 obj
+(1.2.3 Generality)
+endobj
+25 0 obj
+<< /S /GoTo /D (section.1.3) >>
+endobj
+28 0 obj
+(1.3 Alternatives to Parallel Programming)
+endobj
+29 0 obj
+<< /S /GoTo /D (subsection.1.3.1) >>
+endobj
+32 0 obj
+(1.3.1 Multiple Instances of a Sequential Application)
+endobj
+33 0 obj
+<< /S /GoTo /D (subsection.1.3.2) >>
+endobj
+36 0 obj
+(1.3.2 Make Use of Existing Parallel Software)
+endobj
+37 0 obj
+<< /S /GoTo /D (subsection.1.3.3) >>
+endobj
+40 0 obj
+(1.3.3 Performance Optimization)
+endobj
+41 0 obj
+<< /S /GoTo /D (section.1.4) >>
+endobj
+44 0 obj
+(1.4 What Makes Parallel Programming Hard?)
+endobj
+45 0 obj
+<< /S /GoTo /D (subsection.1.4.1) >>
+endobj
+48 0 obj
+(1.4.1 Work Partitioning)
+endobj
+49 0 obj
+<< /S /GoTo /D (subsection.1.4.2) >>
+endobj
+52 0 obj
+(1.4.2 Parallel Access Control)
+endobj
+53 0 obj
+<< /S /GoTo /D (subsection.1.4.3) >>
+endobj
+56 0 obj
+(1.4.3 Resource Partitioning and Replication)
+endobj
+57 0 obj
+<< /S /GoTo /D (subsection.1.4.4) >>
+endobj
+60 0 obj
+(1.4.4 Interacting With Hardware)
+endobj
+61 0 obj
+<< /S /GoTo /D (subsection.1.4.5) >>
+endobj
+64 0 obj
+(1.4.5 Composite Capabilities)
+endobj
+65 0 obj
+<< /S /GoTo /D (subsection.1.4.6) >>
+endobj
+68 0 obj
+(1.4.6 How Do Languages and Environments Assist With These Tasks?)
+endobj
+69 0 obj
+<< /S /GoTo /D (section.1.5) >>
+endobj
+72 0 obj
+(1.5 Guide to This Book)
+endobj
+73 0 obj
+<< /S /GoTo /D (subsection.1.5.1) >>
+endobj
+76 0 obj
+(1.5.1 Quick Quizzes)
+endobj
+77 0 obj
+<< /S /GoTo /D (subsection.1.5.2) >>
+endobj
+80 0 obj
+(1.5.2 Sample Source Code)
+endobj
+81 0 obj
+<< /S /GoTo /D (chapter.2) >>
+endobj
+84 0 obj
+(2 Hardware and its Habits)
+endobj
+85 0 obj
+<< /S /GoTo /D (section.2.1) >>
+endobj
+88 0 obj
+(2.1 Overview)
+endobj
+89 0 obj
+<< /S /GoTo /D (subsection.2.1.1) >>
+endobj
+92 0 obj
+(2.1.1 Pipelined CPUs)
+endobj
+93 0 obj
+<< /S /GoTo /D (subsection.2.1.2) >>
+endobj
+96 0 obj
+(2.1.2 Memory References)
+endobj
+97 0 obj
+<< /S /GoTo /D (subsection.2.1.3) >>
+endobj
+100 0 obj
+(2.1.3 Atomic Operations)
+endobj
+101 0 obj
+<< /S /GoTo /D (subsection.2.1.4) >>
+endobj
+104 0 obj
+(2.1.4 Memory Barriers)
+endobj
+105 0 obj
+<< /S /GoTo /D (subsection.2.1.5) >>
+endobj
+108 0 obj
+(2.1.5 Cache Misses)
+endobj
+109 0 obj
+<< /S /GoTo /D (subsection.2.1.6) >>
+endobj
+112 0 obj
+(2.1.6 I/O Operations)
+endobj
+113 0 obj
+<< /S /GoTo /D (section.2.2) >>
+endobj
+116 0 obj
+(2.2 Overheads)
+endobj
+117 0 obj
+<< /S /GoTo /D (subsection.2.2.1) >>
+endobj
+120 0 obj
+(2.2.1 Hardware System Architecture)
+endobj
+121 0 obj
+<< /S /GoTo /D (subsection.2.2.2) >>
+endobj
+124 0 obj
+(2.2.2 Costs of Operations)
+endobj
+125 0 obj
+<< /S /GoTo /D (section.2.3) >>
+endobj
+128 0 obj
+(2.3 Hardware Free Lunch?)
+endobj
+129 0 obj
+<< /S /GoTo /D (subsection.2.3.1) >>
+endobj
+132 0 obj
+(2.3.1 3D Integration)
+endobj
+133 0 obj
+<< /S /GoTo /D (subsection.2.3.2) >>
+endobj
+136 0 obj
+(2.3.2 Novel Materials and Processes)
+endobj
+137 0 obj
+<< /S /GoTo /D (subsection.2.3.3) >>
+endobj
+140 0 obj
+(2.3.3 Special-Purpose Accelerators)
+endobj
+141 0 obj
+<< /S /GoTo /D (subsection.2.3.4) >>
+endobj
+144 0 obj
+(2.3.4 Existing Parallel Software)
+endobj
+145 0 obj
+<< /S /GoTo /D (section.2.4) >>
+endobj
+148 0 obj
+(2.4 Software Design Implications)
+endobj
+149 0 obj
+<< /S /GoTo /D (chapter.3) >>
+endobj
+152 0 obj
+(3 Tools of the Trade)
+endobj
+153 0 obj
+<< /S /GoTo /D (section.3.1) >>
+endobj
+156 0 obj
+(3.1 Scripting Languages)
+endobj
+157 0 obj
+<< /S /GoTo /D (section.3.2) >>
+endobj
+160 0 obj
+(3.2 POSIX Multiprocessing)
+endobj
+161 0 obj
+<< /S /GoTo /D (subsection.3.2.1) >>
+endobj
+164 0 obj
+(3.2.1 POSIX Process Creation and Destruction)
+endobj
+165 0 obj
+<< /S /GoTo /D (subsection.3.2.2) >>
+endobj
+168 0 obj
+(3.2.2 POSIX Thread Creation and Destruction)
+endobj
+169 0 obj
+<< /S /GoTo /D (subsection.3.2.3) >>
+endobj
+172 0 obj
+(3.2.3 POSIX Locking)
+endobj
+173 0 obj
+<< /S /GoTo /D (subsection.3.2.4) >>
+endobj
+176 0 obj
+(3.2.4 POSIX Reader-Writer Locking)
+endobj
+177 0 obj
+<< /S /GoTo /D (section.3.3) >>
+endobj
+180 0 obj
+(3.3 Atomic Operations)
+endobj
+181 0 obj
+<< /S /GoTo /D (section.3.4) >>
+endobj
+184 0 obj
+(3.4 Linux-Kernel Equivalents to POSIX Operations)
+endobj
+185 0 obj
+<< /S /GoTo /D (section.3.5) >>
+endobj
+188 0 obj
+(3.5 The Right Tool for the Job: How to Choose?)
+endobj
+189 0 obj
+<< /S /GoTo /D (chapter.4) >>
+endobj
+192 0 obj
+(4 Counting)
+endobj
+193 0 obj
+<< /S /GoTo /D (section.4.1) >>
+endobj
+196 0 obj
+(4.1 Why Isn't Concurrent Counting Trivial?)
+endobj
+197 0 obj
+<< /S /GoTo /D (section.4.2) >>
+endobj
+200 0 obj
+(4.2 Statistical Counters)
+endobj
+201 0 obj
+<< /S /GoTo /D (subsection.4.2.1) >>
+endobj
+204 0 obj
+(4.2.1 Design)
+endobj
+205 0 obj
+<< /S /GoTo /D (subsection.4.2.2) >>
+endobj
+208 0 obj
+(4.2.2 Array-Based Implementation)
+endobj
+209 0 obj
+<< /S /GoTo /D (subsection.4.2.3) >>
+endobj
+212 0 obj
+(4.2.3 Eventually Consistent Implementation)
+endobj
+213 0 obj
+<< /S /GoTo /D (subsection.4.2.4) >>
+endobj
+216 0 obj
+(4.2.4 Per-Thread-Variable-Based Implementation)
+endobj
+217 0 obj
+<< /S /GoTo /D (subsection.4.2.5) >>
+endobj
+220 0 obj
+(4.2.5 Discussion)
+endobj
+221 0 obj
+<< /S /GoTo /D (section.4.3) >>
+endobj
+224 0 obj
+(4.3 Approximate Limit Counters)
+endobj
+225 0 obj
+<< /S /GoTo /D (subsection.4.3.1) >>
+endobj
+228 0 obj
+(4.3.1 Design)
+endobj
+229 0 obj
+<< /S /GoTo /D (subsection.4.3.2) >>
+endobj
+232 0 obj
+(4.3.2 Simple Limit Counter Implementation)
+endobj
+233 0 obj
+<< /S /GoTo /D (subsection.4.3.3) >>
+endobj
+236 0 obj
+(4.3.3 Simple Limit Counter Discussion)
+endobj
+237 0 obj
+<< /S /GoTo /D (subsection.4.3.4) >>
+endobj
+240 0 obj
+(4.3.4 Approximate Limit Counter Implementation)
+endobj
+241 0 obj
+<< /S /GoTo /D (subsection.4.3.5) >>
+endobj
+244 0 obj
+(4.3.5 Approximate Limit Counter Discussion)
+endobj
+245 0 obj
+<< /S /GoTo /D (section.4.4) >>
+endobj
+248 0 obj
+(4.4 Exact Limit Counters)
+endobj
+249 0 obj
+<< /S /GoTo /D (subsection.4.4.1) >>
+endobj
+252 0 obj
+(4.4.1 Atomic Limit Counter Implementation)
+endobj
+253 0 obj
+<< /S /GoTo /D (subsection.4.4.2) >>
+endobj
+256 0 obj
+(4.4.2 Atomic Limit Counter Discussion)
+endobj
+257 0 obj
+<< /S /GoTo /D (subsection.4.4.3) >>
+endobj
+260 0 obj
+(4.4.3 Signal-Theft Limit Counter Design)
+endobj
+261 0 obj
+<< /S /GoTo /D (subsection.4.4.4) >>
+endobj
+264 0 obj
+(4.4.4 Signal-Theft Limit Counter Implementation)
+endobj
+265 0 obj
+<< /S /GoTo /D (subsection.4.4.5) >>
+endobj
+268 0 obj
+(4.4.5 Signal-Theft Limit Counter Discussion)
+endobj
+269 0 obj
+<< /S /GoTo /D (section.4.5) >>
+endobj
+272 0 obj
+(4.5 Applying Specialized Parallel Counters)
+endobj
+273 0 obj
+<< /S /GoTo /D (section.4.6) >>
+endobj
+276 0 obj
+(4.6 Parallel Counting Discussion)
+endobj
+277 0 obj
+<< /S /GoTo /D (chapter.5) >>
+endobj
+280 0 obj
+(5 Partitioning and Synchronization Design)
+endobj
+281 0 obj
+<< /S /GoTo /D (section.5.1) >>
+endobj
+284 0 obj
+(5.1 Partitioning Exercises)
+endobj
+285 0 obj
+<< /S /GoTo /D (subsection.5.1.1) >>
+endobj
+288 0 obj
+(5.1.1 Dining Philosophers Problem)
+endobj
+289 0 obj
+<< /S /GoTo /D (subsection.5.1.2) >>
+endobj
+292 0 obj
+(5.1.2 Double-Ended Queue)
+endobj
+293 0 obj
+<< /S /GoTo /D (subsection.5.1.3) >>
+endobj
+296 0 obj
+(5.1.3 Partitioning Example Discussion)
+endobj
+297 0 obj
+<< /S /GoTo /D (section.5.2) >>
+endobj
+300 0 obj
+(5.2 Design Criteria)
+endobj
+301 0 obj
+<< /S /GoTo /D (section.5.3) >>
+endobj
+304 0 obj
+(5.3 Synchronization Granularity)
+endobj
+305 0 obj
+<< /S /GoTo /D (subsection.5.3.1) >>
+endobj
+308 0 obj
+(5.3.1 Sequential Program)
+endobj
+309 0 obj
+<< /S /GoTo /D (subsection.5.3.2) >>
+endobj
+312 0 obj
+(5.3.2 Code Locking)
+endobj
+313 0 obj
+<< /S /GoTo /D (subsection.5.3.3) >>
+endobj
+316 0 obj
+(5.3.3 Data Locking)
+endobj
+317 0 obj
+<< /S /GoTo /D (subsection.5.3.4) >>
+endobj
+320 0 obj
+(5.3.4 Data Ownership)
+endobj
+321 0 obj
+<< /S /GoTo /D (subsection.5.3.5) >>
+endobj
+324 0 obj
+(5.3.5 Locking Granularity and Performance)
+endobj
+325 0 obj
+<< /S /GoTo /D (section.5.4) >>
+endobj
+328 0 obj
+(5.4 Parallel Fastpath)
+endobj
+329 0 obj
+<< /S /GoTo /D (subsection.5.4.1) >>
+endobj
+332 0 obj
+(5.4.1 Reader/Writer Locking)
+endobj
+333 0 obj
+<< /S /GoTo /D (subsection.5.4.2) >>
+endobj
+336 0 obj
+(5.4.2 Hierarchical Locking)
+endobj
+337 0 obj
+<< /S /GoTo /D (subsection.5.4.3) >>
+endobj
+340 0 obj
+(5.4.3 Resource Allocator Caches)
+endobj
+341 0 obj
+<< /S /GoTo /D (section.5.5) >>
+endobj
+344 0 obj
+(5.5 Performance Summary)
+endobj
+345 0 obj
+<< /S /GoTo /D (chapter.6) >>
+endobj
+348 0 obj
+(6 Locking)
+endobj
+349 0 obj
+<< /S /GoTo /D (section.6.1) >>
+endobj
+352 0 obj
+(6.1 Staying Alive)
+endobj
+353 0 obj
+<< /S /GoTo /D (subsection.6.1.1) >>
+endobj
+356 0 obj
+(6.1.1 Deadlock)
+endobj
+357 0 obj
+<< /S /GoTo /D (subsection.6.1.2) >>
+endobj
+360 0 obj
+(6.1.2 Livelock and Starvation)
+endobj
+361 0 obj
+<< /S /GoTo /D (subsection.6.1.3) >>
+endobj
+364 0 obj
+(6.1.3 Unfairness)
+endobj
+365 0 obj
+<< /S /GoTo /D (subsection.6.1.4) >>
+endobj
+368 0 obj
+(6.1.4 Inefficiency)
+endobj
+369 0 obj
+<< /S /GoTo /D (section.6.2) >>
+endobj
+372 0 obj
+(6.2 Types of Locks)
+endobj
+373 0 obj
+<< /S /GoTo /D (subsection.6.2.1) >>
+endobj
+376 0 obj
+(6.2.1 Exclusive Locks)
+endobj
+377 0 obj
+<< /S /GoTo /D (subsection.6.2.2) >>
+endobj
+380 0 obj
+(6.2.2 Reader-Writer Locks)
+endobj
+381 0 obj
+<< /S /GoTo /D (subsection.6.2.3) >>
+endobj
+384 0 obj
+(6.2.3 Beyond Reader-Writer Locks)
+endobj
+385 0 obj
+<< /S /GoTo /D (section.6.3) >>
+endobj
+388 0 obj
+(6.3 Locking Implementation Issues)
+endobj
+389 0 obj
+<< /S /GoTo /D (subsection.6.3.1) >>
+endobj
+392 0 obj
+(6.3.1 Sample Exclusive-Locking Implementation Based on Atomic Exchange)
+endobj
+393 0 obj
+<< /S /GoTo /D (subsection.6.3.2) >>
+endobj
+396 0 obj
+(6.3.2 Other Exclusive-Locking Implementations)
+endobj
+397 0 obj
+<< /S /GoTo /D (section.6.4) >>
+endobj
+400 0 obj
+(6.4 Lock-Based Existence Guarantees)
+endobj
+401 0 obj
+<< /S /GoTo /D (section.6.5) >>
+endobj
+404 0 obj
+(6.5 Locking: Hero or Villain?)
+endobj
+405 0 obj
+<< /S /GoTo /D (chapter.7) >>
+endobj
+408 0 obj
+(7 Data Ownership)
+endobj
+409 0 obj
+<< /S /GoTo /D (section.7.1) >>
+endobj
+412 0 obj
+(7.1 Multiple Processes)
+endobj
+413 0 obj
+<< /S /GoTo /D (section.7.2) >>
+endobj
+416 0 obj
+(7.2 Partial Data Ownership and pthreads)
+endobj
+417 0 obj
+<< /S /GoTo /D (section.7.3) >>
+endobj
+420 0 obj
+(7.3 Function Shipping)
+endobj
+421 0 obj
+<< /S /GoTo /D (section.7.4) >>
+endobj
+424 0 obj
+(7.4 Designated Thread)
+endobj
+425 0 obj
+<< /S /GoTo /D (section.7.5) >>
+endobj
+428 0 obj
+(7.5 Privatization)
+endobj
+429 0 obj
+<< /S /GoTo /D (section.7.6) >>
+endobj
+432 0 obj
+(7.6 Other Uses of Data Ownership)
+endobj
+433 0 obj
+<< /S /GoTo /D (chapter.8) >>
+endobj
+436 0 obj
+(8 Deferred Processing)
+endobj
+437 0 obj
+<< /S /GoTo /D (section.8.1) >>
+endobj
+440 0 obj
+(8.1 Reference Counting)
+endobj
+441 0 obj
+<< /S /GoTo /D (subsection.8.1.1) >>
+endobj
+444 0 obj
+(8.1.1 Implementation of Reference-Counting Categories)
+endobj
+445 0 obj
+<< /S /GoTo /D (subsection.8.1.2) >>
+endobj
+448 0 obj
+(8.1.2 Linux Primitives Supporting Reference Counting)
+endobj
+449 0 obj
+<< /S /GoTo /D (subsection.8.1.3) >>
+endobj
+452 0 obj
+(8.1.3 Counter Optimizations)
+endobj
+453 0 obj
+<< /S /GoTo /D (section.8.2) >>
+endobj
+456 0 obj
+(8.2 Sequence Locks)
+endobj
+457 0 obj
+<< /S /GoTo /D (section.8.3) >>
+endobj
+460 0 obj
+(8.3 Read-Copy Update \(RCU\))
+endobj
+461 0 obj
+<< /S /GoTo /D (subsection.8.3.1) >>
+endobj
+464 0 obj
+(8.3.1 Introduction to RCU)
+endobj
+465 0 obj
+<< /S /GoTo /D (subsection.8.3.2) >>
+endobj
+468 0 obj
+(8.3.2 RCU Fundamentals)
+endobj
+469 0 obj
+<< /S /GoTo /D (subsection.8.3.3) >>
+endobj
+472 0 obj
+(8.3.3 RCU Usage)
+endobj
+473 0 obj
+<< /S /GoTo /D (subsection.8.3.4) >>
+endobj
+476 0 obj
+(8.3.4 RCU Linux-Kernel API)
+endobj
+477 0 obj
+<< /S /GoTo /D (subsection.8.3.5) >>
+endobj
+480 0 obj
+(8.3.5 ``Toy'' RCU Implementations)
+endobj
+481 0 obj
+<< /S /GoTo /D (subsection.8.3.6) >>
+endobj
+484 0 obj
+(8.3.6 RCU Exercises)
+endobj
+485 0 obj
+<< /S /GoTo /D (chapter.9) >>
+endobj
+488 0 obj
+(9 Applying RCU)
+endobj
+489 0 obj
+<< /S /GoTo /D (section.9.1) >>
+endobj
+492 0 obj
+(9.1 RCU and Per-Thread-Variable-Based Statistical Counters)
+endobj
+493 0 obj
+<< /S /GoTo /D (subsection.9.1.1) >>
+endobj
+496 0 obj
+(9.1.1 Design)
+endobj
+497 0 obj
+<< /S /GoTo /D (subsection.9.1.2) >>
+endobj
+500 0 obj
+(9.1.2 Implementation)
+endobj
+501 0 obj
+<< /S /GoTo /D (subsection.9.1.3) >>
+endobj
+504 0 obj
+(9.1.3 Discussion)
+endobj
+505 0 obj
+<< /S /GoTo /D (section.9.2) >>
+endobj
+508 0 obj
+(9.2 RCU and Counters for Removable I/O Devices)
+endobj
+509 0 obj
+<< /S /GoTo /D (chapter.10) >>
+endobj
+512 0 obj
+(10 Validation)
+endobj
+513 0 obj
+<< /S /GoTo /D (section.10.1) >>
+endobj
+516 0 obj
+(10.1 Required Mindset)
+endobj
+517 0 obj
+<< /S /GoTo /D (section.10.2) >>
+endobj
+520 0 obj
+(10.2 Tracing)
+endobj
+521 0 obj
+<< /S /GoTo /D (section.10.3) >>
+endobj
+524 0 obj
+(10.3 Assertions)
+endobj
+525 0 obj
+<< /S /GoTo /D (section.10.4) >>
+endobj
+528 0 obj
+(10.4 Static Analysis)
+endobj
+529 0 obj
+<< /S /GoTo /D (section.10.5) >>
+endobj
+532 0 obj
+(10.5 Code Review)
+endobj
+533 0 obj
+<< /S /GoTo /D (subsection.10.5.1) >>
+endobj
+536 0 obj
+(10.5.1 Inspection)
+endobj
+537 0 obj
+<< /S /GoTo /D (subsection.10.5.2) >>
+endobj
+540 0 obj
+(10.5.2 Walkthroughs)
+endobj
+541 0 obj
+<< /S /GoTo /D (subsection.10.5.3) >>
+endobj
+544 0 obj
+(10.5.3 Self-Inspection)
+endobj
+545 0 obj
+<< /S /GoTo /D (section.10.6) >>
+endobj
+548 0 obj
+(10.6 Probability and Heisenbugs)
+endobj
+549 0 obj
+<< /S /GoTo /D (subsection.10.6.1) >>
+endobj
+552 0 obj
+(10.6.1 Statistics for Discrete Testing)
+endobj
+553 0 obj
+<< /S /GoTo /D (subsection.10.6.2) >>
+endobj
+556 0 obj
+(10.6.2 Abusing Statistics for Discrete Testing)
+endobj
+557 0 obj
+<< /S /GoTo /D (subsection.10.6.3) >>
+endobj
+560 0 obj
+(10.6.3 Statistics for Continuous Testing)
+endobj
+561 0 obj
+<< /S /GoTo /D (subsection.10.6.4) >>
+endobj
+564 0 obj
+(10.6.4 Heisenbugs and Creating Anti-Heisenbugs)
+endobj
+565 0 obj
+<< /S /GoTo /D (section.10.7) >>
+endobj
+568 0 obj
+(10.7 Performance Estimation)
+endobj
+569 0 obj
+<< /S /GoTo /D (subsection.10.7.1) >>
+endobj
+572 0 obj
+(10.7.1 Profiling)
+endobj
+573 0 obj
+<< /S /GoTo /D (subsection.10.7.2) >>
+endobj
+576 0 obj
+(10.7.2 Differential Profiling)
+endobj
+577 0 obj
+<< /S /GoTo /D (chapter.11) >>
+endobj
+580 0 obj
+(11 Data Structures)
+endobj
+581 0 obj
+<< /S /GoTo /D (section.11.1) >>
+endobj
+584 0 obj
+(11.1 Lists)
+endobj
+585 0 obj
+<< /S /GoTo /D (section.11.2) >>
+endobj
+588 0 obj
+(11.2 Computational Complexity and Performance)
+endobj
+589 0 obj
+<< /S /GoTo /D (section.11.3) >>
+endobj
+592 0 obj
+(11.3 Design Tradeoffs)
+endobj
+593 0 obj
+<< /S /GoTo /D (section.11.4) >>
+endobj
+596 0 obj
+(11.4 Protection)
+endobj
+597 0 obj
+<< /S /GoTo /D (section.11.5) >>
+endobj
+600 0 obj
+(11.5 Bits and Bytes)
+endobj
+601 0 obj
+<< /S /GoTo /D (section.11.6) >>
+endobj
+604 0 obj
+(11.6 Hardware Considerations)
+endobj
+605 0 obj
+<< /S /GoTo /D (chapter.12) >>
+endobj
+608 0 obj
+(12 Advanced Synchronization)
+endobj
+609 0 obj
+<< /S /GoTo /D (section.12.1) >>
+endobj
+612 0 obj
+(12.1 Avoiding Locks)
+endobj
+613 0 obj
+<< /S /GoTo /D (section.12.2) >>
+endobj
+616 0 obj
+(12.2 Memory Barriers)
+endobj
+617 0 obj
+<< /S /GoTo /D (subsection.12.2.1) >>
+endobj
+620 0 obj
+(12.2.1 Memory Ordering and Memory Barriers)
+endobj
+621 0 obj
+<< /S /GoTo /D (subsection.12.2.2) >>
+endobj
+624 0 obj
+(12.2.2 If B Follows A, and C Follows B, Why Doesn't C Follow A?)
+endobj
+625 0 obj
+<< /S /GoTo /D (subsection.12.2.3) >>
+endobj
+628 0 obj
+(12.2.3 Variables Can Have More Than One Value)
+endobj
+629 0 obj
+<< /S /GoTo /D (subsection.12.2.4) >>
+endobj
+632 0 obj
+(12.2.4 What Can You Trust?)
+endobj
+633 0 obj
+<< /S /GoTo /D (subsection.12.2.5) >>
+endobj
+636 0 obj
+(12.2.5 Review of Locking Implementations)
+endobj
+637 0 obj
+<< /S /GoTo /D (subsection.12.2.6) >>
+endobj
+640 0 obj
+(12.2.6 A Few Simple Rules)
+endobj
+641 0 obj
+<< /S /GoTo /D (subsection.12.2.7) >>
+endobj
+644 0 obj
+(12.2.7 Abstract Memory Access Model)
+endobj
+645 0 obj
+<< /S /GoTo /D (subsection.12.2.8) >>
+endobj
+648 0 obj
+(12.2.8 Device Operations)
+endobj
+649 0 obj
+<< /S /GoTo /D (subsection.12.2.9) >>
+endobj
+652 0 obj
+(12.2.9 Guarantees)
+endobj
+653 0 obj
+<< /S /GoTo /D (subsection.12.2.10) >>
+endobj
+656 0 obj
+(12.2.10 What Are Memory Barriers?)
+endobj
+657 0 obj
+<< /S /GoTo /D (subsection.12.2.11) >>
+endobj
+660 0 obj
+(12.2.11 Locking Constraints)
+endobj
+661 0 obj
+<< /S /GoTo /D (subsection.12.2.12) >>
+endobj
+664 0 obj
+(12.2.12 Memory-Barrier Examples)
+endobj
+665 0 obj
+<< /S /GoTo /D (subsection.12.2.13) >>
+endobj
+668 0 obj
+(12.2.13 The Effects of the CPU Cache)
+endobj
+669 0 obj
+<< /S /GoTo /D (subsection.12.2.14) >>
+endobj
+672 0 obj
+(12.2.14 Where Are Memory Barriers Needed?)
+endobj
+673 0 obj
+<< /S /GoTo /D (section.12.3) >>
+endobj
+676 0 obj
+(12.3 Non-Blocking Synchronization)
+endobj
+677 0 obj
+<< /S /GoTo /D (subsection.12.3.1) >>
+endobj
+680 0 obj
+(12.3.1 Simple NBS)
+endobj
+681 0 obj
+<< /S /GoTo /D (subsection.12.3.2) >>
+endobj
+684 0 obj
+(12.3.2 Hazard Pointers)
+endobj
+685 0 obj
+<< /S /GoTo /D (subsection.12.3.3) >>
+endobj
+688 0 obj
+(12.3.3 Atomic Data Structures)
+endobj
+689 0 obj
+<< /S /GoTo /D (subsection.12.3.4) >>
+endobj
+692 0 obj
+(12.3.4 ``Macho'' NBS)
+endobj
+693 0 obj
+<< /S /GoTo /D (chapter.13) >>
+endobj
+696 0 obj
+(13 Ease of Use)
+endobj
+697 0 obj
+<< /S /GoTo /D (section.13.1) >>
+endobj
+700 0 obj
+(13.1 Rusty Scale for API Design)
+endobj
+701 0 obj
+<< /S /GoTo /D (section.13.2) >>
+endobj
+704 0 obj
+(13.2 Shaving the Mandelbrot Set)
+endobj
+705 0 obj
+<< /S /GoTo /D (chapter.14) >>
+endobj
+708 0 obj
+(14 Time Management)
+endobj
+709 0 obj
+<< /S /GoTo /D (chapter.15) >>
+endobj
+712 0 obj
+(15 Conflicting Visions of the Future)
+endobj
+713 0 obj
+<< /S /GoTo /D (section.15.1) >>
+endobj
+716 0 obj
+(15.1 The Future of CPU Technology Ain't What it Used to Be)
+endobj
+717 0 obj
+<< /S /GoTo /D (subsection.15.1.1) >>
+endobj
+720 0 obj
+(15.1.1 Uniprocessor \334ber Alles)
+endobj
+721 0 obj
+<< /S /GoTo /D (subsection.15.1.2) >>
+endobj
+724 0 obj
+(15.1.2 Multithreaded Mania)
+endobj
+725 0 obj
+<< /S /GoTo /D (subsection.15.1.3) >>
+endobj
+728 0 obj
+(15.1.3 More of the Same)
+endobj
+729 0 obj
+<< /S /GoTo /D (subsection.15.1.4) >>
+endobj
+732 0 obj
+(15.1.4 Crash Dummies Slamming into the Memory Wall)
+endobj
+733 0 obj
+<< /S /GoTo /D (section.15.2) >>
+endobj
+736 0 obj
+(15.2 Transactional Memory)
+endobj
+737 0 obj
+<< /S /GoTo /D (subsection.15.2.1) >>
+endobj
+740 0 obj
+(15.2.1 I/O Operations)
+endobj
+741 0 obj
+<< /S /GoTo /D (subsection.15.2.2) >>
+endobj
+744 0 obj
+(15.2.2 RPC Operations)
+endobj
+745 0 obj
+<< /S /GoTo /D (subsection.15.2.3) >>
+endobj
+748 0 obj
+(15.2.3 Memory-Mapping Operations)
+endobj
+749 0 obj
+<< /S /GoTo /D (subsection.15.2.4) >>
+endobj
+752 0 obj
+(15.2.4 Multithreaded Transactions)
+endobj
+753 0 obj
+<< /S /GoTo /D (subsection.15.2.5) >>
+endobj
+756 0 obj
+(15.2.5 Extra-Transactional Accesses)
+endobj
+757 0 obj
+<< /S /GoTo /D (subsection.15.2.6) >>
+endobj
+760 0 obj
+(15.2.6 Time Delays)
+endobj
+761 0 obj
+<< /S /GoTo /D (subsection.15.2.7) >>
+endobj
+764 0 obj
+(15.2.7 Locking)
+endobj
+765 0 obj
+<< /S /GoTo /D (subsection.15.2.8) >>
+endobj
+768 0 obj
+(15.2.8 Reader-Writer Locking)
+endobj
+769 0 obj
+<< /S /GoTo /D (subsection.15.2.9) >>
+endobj
+772 0 obj
+(15.2.9 Persistence)
+endobj
+773 0 obj
+<< /S /GoTo /D (subsection.15.2.10) >>
+endobj
+776 0 obj
+(15.2.10 Dynamic Linking and Loading)
+endobj
+777 0 obj
+<< /S /GoTo /D (subsection.15.2.11) >>
+endobj
+780 0 obj
+(15.2.11 Debugging)
+endobj
+781 0 obj
+<< /S /GoTo /D (subsection.15.2.12) >>
+endobj
+784 0 obj
+(15.2.12 The exec\(\) System Call)
+endobj
+785 0 obj
+<< /S /GoTo /D (subsection.15.2.13) >>
+endobj
+788 0 obj
+(15.2.13 RCU)
+endobj
+789 0 obj
+<< /S /GoTo /D (subsection.15.2.14) >>
+endobj
+792 0 obj
+(15.2.14 Discussion)
+endobj
+793 0 obj
+<< /S /GoTo /D (section.15.3) >>
+endobj
+796 0 obj
+(15.3 Shared-Memory Parallel Functional Programming)
+endobj
+797 0 obj
+<< /S /GoTo /D (section.15.4) >>
+endobj
+800 0 obj
+(15.4 Process-Based Parallel Functional Programming)
+endobj
+801 0 obj
+<< /S /GoTo /D (appendix.A) >>
+endobj
+804 0 obj
+(A Important Questions)
+endobj
+805 0 obj
+<< /S /GoTo /D (section.A.1) >>
+endobj
+808 0 obj
+(A.1 What Does ``After'' Mean?)
+endobj
+809 0 obj
+<< /S /GoTo /D (appendix.B) >>
+endobj
+812 0 obj
+(B Synchronization Primitives)
+endobj
+813 0 obj
+<< /S /GoTo /D (section.B.1) >>
+endobj
+816 0 obj
+(B.1 Organization and Initialization)
+endobj
+817 0 obj
+<< /S /GoTo /D (subsection.B.1.1) >>
+endobj
+820 0 obj
+(B.1.1 smp\137init\(\):)
+endobj
+821 0 obj
+<< /S /GoTo /D (section.B.2) >>
+endobj
+824 0 obj
+(B.2 Thread Creation, Destruction, and Control)
+endobj
+825 0 obj
+<< /S /GoTo /D (subsection.B.2.1) >>
+endobj
+828 0 obj
+(B.2.1 create\137thread\(\))
+endobj
+829 0 obj
+<< /S /GoTo /D (subsection.B.2.2) >>
+endobj
+832 0 obj
+(B.2.2 smp\137thread\137id\(\))
+endobj
+833 0 obj
+<< /S /GoTo /D (subsection.B.2.3) >>
+endobj
+836 0 obj
+(B.2.3 for\137each\137thread\(\))
+endobj
+837 0 obj
+<< /S /GoTo /D (subsection.B.2.4) >>
+endobj
+840 0 obj
+(B.2.4 for\137each\137running\137thread\(\))
+endobj
+841 0 obj
+<< /S /GoTo /D (subsection.B.2.5) >>
+endobj
+844 0 obj
+(B.2.5 wait\137thread\(\))
+endobj
+845 0 obj
+<< /S /GoTo /D (subsection.B.2.6) >>
+endobj
+848 0 obj
+(B.2.6 wait\137all\137threads\(\))
+endobj
+849 0 obj
+<< /S /GoTo /D (subsection.B.2.7) >>
+endobj
+852 0 obj
+(B.2.7 Example Usage)
+endobj
+853 0 obj
+<< /S /GoTo /D (section.B.3) >>
+endobj
+856 0 obj
+(B.3 Locking)
+endobj
+857 0 obj
+<< /S /GoTo /D (subsection.B.3.1) >>
+endobj
+860 0 obj
+(B.3.1 spin\137lock\137init\(\))
+endobj
+861 0 obj
+<< /S /GoTo /D (subsection.B.3.2) >>
+endobj
+864 0 obj
+(B.3.2 spin\137lock\(\))
+endobj
+865 0 obj
+<< /S /GoTo /D (subsection.B.3.3) >>
+endobj
+868 0 obj
+(B.3.3 spin\137trylock\(\))
+endobj
+869 0 obj
+<< /S /GoTo /D (subsection.B.3.4) >>
+endobj
+872 0 obj
+(B.3.4 spin\137unlock\(\))
+endobj
+873 0 obj
+<< /S /GoTo /D (subsection.B.3.5) >>
+endobj
+876 0 obj
+(B.3.5 Example Usage)
+endobj
+877 0 obj
+<< /S /GoTo /D (section.B.4) >>
+endobj
+880 0 obj
+(B.4 Per-Thread Variables)
+endobj
+881 0 obj
+<< /S /GoTo /D (subsection.B.4.1) >>
+endobj
+884 0 obj
+(B.4.1 DEFINE\137PER\137THREAD\(\))
+endobj
+885 0 obj
+<< /S /GoTo /D (subsection.B.4.2) >>
+endobj
+888 0 obj
+(B.4.2 DECLARE\137PER\137THREAD\(\))
+endobj
+889 0 obj
+<< /S /GoTo /D (subsection.B.4.3) >>
+endobj
+892 0 obj
+(B.4.3 per\137thread\(\))
+endobj
+893 0 obj
+<< /S /GoTo /D (subsection.B.4.4) >>
+endobj
+896 0 obj
+(B.4.4 \137\137get\137thread\137var\(\))
+endobj
+897 0 obj
+<< /S /GoTo /D (subsection.B.4.5) >>
+endobj
+900 0 obj
+(B.4.5 init\137per\137thread\(\))
+endobj
+901 0 obj
+<< /S /GoTo /D (subsection.B.4.6) >>
+endobj
+904 0 obj
+(B.4.6 Usage Example)
+endobj
+905 0 obj
+<< /S /GoTo /D (section.B.5) >>
+endobj
+908 0 obj
+(B.5 Performance)
+endobj
+909 0 obj
+<< /S /GoTo /D (appendix.C) >>
+endobj
+912 0 obj
+(C Why Memory Barriers?)
+endobj
+913 0 obj
+<< /S /GoTo /D (section.C.1) >>
+endobj
+916 0 obj
+(C.1 Cache Structure)
+endobj
+917 0 obj
+<< /S /GoTo /D (section.C.2) >>
+endobj
+920 0 obj
+(C.2 Cache-Coherence Protocols)
+endobj
+921 0 obj
+<< /S /GoTo /D (subsection.C.2.1) >>
+endobj
+924 0 obj
+(C.2.1 MESI States)
+endobj
+925 0 obj
+<< /S /GoTo /D (subsection.C.2.2) >>
+endobj
+928 0 obj
+(C.2.2 MESI Protocol Messages)
+endobj
+929 0 obj
+<< /S /GoTo /D (subsection.C.2.3) >>
+endobj
+932 0 obj
+(C.2.3 MESI State Diagram)
+endobj
+933 0 obj
+<< /S /GoTo /D (subsection.C.2.4) >>
+endobj
+936 0 obj
+(C.2.4 MESI Protocol Example)
+endobj
+937 0 obj
+<< /S /GoTo /D (section.C.3) >>
+endobj
+940 0 obj
+(C.3 Stores Result in Unnecessary Stalls)
+endobj
+941 0 obj
+<< /S /GoTo /D (subsection.C.3.1) >>
+endobj
+944 0 obj
+(C.3.1 Store Buffers)
+endobj
+945 0 obj
+<< /S /GoTo /D (subsection.C.3.2) >>
+endobj
+948 0 obj
+(C.3.2 Store Forwarding)
+endobj
+949 0 obj
+<< /S /GoTo /D (subsection.C.3.3) >>
+endobj
+952 0 obj
+(C.3.3 Store Buffers and Memory Barriers)
+endobj
+953 0 obj
+<< /S /GoTo /D (section.C.4) >>
+endobj
+956 0 obj
+(C.4 Store Sequences Result in Unnecessary Stalls)
+endobj
+957 0 obj
+<< /S /GoTo /D (subsection.C.4.1) >>
+endobj
+960 0 obj
+(C.4.1 Invalidate Queues)
+endobj
+961 0 obj
+<< /S /GoTo /D (subsection.C.4.2) >>
+endobj
+964 0 obj
+(C.4.2 Invalidate Queues and Invalidate Acknowledge)
+endobj
+965 0 obj
+<< /S /GoTo /D (subsection.C.4.3) >>
+endobj
+968 0 obj
+(C.4.3 Invalidate Queues and Memory Barriers)
+endobj
+969 0 obj
+<< /S /GoTo /D (section.C.5) >>
+endobj
+972 0 obj
+(C.5 Read and Write Memory Barriers)
+endobj
+973 0 obj
+<< /S /GoTo /D (section.C.6) >>
+endobj
+976 0 obj
+(C.6 Example Memory-Barrier Sequences)
+endobj
+977 0 obj
+<< /S /GoTo /D (subsection.C.6.1) >>
+endobj
+980 0 obj
+(C.6.1 Ordering-Hostile Architecture)
+endobj
+981 0 obj
+<< /S /GoTo /D (subsection.C.6.2) >>
+endobj
+984 0 obj
+(C.6.2 Example 1)
+endobj
+985 0 obj
+<< /S /GoTo /D (subsection.C.6.3) >>
+endobj
+988 0 obj
+(C.6.3 Example 2)
+endobj
+989 0 obj
+<< /S /GoTo /D (subsection.C.6.4) >>
+endobj
+992 0 obj
+(C.6.4 Example 3)
+endobj
+993 0 obj
+<< /S /GoTo /D (section.C.7) >>
+endobj
+996 0 obj
+(C.7 Memory-Barrier Instructions For Specific CPUs)
+endobj
+997 0 obj
+<< /S /GoTo /D (subsection.C.7.1) >>
+endobj
+1000 0 obj
+(C.7.1 Alpha)
+endobj
+1001 0 obj
+<< /S /GoTo /D (subsection.C.7.2) >>
+endobj
+1004 0 obj
+(C.7.2 AMD64)
+endobj
+1005 0 obj
+<< /S /GoTo /D (subsection.C.7.3) >>
+endobj
+1008 0 obj
+(C.7.3 ARMv7-A/R)
+endobj
+1009 0 obj
+<< /S /GoTo /D (subsection.C.7.4) >>
+endobj
+1012 0 obj
+(C.7.4 IA64)
+endobj
+1013 0 obj
+<< /S /GoTo /D (subsection.C.7.5) >>
+endobj
+1016 0 obj
+(C.7.5 PA-RISC)
+endobj
+1017 0 obj
+<< /S /GoTo /D (subsection.C.7.6) >>
+endobj
+1020 0 obj
+(C.7.6 POWER / PowerPC)
+endobj
+1021 0 obj
+<< /S /GoTo /D (subsection.C.7.7) >>
+endobj
+1024 0 obj
+(C.7.7 SPARC RMO, PSO, and TSO)
+endobj
+1025 0 obj
+<< /S /GoTo /D (subsection.C.7.8) >>
+endobj
+1028 0 obj
+(C.7.8 x86)
+endobj
+1029 0 obj
+<< /S /GoTo /D (subsection.C.7.9) >>
+endobj
+1032 0 obj
+(C.7.9 zSeries)
+endobj
+1033 0 obj
+<< /S /GoTo /D (section.C.8) >>
+endobj
+1036 0 obj
+(C.8 Are Memory Barriers Forever?)
+endobj
+1037 0 obj
+<< /S /GoTo /D (section.C.9) >>
+endobj
+1040 0 obj
+(C.9 Advice to Hardware Designers)
+endobj
+1041 0 obj
+<< /S /GoTo /D (appendix.D) >>
+endobj
+1044 0 obj
+(D Read-Copy Update Implementations)
+endobj
+1045 0 obj
+<< /S /GoTo /D (section.D.1) >>
+endobj
+1048 0 obj
+(D.1 Sleepable RCU Implementation)
+endobj
+1049 0 obj
+<< /S /GoTo /D (subsection.D.1.1) >>
+endobj
+1052 0 obj
+(D.1.1 SRCU Implementation Strategy)
+endobj
+1053 0 obj
+<< /S /GoTo /D (subsection.D.1.2) >>
+endobj
+1056 0 obj
+(D.1.2 SRCU API and Usage)
+endobj
+1057 0 obj
+<< /S /GoTo /D (subsection.D.1.3) >>
+endobj
+1060 0 obj
+(D.1.3 Implementation)
+endobj
+1061 0 obj
+<< /S /GoTo /D (subsection.D.1.4) >>
+endobj
+1064 0 obj
+(D.1.4 SRCU Summary)
+endobj
+1065 0 obj
+<< /S /GoTo /D (section.D.2) >>
+endobj
+1068 0 obj
+(D.2 Hierarchical RCU Overview)
+endobj
+1069 0 obj
+<< /S /GoTo /D (subsection.D.2.1) >>
+endobj
+1072 0 obj
+(D.2.1 Review of RCU Fundamentals)
+endobj
+1073 0 obj
+<< /S /GoTo /D (subsection.D.2.2) >>
+endobj
+1076 0 obj
+(D.2.2 Brief Overview of Classic RCU Implementation)
+endobj
+1077 0 obj
+<< /S /GoTo /D (subsection.D.2.3) >>
+endobj
+1080 0 obj
+(D.2.3 RCU Desiderata)
+endobj
+1081 0 obj
+<< /S /GoTo /D (subsection.D.2.4) >>
+endobj
+1084 0 obj
+(D.2.4 Towards a More Scalable RCU Implementation)
+endobj
+1085 0 obj
+<< /S /GoTo /D (subsection.D.2.5) >>
+endobj
+1088 0 obj
+(D.2.5 Towards a Greener RCU Implementation)
+endobj
+1089 0 obj
+<< /S /GoTo /D (subsection.D.2.6) >>
+endobj
+1092 0 obj
+(D.2.6 State Machine)
+endobj
+1093 0 obj
+<< /S /GoTo /D (subsection.D.2.7) >>
+endobj
+1096 0 obj
+(D.2.7 Use Cases)
+endobj
+1097 0 obj
+<< /S /GoTo /D (subsection.D.2.8) >>
+endobj
+1100 0 obj
+(D.2.8 Testing)
+endobj
+1101 0 obj
+<< /S /GoTo /D (subsection.D.2.9) >>
+endobj
+1104 0 obj
+(D.2.9 Conclusion)
+endobj
+1105 0 obj
+<< /S /GoTo /D (section.D.3) >>
+endobj
+1108 0 obj
+(D.3 Hierarchical RCU Code Walkthrough)
+endobj
+1109 0 obj
+<< /S /GoTo /D (subsection.D.3.1) >>
+endobj
+1112 0 obj
+(D.3.1 Data Structures and Kernel Parameters)
+endobj
+1113 0 obj
+<< /S /GoTo /D (subsection.D.3.2) >>
+endobj
+1116 0 obj
+(D.3.2 External Interfaces)
+endobj
+1117 0 obj
+<< /S /GoTo /D (subsection.D.3.3) >>
+endobj
+1120 0 obj
+(D.3.3 Initialization)
+endobj
+1121 0 obj
+<< /S /GoTo /D (subsection.D.3.4) >>
+endobj
+1124 0 obj
+(D.3.4 CPU Hotplug)
+endobj
+1125 0 obj
+<< /S /GoTo /D (subsection.D.3.5) >>
+endobj
+1128 0 obj
+(D.3.5 Miscellaneous Functions)
+endobj
+1129 0 obj
+<< /S /GoTo /D (subsection.D.3.6) >>
+endobj
+1132 0 obj
+(D.3.6 Grace-Period-Detection Functions)
+endobj
+1133 0 obj
+<< /S /GoTo /D (subsection.D.3.7) >>
+endobj
+1136 0 obj
+(D.3.7 Dyntick-Idle Functions)
+endobj
+1137 0 obj
+<< /S /GoTo /D (subsection.D.3.8) >>
+endobj
+1140 0 obj
+(D.3.8 Forcing Quiescent States)
+endobj
+1141 0 obj
+<< /S /GoTo /D (subsection.D.3.9) >>
+endobj
+1144 0 obj
+(D.3.9 CPU-Stall Detection)
+endobj
+1145 0 obj
+<< /S /GoTo /D (subsection.D.3.10) >>
+endobj
+1148 0 obj
+(D.3.10 Possible Flaws and Changes)
+endobj
+1149 0 obj
+<< /S /GoTo /D (section.D.4) >>
+endobj
+1152 0 obj
+(D.4 Preemptible RCU)
+endobj
+1153 0 obj
+<< /S /GoTo /D (subsection.D.4.1) >>
+endobj
+1156 0 obj
+(D.4.1 Conceptual RCU)
+endobj
+1157 0 obj
+<< /S /GoTo /D (subsection.D.4.2) >>
+endobj
+1160 0 obj
+(D.4.2 Overview of Preemptible RCU Algorithm)
+endobj
+1161 0 obj
+<< /S /GoTo /D (subsection.D.4.3) >>
+endobj
+1164 0 obj
+(D.4.3 Validation of Preemptible RCU)
+endobj
+1165 0 obj
+<< /S /GoTo /D (appendix.E) >>
+endobj
+1168 0 obj
+(E Read-Copy Update in Linux)
+endobj
+1169 0 obj
+<< /S /GoTo /D (section.E.1) >>
+endobj
+1172 0 obj
+(E.1 RCU Usage Within Linux)
+endobj
+1173 0 obj
+<< /S /GoTo /D (section.E.2) >>
+endobj
+1176 0 obj
+(E.2 RCU Evolution)
+endobj
+1177 0 obj
+<< /S /GoTo /D (subsection.E.2.1) >>
+endobj
+1180 0 obj
+(E.2.1 2.6.27 Linux Kernel)
+endobj
+1181 0 obj
+<< /S /GoTo /D (subsection.E.2.2) >>
+endobj
+1184 0 obj
+(E.2.2 2.6.28 Linux Kernel)
+endobj
+1185 0 obj
+<< /S /GoTo /D (subsection.E.2.3) >>
+endobj
+1188 0 obj
+(E.2.3 2.6.29 Linux Kernel)
+endobj
+1189 0 obj
+<< /S /GoTo /D (subsection.E.2.4) >>
+endobj
+1192 0 obj
+(E.2.4 2.6.31 Linux Kernel)
+endobj
+1193 0 obj
+<< /S /GoTo /D (subsection.E.2.5) >>
+endobj
+1196 0 obj
+(E.2.5 2.6.32 Linux Kernel)
+endobj
+1197 0 obj
+<< /S /GoTo /D (subsection.E.2.6) >>
+endobj
+1200 0 obj
+(E.2.6 2.6.33 Linux Kernel)
+endobj
+1201 0 obj
+<< /S /GoTo /D (subsection.E.2.7) >>
+endobj
+1204 0 obj
+(E.2.7 2.6.34 Linux Kernel)
+endobj
+1205 0 obj
+<< /S /GoTo /D (subsection.E.2.8) >>
+endobj
+1208 0 obj
+(E.2.8 2.6.35 Linux Kernel)
+endobj
+1209 0 obj
+<< /S /GoTo /D (subsection.E.2.9) >>
+endobj
+1212 0 obj
+(E.2.9 2.6.36 Linux Kernel)
+endobj
+1213 0 obj
+<< /S /GoTo /D (subsection.E.2.10) >>
+endobj
+1216 0 obj
+(E.2.10 2.6.37 Linux Kernel)
+endobj
+1217 0 obj
+<< /S /GoTo /D (subsection.E.2.11) >>
+endobj
+1220 0 obj
+(E.2.11 2.6.38 Linux Kernel)
+endobj
+1221 0 obj
+<< /S /GoTo /D (subsection.E.2.12) >>
+endobj
+1224 0 obj
+(E.2.12 2.6.39 Linux Kernel)
+endobj
+1225 0 obj
+<< /S /GoTo /D (subsection.E.2.13) >>
+endobj
+1228 0 obj
+(E.2.13 What Comes After 2.6.39?)
+endobj
+1229 0 obj
+<< /S /GoTo /D (appendix.F) >>
+endobj
+1232 0 obj
+(F Formal Verification)
+endobj
+1233 0 obj
+<< /S /GoTo /D (section.F.1) >>
+endobj
+1236 0 obj
+(F.1 What are Promela and Spin?)
+endobj
+1237 0 obj
+<< /S /GoTo /D (section.F.2) >>
+endobj
+1240 0 obj
+(F.2 Promela Example: Non-Atomic Increment)
+endobj
+1241 0 obj
+<< /S /GoTo /D (section.F.3) >>
+endobj
+1244 0 obj
+(F.3 Promela Example: Atomic Increment)
+endobj
+1245 0 obj
+<< /S /GoTo /D (subsection.F.3.1) >>
+endobj
+1248 0 obj
+(F.3.1 Combinatorial Explosion)
+endobj
+1249 0 obj
+<< /S /GoTo /D (section.F.4) >>
+endobj
+1252 0 obj
+(F.4 How to Use Promela)
+endobj
+1253 0 obj
+<< /S /GoTo /D (subsection.F.4.1) >>
+endobj
+1256 0 obj
+(F.4.1 Promela Peculiarities)
+endobj
+1257 0 obj
+<< /S /GoTo /D (subsection.F.4.2) >>
+endobj
+1260 0 obj
+(F.4.2 Promela Coding Tricks)
+endobj
+1261 0 obj
+<< /S /GoTo /D (section.F.5) >>
+endobj
+1264 0 obj
+(F.5 Promela Example: Locking)
+endobj
+1265 0 obj
+<< /S /GoTo /D (section.F.6) >>
+endobj
+1268 0 obj
+(F.6 Promela Example: QRCU)
+endobj
+1269 0 obj
+<< /S /GoTo /D (subsection.F.6.1) >>
+endobj
+1272 0 obj
+(F.6.1 Running the QRCU Example)
+endobj
+1273 0 obj
+<< /S /GoTo /D (subsection.F.6.2) >>
+endobj
+1276 0 obj
+(F.6.2 How Many Readers and Updaters Are Really Needed?)
+endobj
+1277 0 obj
+<< /S /GoTo /D (subsection.F.6.3) >>
+endobj
+1280 0 obj
+(F.6.3 Alternative Approach: Proof of Correctness)
+endobj
+1281 0 obj
+<< /S /GoTo /D (subsection.F.6.4) >>
+endobj
+1284 0 obj
+(F.6.4 Alternative Approach: More Capable Tools)
+endobj
+1285 0 obj
+<< /S /GoTo /D (subsection.F.6.5) >>
+endobj
+1288 0 obj
+(F.6.5 Alternative Approach: Divide and Conquer)
+endobj
+1289 0 obj
+<< /S /GoTo /D (section.F.7) >>
+endobj
+1292 0 obj
+(F.7 Promela Parable: dynticks and Preemptible RCU)
+endobj
+1293 0 obj
+<< /S /GoTo /D (subsection.F.7.1) >>
+endobj
+1296 0 obj
+(F.7.1 Introduction to Preemptible RCU and dynticks)
+endobj
+1297 0 obj
+<< /S /GoTo /D (subsection.F.7.2) >>
+endobj
+1300 0 obj
+(F.7.2 Validating Preemptible RCU and dynticks)
+endobj
+1301 0 obj
+<< /S /GoTo /D (subsection.F.7.3) >>
+endobj
+1304 0 obj
+(F.7.3 Lessons \(Re\)Learned)
+endobj
+1305 0 obj
+<< /S /GoTo /D (section.F.8) >>
+endobj
+1308 0 obj
+(F.8 Simplicity Avoids Formal Verification)
+endobj
+1309 0 obj
+<< /S /GoTo /D (subsection.F.8.1) >>
+endobj
+1312 0 obj
+(F.8.1 State Variables for Simplified Dynticks Interface)
+endobj
+1313 0 obj
+<< /S /GoTo /D (subsection.F.8.2) >>
+endobj
+1316 0 obj
+(F.8.2 Entering and Leaving Dynticks-Idle Mode)
+endobj
+1317 0 obj
+<< /S /GoTo /D (subsection.F.8.3) >>
+endobj
+1320 0 obj
+(F.8.3 NMIs From Dynticks-Idle Mode)
+endobj
+1321 0 obj
+<< /S /GoTo /D (subsection.F.8.4) >>
+endobj
+1324 0 obj
+(F.8.4 Interrupts From Dynticks-Idle Mode)
+endobj
+1325 0 obj
+<< /S /GoTo /D (subsection.F.8.5) >>
+endobj
+1328 0 obj
+(F.8.5 Checking For Dynticks Quiescent States)
+endobj
+1329 0 obj
+<< /S /GoTo /D (subsection.F.8.6) >>
+endobj
+1332 0 obj
+(F.8.6 Discussion)
+endobj
+1333 0 obj
+<< /S /GoTo /D (section.F.9) >>
+endobj
+1336 0 obj
+(F.9 Summary)
+endobj
+1337 0 obj
+<< /S /GoTo /D (appendix.G) >>
+endobj
+1340 0 obj
+(G Answers to Quick Quizzes)
+endobj
+1341 0 obj
+<< /S /GoTo /D (section.G.1) >>
+endobj
+1344 0 obj
+(G.1 Introduction)
+endobj
+1345 0 obj
+<< /S /GoTo /D (section.G.2) >>
+endobj
+1348 0 obj
+(G.2 Hardware and its Habits)
+endobj
+1349 0 obj
+<< /S /GoTo /D (section.G.3) >>
+endobj
+1352 0 obj
+(G.3 Tools of the Trade)
+endobj
+1353 0 obj
+<< /S /GoTo /D (section.G.4) >>
+endobj
+1356 0 obj
+(G.4 Counting)
+endobj
+1357 0 obj
+<< /S /GoTo /D (section.G.5) >>
+endobj
+1360 0 obj
+(G.5 Partitioning and Synchronization Design)
+endobj
+1361 0 obj
+<< /S /GoTo /D (section.G.6) >>
+endobj
+1364 0 obj
+(G.6 Locking)
+endobj
+1365 0 obj
+<< /S /GoTo /D (section.G.7) >>
+endobj
+1368 0 obj
+(G.7 Data Ownership)
+endobj
+1369 0 obj
+<< /S /GoTo /D (section.G.8) >>
+endobj
+1372 0 obj
+(G.8 Deferred Processing)
+endobj
+1373 0 obj
+<< /S /GoTo /D (section.G.9) >>
+endobj
+1376 0 obj
+(G.9 Applying RCU)
+endobj
+1377 0 obj
+<< /S /GoTo /D (section.G.10) >>
+endobj
+1380 0 obj
+(G.10 Validation)
+endobj
+1381 0 obj
+<< /S /GoTo /D (section.G.11) >>
+endobj
+1384 0 obj
+(G.11 Advanced Synchronization)
+endobj
+1385 0 obj
+<< /S /GoTo /D (section.G.12) >>
+endobj
+1388 0 obj
+(G.12 Ease of Use)
+endobj
+1389 0 obj
+<< /S /GoTo /D (section.G.13) >>
+endobj
+1392 0 obj
+(G.13 Conflicting Visions of the Future)
+endobj
+1393 0 obj
+<< /S /GoTo /D (section.G.14) >>
+endobj
+1396 0 obj
+(G.14 Important Questions)
+endobj
+1397 0 obj
+<< /S /GoTo /D (section.G.15) >>
+endobj
+1400 0 obj
+(G.15 Synchronization Primitives)
+endobj
+1401 0 obj
+<< /S /GoTo /D (section.G.16) >>
+endobj
+1404 0 obj
+(G.16 Why Memory Barriers?)
+endobj
+1405 0 obj
+<< /S /GoTo /D (section.G.17) >>
+endobj
+1408 0 obj
+(G.17 Read-Copy Update Implementations)
+endobj
+1409 0 obj
+<< /S /GoTo /D (section.G.18) >>
+endobj
+1412 0 obj
+(G.18 Formal Verification)
+endobj
+1413 0 obj
+<< /S /GoTo /D (appendix.H) >>
+endobj
+1416 0 obj
+(H Glossary)
+endobj
+1417 0 obj
+<< /S /GoTo /D (appendix.I) >>
+endobj
+1420 0 obj
+(I Credits)
+endobj
+1421 0 obj
+<< /S /GoTo /D (section.I.1) >>
+endobj
+1424 0 obj
+(I.1 Authors)
+endobj
+1425 0 obj
+<< /S /GoTo /D (section.I.2) >>
+endobj
+1428 0 obj
+(I.2 Reviewers)
+endobj
+1429 0 obj
+<< /S /GoTo /D (section.I.3) >>
+endobj
+1432 0 obj
+(I.3 Machine Owners)
+endobj
+1433 0 obj
+<< /S /GoTo /D (section.I.4) >>
+endobj
+1436 0 obj
+(I.4 Original Publications)
+endobj
+1437 0 obj
+<< /S /GoTo /D (section.I.5) >>
+endobj
+1440 0 obj
+(I.5 Figure Credits)
+endobj
+1441 0 obj
+<< /S /GoTo /D (section.I.6) >>
+endobj
+1444 0 obj
+(I.6 Other Support)
+endobj
+1445 0 obj
+<< /S /GoTo /D [1446 0 R  /Fit ] >>
+endobj
+1449 0 obj <<
+/Length 340       
+/Filter /FlateDecode
+>>
+stream
+xÚm‘MOÃ0†ïû=¶5Iš4-Ø`ˆ“V	!Ä¡ÙVÑ&Siû÷$s@âdÇñë<¯³(fç·<¨FŠm¹¸$“$(šà5\}D1$|Š¨Ë¡ì:ÕùÊ`vCÙ÷­Şaá®š3Lçú'[m1nŒ/<ïË³ëRcòQJB3áéÆDoÅ½åÊ@JÄŒBN3¤™WfòêÕxéúĞƒm‚9rnE<,IQ´lÚQ5¨ª§é1#À„›.!Ë6¢ÇÉû[Æuı1*­•»?¢¦ğÌÆÄ>èé[=}¡¨ˆ$	U½×¦3»£÷«ô¨†“œq vÓ¨–~Ó‹5ö-T1~º×Ô0>ùí3)P’ş8Xø¾~¿ê|j5B[õP›ş¿Uq’Z–ó¿½Q‡Qõ•¥<‘ĞÜ#”º³e1ûÓ0ä
+endstream
+endobj
+1446 0 obj <<
+/Type /Page
+/Contents 1449 0 R
+/Resources 1448 0 R
+/MediaBox [0 0 612 792]
+/Parent 1454 0 R
+/Annots [ 1447 0 R ]
+>> endobj
+1447 0 obj <<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [197.806 330.23 386.299 346.17]
+/Subtype/Link/A<</Type/Action/S/URI/URI(paulmck@linux.vnet.ibm.com)>>
+>> endobj
+1450 0 obj <<
+/D [1446 0 R /XYZ 57.052 699.082 null]
+>> endobj
+1451 0 obj <<
+/D [1446 0 R /XYZ 58.052 668.127 null]
+>> endobj
+1448 0 obj <<
+/Font << /F46 1452 0 R /F50 1453 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1460 0 obj <<
+/Length 1808      
+/Filter /FlateDecode
+>>
+stream
+xÚµXK“ã¸¾Ï¯ğQ®jÓ$EQRn™®İÔ&;•©êÎ)“ƒ,Ñ6«-É¡¤îíüú ä×´»*‡f‚/à#ğê¯Ï_Ö¿»(Eiµ]<oE&JS,la…Òùâ¹Yü3ñ~ù¯ç¿®ÍíB‘«q¥\¬tûRZô»ÛU‡åJg2y«Ñµ®iœ_À:kp—RÃV¹Px•Í6µ¢(a®…C÷~X®R›'oK%“>¼Ğ(¸cpœÈ³ãŞ‘ğêİR›äõıöf¾šÆ}x¶êšŞ±ªë£‘`ÍÉ¦è¾†ß4#£:W»a¨‚?¼“'kh/C!“éq„¶ğ´$ºöxèÑ±wA_áïŒK€:ŞıÛ×oËU¦Êä?O.x7à¨(ÈTïã•.|$E	c¨×Váe qèæ•Iv~]pÍl„Ìo¬FH•“—GicÉ5“'¿upFW¾ïâÛÃÔ×iğÀE£oU½Ç!-ìÃ±q9Mûî#ğ³22+ùêÜt~sÏ†PDœa	ã[÷S72JqŠõXCpCĞ*)J<=­ï¦?hşVó/UvF‰^r†áúñŞü¼,ğÖW|“êĞÜ}ã,WBE.ú´°ˆGyeƒ)o`/ö2ÂÎ©v)½r<jäMÃ´|ã+„…=ıu+…*ôÿuQåÍu¦Z§tİßçÃ4Ö«±_Z›<öúfªGÅàGapáÕ×]Õ’‡:i«w6<wäG®§…Ğ–)h¶şâl™ÌpñêÃTïgÿÑdğÿ§×.á|µÈ”EÒœ,T
+ÌÓ­†~
+µ[Õ}•&cÔı1Ò(ú‰k}[íĞ·(w¼4R%jš¾^İ‹3™‰´à,"%¯ò<'’@€Å_}ƒ¯Œš©kğ-PŒQÚDtÿjî18?øWäwÇSatA–<ömÛwp¢-uòç‚g³fš0ŒWOûh]œ:ø¤Ë8L ÒÏQ‰JŠJÒü= L‘
+Ã8Ô®àDÉä‡Ì$©L^)Ş¬T! 
+\nŞãñOëu½~u5y"ú°[|<yXGV©Ì¸â›Íû
+HØ&CµgÖ@*YP%aK9'ŒÊ |Štar-2Åœ†+%L)`N7HÁ-§à{?¡ æLÉ4¸«j¥ lFbE=‡µJF°#‹Ó¶¼)Æ*‘eÌxS¸sÛ‡9=)}£ö8AîGP÷°V<œ’½u¡ö¬PÉ|Dd—7ûî¼g&Ô	²cè		Ïßw;’ª)¶´¤Ø"åÈË©IÀU§&ÛÊw#üsàlòhcëíg¦¥¥°©¹ RcåV&+éYP½áé¶o< ÿCJíšXñ9ıq5$¤Ç.‡ÊÊÈ2`Ì›ç^i !î»cš. åÊNE½±tàÆÌ€UÈC(UÙ+ŞSùCµ9àûeÒF¤q6Y‘FÑa<\A?j>ú)*¹bR$B7³§_Í¦áD w*ƒ0»E•f,•=ÿîyÑqÚ@>¢\$smtÿ¨M)gF‹Gç­#­È3ÎşŸH;fÔ‰´cíî¸\Î¤Í%÷ºUìƒßùnn˜çà¸S@RøÉKæÎ§x=@f	Ù`R£–4‘ÎcpDpP¹y§E„jğı4Ì
+dì0p€i ·PÜ‚â/ßÿà-P@ZQ¤å‰>#Òâ¨äj3éÛÛ›ØuÓ5ƒî"J-¤Øíáó/‰šÕ´(~2Iİë¿Ò<Å	Ğë‹-¢óÖ–\ZQ"€qnÖ ¯zÕwğ-`¶'ynbá¤iñ9añxrúö9V‹R_ö^yšá@ˆÇşGD>¡sÈ•dŞÛŞâJ=7c¸Œ,F%ZŒ¶8`J¯ ßa%dé]d ´øM¡q±N*²	…G8ş©‚Ïôª„f·ñÁÕcŞiıjÃ1A¡
+ğ)ği›ƒÊà·ˆùŸ‚êr\1ÿ‹—ˆU+à‚õP·^€&Wg-rS^gÚ›×Çj:´õËêÕvÓ÷/İø4¡j‰0M¥&;‡àr]uJÕ$}æ°:½_•BLŠÄ*U=‰Í¹ñ@l¯ûO˜‰í
+¾«S3SbäĞÆ"Ûñ){†y=ó"|¥LºéÓSYĞÈ©û	_![:…zSí˜ºašåù›%öÌÍì
+- ¶İ Éİ$9'Ş¹Õy¸eê\›….s¡,g5w@Ğ§ïûéÀ”\ÃÔ2_&r6§~Yˆ
+È,£¨€^uƒ] í:ÿYG?4¾/JZÊl¥¥âá†»®ïèÄ~ôû­şúèºÎñ‡ğå—ç/ÿáQ•”
+endstream
+endobj
+1459 0 obj <<
+/Type /Page
+/Contents 1460 0 R
+/Resources 1458 0 R
+/MediaBox [0 0 612 792]
+/Parent 1454 0 R
+/Annots [ 1455 0 R 1464 0 R 1456 0 R 1457 0 R 1465 0 R ]
+>> endobj
+1455 0 obj <<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [117.354 480.868 311.944 490.545]
+/Subtype/Link/A<</Type/Action/S/URI/URI(http://creativecommons.org/licenses/by-sa/3.0/us/)>>
+>> endobj
+1464 0 obj <<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [84.951 469.573 157.38 479.586]
+/Subtype/Link/A<</Type/Action/S/URI/URI(http://creativecommons.org/licenses/by-sa/3.0/us/)>>
+>> endobj
+1456 0 obj <<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [87.701 382.238 305.384 391.915]
+/Subtype/Link/A<</Type/Action/S/URI/URI(http://www.gnu.org/licenses/gpl-2.0.html)>>
+>> endobj
+1457 0 obj <<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [87.701 338.403 311.944 348.079]
+/Subtype/Link/A<</Type/Action/S/URI/URI(git://git.kernel.org/pub/scm/linux/kernel/git/paulmck/perfbook.git)>>
+>> endobj
+1465 0 obj <<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [84.951 327.444 253.718 337.12]
+/Subtype/Link/A<</Type/Action/S/URI/URI(git://git.kernel.org/pub/scm/linux/kernel/git/paulmck/perfbook.git)>>
+>> endobj
+1461 0 obj <<
+/D [1459 0 R /XYZ 84.948 699.082 null]
+>> endobj
+1463 0 obj <<
+/D [1459 0 R /XYZ 85.948 644.941 null]
+>> endobj
+1458 0 obj <<
+/Font << /F46 1452 0 R /F76 1462 0 R /F50 1453 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1506 0 obj <<
+/Length 1285      
+/Filter /FlateDecode
+>>
+stream
+xÚíšÏSã6Çïü9Æ{-É²ä,t–B—ìph{p’hH¬TV–…¿¾’,;	ÓĞ¦$>ÅÄ?&|üô}ß÷Ÿ¾¸£€PzƒaÓ Ä°‡	"÷w½ßû'"W,W…÷çà{}$1ŒÍåaÏA@cT^	<„aØ¿È•ô í‹»y¦¸ÈÍ½(F‰c}»Ö>.Z~œE4 ö| ƒ@we`Ÿ‹Ãş9/”<ó|¨ÿºö î§2LØÄ}#ÅH¦Ó)ÏGåŸùĞƒ¸ÿGÂl>Qœ¯G?ğ|¬çGøˆ’äe7 Â’®y=$¨@Brtg"hZ’Dë¹Vx‰&-^ƒDÏƒÚp…úêk&‡BNÓ<cdväë`m…6ùÂŠ¯,Æ,ñ\=z>Bá>@~}Ö¨5r¬ÏXÎ´^XÊ${DùõaG¶¿^>“è£‰b2O]t½6ÉË(³Ûå?ítËoPgT«ó¥1³	+Ñ]ä…2Bí‹aù™–7ìï¹¶@<u f³	ÏRëm|ú0Û“²ˆâõş ÕÚz™Ş{ ì;:ß¶Êåô§¶bµWhFâªó€Tê;cv*ıÇëÕÕj¹’ù«™âSşä"&ho…p	`‹FNoÇ©*éUÁXlmüÏSyw¨AGxÇå>Ù wQ-w·ÕËWŞ¯ TÜ¤¥†>ª÷OÜ5é°	¹v¤È<ÊtNqqk
+i)ô	aGw¡´k%§ßX!æ²ÒÒfìÚLß•ßØRnÆ ŞÅú“®Oß‘ÕNXv`´]Ï)úÖ‹Â>Wã…<.Ò3†ñ~—ó­ˆÎ1‰‚+'é,ı‹ëbÈ6”¥İjŞfì`SÒ<¸+f¾¦ùhª_¯æÓÜî.E>µMÈRU‹BûÏu‘=³Ê«LÆK‹ûâĞ”¬ğıMv²Éå`çrÎæü­vƒ1wÿç±:ac„ºBû¿„b²ÁáÚı6ç™³EúğéÉÄ E¸ƒüÈ\„kSt“Në2ûf)Ÿø1è¼PÔgÃ‘€bj%näİÈÅdtã‹R;yaÏd”WÊy®W9ÊéE˜„âz Ó2‘AÀêêõDæªìLÉœ9Q'	Ù¿æà†CÈLu@SĞ@ıJs>c3÷îO®¿ï–KyËÅ·„9lı¢;Æ¦B>VõÆIV¶iu<WxB-f ¶ñ¬
+¼#%¦ÕX÷j¦+S½;•Şk´&LS)9“*¦]§ç_Ù¢6¶uI˜fc—e/yQØuyí•0WÅâÅ§«¦,@¾>a½g€ÏlÜ˜¥w&QÒy¸7ğpö…D­E)\Ú;²Ú¡³¥Óc¡ØÔõ?d6æŠejnÎ"‚÷©É´D1l„uË®PÏ†¹Ë‚Â¸ÕVº¸½së
+Íı"™;ú:Ï³ñ¡Vêvú°%ôxƒ0,¶- ÏÕ†ÅŒh¤u$agë¶AM4j²^=Û~†m™'ÕZ1Éí¦È•ÖÊµfÄW@²WBÜD	(«ÚîfÆ2Í¿Ë™¨zóf,:1j,LE’DtÏ¹-…`U¼½l‹!ñş¬|ÒM9«ÚS²
+Í XÁG¹ÓÔi=:6«<&’¶q† 
+’jŞ8p”9çæÔÁéààñˆ
+endstream
+endobj
+1505 0 obj <<
+/Type /Page
+/Contents 1506 0 R
+/Resources 1504 0 R
+/MediaBox [0 0 612 792]
+/Parent 1454 0 R
+/Annots [ 1466 0 R 1467 0 R 1468 0 R 1469 0 R 1470 0 R 1471 0 R 1472 0 R 1473 0 R 1474 0 R 1475 0 R 1476 0 R 1477 0 R 1478 0 R 1479 0 R 1480 0 R 1481 0 R 1482 0 R 1483 0 R 1484 0 R 1485 0 R 1486 0 R 1487 0 R 1488 0 R 1489 0 R 1490 0 R 1491 0 R 1492 0 R 1493 0 R 1494 0 R 1495 0 R 1496 0 R 1497 0 R 1498 0 R 1499 0 R 1500 0 R 1501 0 R 1502 0 R ]
+>> endobj
+1466 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 515.438 128.059 524.414]
+/A << /S /GoTo /D (chapter.1) >>
+>> endobj
+1467 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 501.388 266.14 512.292]
+/A << /S /GoTo /D (section.1.1) >>
+>> endobj
+1468 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 489.377 210.21 500.28]
+/A << /S /GoTo /D (section.1.2) >>
+>> endobj
+1469 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 479.422 179.686 488.269]
+/A << /S /GoTo /D (subsection.1.2.1) >>
+>> endobj
+1470 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 465.353 177.803 476.257]
+/A << /S /GoTo /D (subsection.1.2.2) >>
+>> endobj
+1471 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 453.341 170.839 464.245]
+/A << /S /GoTo /D (subsection.1.2.3) >>
+>> endobj
+1472 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 441.329 245.508 452.233]
+/A << /S /GoTo /D (section.1.3) >>
+>> endobj
+1473 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 429.317 314.458 440.221]
+/A << /S /GoTo /D (subsection.1.3.1) >>
+>> endobj
+1474 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 417.306 286.982 428.209]
+/A << /S /GoTo /D (subsection.1.3.2) >>
+>> endobj
+1475 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 405.294 234.758 416.198]
+/A << /S /GoTo /D (subsection.1.3.3) >>
+>> endobj
+1476 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 393.282 264.327 404.186]
+/A << /S /GoTo /D (section.1.4) >>
+>> endobj
+1477 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 381.27 200.069 392.174]
+/A << /S /GoTo /D (subsection.1.4.1) >>
+>> endobj
+1478 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 371.316 222.714 380.162]
+/A << /S /GoTo /D (subsection.1.4.2) >>
+>> endobj
+1479 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 357.246 280.556 368.15]
+/A << /S /GoTo /D (subsection.1.4.3) >>
+>> endobj
+1480 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 345.235 235.625 356.139]
+/A << /S /GoTo /D (subsection.1.4.4) >>
+>> endobj
+1481 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 333.223 222.056 344.127]
+/A << /S /GoTo /D (subsection.1.4.5) >>
+>> endobj
+1482 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 321.211 387.594 332.115]
+/A << /S /GoTo /D (subsection.1.4.6) >>
+>> endobj
+1483 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 311.137 175.78 320.103]
+/A << /S /GoTo /D (section.1.5) >>
+>> endobj
+1484 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 297.561 187.715 308.091]
+/A << /S /GoTo /D (subsection.1.5.1) >>
+>> endobj
+1485 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 285.175 212.353 296.079]
+/A << /S /GoTo /D (subsection.1.5.2) >>
+>> endobj
+1486 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 265.201 179.107 274.177]
+/A << /S /GoTo /D (chapter.2) >>
+>> endobj
+1487 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 253.209 135.791 262.055]
+/A << /S /GoTo /D (section.2.1) >>
+>> endobj
+1488 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 239.14 192.169 250.043]
+/A << /S /GoTo /D (subsection.2.1.1) >>
+>> endobj
+1489 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 227.128 209.842 238.032]
+/A << /S /GoTo /D (subsection.2.1.2) >>
+>> endobj
+1490 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 215.116 204.881 226.02]
+/A << /S /GoTo /D (subsection.2.1.3) >>
+>> endobj
+1491 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 203.104 197.678 214.008]
+/A << /S /GoTo /D (subsection.2.1.4) >>
+>> endobj
+1492 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 193.15 183.85 201.996]
+/A << /S /GoTo /D (subsection.2.1.5) >>
+>> endobj
+1493 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 179.08 188.273 189.984]
+/A << /S /GoTo /D (subsection.2.1.6) >>
+>> endobj
+1494 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 169.126 139.357 177.972]
+/A << /S /GoTo /D (section.2.2) >>
+>> endobj
+1495 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 155.057 252.073 165.961]
+/A << /S /GoTo /D (subsection.2.2.1) >>
+>> endobj
+1496 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 143.045 207.929 153.949]
+/A << /S /GoTo /D (subsection.2.2.2) >>
+>> endobj
+1497 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 133.09 188.642 141.937]
+/A << /S /GoTo /D (section.2.3) >>
+>> endobj
+1498 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 119.021 187.018 129.925]
+/A << /S /GoTo /D (subsection.2.3.1) >>
+>> endobj
+1499 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 109.067 251.057 117.913]
+/A << /S /GoTo /D (subsection.2.3.2) >>
+>> endobj
+1500 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 94.998 246.365 105.902]
+/A << /S /GoTo /D (subsection.2.3.3) >>
+>> endobj
+1501 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 82.986 233.134 93.89]
+/A << /S /GoTo /D (subsection.2.3.4) >>
+>> endobj
+1502 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 70.974 215.789 81.878]
+/A << /S /GoTo /D (section.2.4) >>
+>> endobj
+1507 0 obj <<
+/D [1505 0 R /XYZ 57.052 699.082 null]
+>> endobj
+1508 0 obj <<
+/D [1505 0 R /XYZ 58.052 538.268 null]
+>> endobj
+1504 0 obj <<
+/Font << /F76 1462 0 R /F46 1452 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1559 0 obj <<
+/Length 1423      
+/Filter /FlateDecode
+>>
+stream
+xÚí›YwÚFÇßó)x«ô ÖlZúÒã`Ü8ub7pšÓÓ‡±Ãœ
+‰Œ¤ÄäÓwÄhC†´^ ½„eÿæÎ½ÿ»ğvòæì›=gà˜ĞìMî{68Øî™¶9 ĞêM¦½¿4®C¢}Õÿ¼?» •îÆ@Şn‘¡nŞ|œŒ>NÆêV«ü¾ıìÖ>´ä‹HıÒûÀ0m¢;P/ÔûZp¯£9SO&º…5A§,yç&öÀ@V¶*pÔzxs=Œ†ƒz} †Òõ YQ¾ãØ|q¦¸¦ş,¦3&?€C€6ĞûD~¬ƒ}Àó<­tävTXÃ”õíÍøêOÅùCìE|)—…á> Ã¼fh¬1C8p ®±^[646hß*Ğêb(xà«+êOÕ“F"vÕo,`™Uİ$×FYÁ4™K4Óİ)I7vğö5Ú(¡:¥ëÀıGùKËîìŒë€?I#dB‡†Öÿ,x$ŸV¹£¢©1Zóë7û<”Æ—ó(XpWÑºY2±>ÀÒëÙ |$nëUØI³Ùâø5÷ã‡şo‰,dÂgB?ú§JQş ó£4òDA
+[/o!äXX*zf3=’Ò›dªöŸÍ£LàÚF"€ÕÕ} *ø}p÷s"–í]àı¶Iv8‚ı"ï ÖqZi‰l5³ X¦,Ò9@0p¢hã4±±¿VùyÜ=oÀyŞğy®m¥¨_…şO:°µt‡ïÆBH»Ï®ÓµÓFDê€pêÉ½2}25ê1œ§ãHzƒ0â.õJğ˜îÁÄ¸óâ?">hÍp)_Ò–ÏU¬#ãü"’KÏ3s!èªÿ–†,M.®K-¤ßH3dØ§‡òxYB2úª©:ü(¦·Êo(Gîxk<-ó£!‚m°òä"M'T‚ÛÿC hTpzç±mˆëĞÙ 66$s{<tã0\ÿ¿¶	:g÷C˜q{~†‹ül¹Á_Ğ(U³×|Á£jœ'¶Ón#¼æ€» ş¤ÔkîåA|ÌŸÙfÎ-qÈ¶2‘6XhXşÁH‰ì6lYøŞÁo6šƒÉÁS+²/•²E™È9®3go¼Ynô@İèxBîkÇÎ–œçá¸\‘ŞùĞZğ¸LÔi>É¸H„w ´qˆMóøÃ†mØŠh:ó©'“:v=ïU¨Â—#†÷&VË„Á¡gÂítÈşöôò9óÓq"Û"*)RYo•×ôÇKærêñïY!å6)NQA=ÕêØÎë›tyj˜F5a5³‰ fN9Ø²¡lwz¤NøñVVÔIÚ
+“ÌÉ<â‰gËIç.ã•ïÎEÒÎ’¿ı^šÉ‚´›h¸©i–-[>3$o™¥›]Yxô°.ä
+—‡ÉÔ†¤“¢ûY@»•ì‹Ê/˜ßÎ¹„Ár¾vHé„Øx‰w2Oî5
+Ô„]&P/‚8©”üiæàYÌ^s‡æ%´ÍÇÉZ\-êCe×ğétÈÉıAò>yîŒ×£ŠÉ§Ç8èôüÕ’[`5ÛoÖÇP!²Ô=*÷b¥÷-›txë¦mo‰TEcÌ¾Ä2óâÙˆŒM3AelBwT[‘Ú¤ÔªSV%E†Ùù†ı0·ˆ…¢ÉqA#ZÁL`W_ı¿0ãæ›o¾Ô±s¾Lj§¸Cûˆ:3AÚ¬TLšWãÚF¦xËÄ} ÔwY²>Æ†	·©1ÜZÆ¸\¿FKÍå+¶yÔºì™ôƒ‰·è‡¢é¢¾?qÖøİ	Œ­h¨Q‡™‰†wœ	*Üy1‘[°´:‘Û€”´!E¹}†A,ÜT‹{^àÒ(›ôRwÔÁ‰Og‰ã›ÑäÍ¿œKæ
+endstream
+endobj
+1558 0 obj <<
+/Type /Page
+/Contents 1559 0 R
+/Resources 1557 0 R
+/MediaBox [0 0 612 792]
+/Parent 1454 0 R
+/Annots [ 1503 0 R 1509 0 R 1510 0 R 1511 0 R 1512 0 R 1513 0 R 1514 0 R 1515 0 R 1516 0 R 1517 0 R 1518 0 R 1519 0 R 1520 0 R 1521 0 R 1522 0 R 1523 0 R 1524 0 R 1525 0 R 1526 0 R 1527 0 R 1528 0 R 1529 0 R 1530 0 R 1531 0 R 1532 0 R 1533 0 R 1534 0 R 1535 0 R 1536 0 R 1537 0 R 1538 0 R 1539 0 R 1540 0 R 1541 0 R 1542 0 R 1543 0 R 1544 0 R 1545 0 R 1546 0 R 1547 0 R 1548 0 R 1549 0 R 1550 0 R 1551 0 R 1552 0 R 1553 0 R 1554 0 R 1555 0 R ]
+>> endobj
+1503 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 657.049 178.55 666.025]
+/A << /S /GoTo /D (chapter.3) >>
+>> endobj
+1509 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 643.01 206.983 653.914]
+/A << /S /GoTo /D (section.3.1) >>
+>> endobj
+1510 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 631.009 220.831 641.913]
+/A << /S /GoTo /D (section.3.2) >>
+>> endobj
+1511 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 621.065 321.044 629.912]
+/A << /S /GoTo /D (subsection.3.2.1) >>
+>> endobj
+1512 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 609.064 318.823 617.911]
+/A << /S /GoTo /D (subsection.3.2.2) >>
+>> endobj
+1513 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 595.006 221.16 605.91]
+/A << /S /GoTo /D (subsection.3.2.3) >>
+>> endobj
+1514 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 583.005 280.985 593.909]
+/A << /S /GoTo /D (subsection.3.2.4) >>
+>> endobj
+1515 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 571.004 200.896 581.908]
+/A << /S /GoTo /D (section.3.3) >>
+>> endobj
+1516 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 559.003 315.535 569.907]
+/A << /S /GoTo /D (section.3.4) >>
+>> endobj
+1517 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 547.002 302.564 557.905]
+/A << /S /GoTo /D (section.3.5) >>
+>> endobj
+1518 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 525.142 141.748 536.021]
+/A << /S /GoTo /D (chapter.4) >>
+>> endobj
+1519 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 513.006 285.02 523.91]
+/A << /S /GoTo /D (section.4.1) >>
+>> endobj
+1520 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 503.062 202.569 511.909]
+/A << /S /GoTo /D (section.4.2) >>
+>> endobj
+1521 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 489.004 184.906 499.908]
+/A << /S /GoTo /D (subsection.4.2.1) >>
+>> endobj
+1522 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 477.003 273.164 487.907]
+/A << /S /GoTo /D (subsection.4.2.2) >>
+>> endobj
+1523 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 465.002 309.846 475.906]
+/A << /S /GoTo /D (subsection.4.2.3) >>
+>> endobj
+1524 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 453.001 331.056 463.905]
+/A << /S /GoTo /D (subsection.4.2.4) >>
+>> endobj
+1525 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 443.057 200.408 451.904]
+/A << /S /GoTo /D (subsection.4.2.5) >>
+>> endobj
+1526 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 428.999 240.477 439.903]
+/A << /S /GoTo /D (section.4.3) >>
+>> endobj
+1527 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 416.997 184.906 427.901]
+/A << /S /GoTo /D (subsection.4.3.1) >>
+>> endobj
+1528 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 404.996 309.726 415.9]
+/A << /S /GoTo /D (subsection.4.3.2) >>
+>> endobj
+1529 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 392.995 290.359 403.899]
+/A << /S /GoTo /D (subsection.4.3.3) >>
+>> endobj
+1530 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 380.994 334.065 391.898]
+/A << /S /GoTo /D (subsection.4.3.4) >>
+>> endobj
+1531 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 368.993 314.698 379.897]
+/A << /S /GoTo /D (subsection.4.3.5) >>
+>> endobj
+1532 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 358.93 210.589 367.896]
+/A << /S /GoTo /D (section.4.4) >>
+>> endobj
+1533 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 344.991 311.38 355.895]
+/A << /S /GoTo /D (subsection.4.4.1) >>
+>> endobj
+1534 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 335.047 292.013 343.894]
+/A << /S /GoTo /D (subsection.4.4.2) >>
+>> endobj
+1535 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 320.989 296.985 331.893]
+/A << /S /GoTo /D (subsection.4.4.3) >>
+>> endobj
+1536 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 308.988 331.853 319.892]
+/A << /S /GoTo /D (subsection.4.4.4) >>
+>> endobj
+1537 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 296.987 312.486 307.891]
+/A << /S /GoTo /D (subsection.4.4.5) >>
+>> endobj
+1538 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 284.986 282.1 295.89]
+/A << /S /GoTo /D (section.4.5) >>
+>> endobj
+1539 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 272.985 240.885 283.888]
+/A << /S /GoTo /D (section.4.6) >>
+>> endobj
+1540 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 251.125 275.146 262.004]
+/A << /S /GoTo /D (chapter.5) >>
+>> endobj
+1541 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 238.989 212.223 249.893]
+/A << /S /GoTo /D (section.5.1) >>
+>> endobj
+1542 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 226.988 274.579 237.892]
+/A << /S /GoTo /D (subsection.5.1.1) >>
+>> endobj
+1543 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 215.361 243.277 225.891]
+/A << /S /GoTo /D (subsection.5.1.2) >>
+>> endobj
+1544 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 202.986 287.709 213.89]
+/A << /S /GoTo /D (subsection.5.1.3) >>
+>> endobj
+1545 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 190.985 185.952 201.889]
+/A << /S /GoTo /D (section.5.2) >>
+>> endobj
+1546 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 178.984 238.524 189.888]
+/A << /S /GoTo /D (section.5.3) >>
+>> endobj
+1547 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 166.983 235.546 177.887]
+/A << /S /GoTo /D (subsection.5.3.1) >>
+>> endobj
+1548 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 154.982 213.409 165.885]
+/A << /S /GoTo /D (subsection.5.3.2) >>
+>> endobj
+1549 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 142.98 211.188 153.884]
+/A << /S /GoTo /D (subsection.5.3.3) >>
+>> endobj
+1550 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 130.979 221.698 141.883]
+/A << /S /GoTo /D (subsection.5.3.4) >>
+>> endobj
+1551 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 118.978 308.572 129.882]
+/A << /S /GoTo /D (subsection.5.3.5) >>
+>> endobj
+1552 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 106.977 191.192 117.881]
+/A << /S /GoTo /D (section.5.4) >>
+>> endobj
+1553 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 94.976 249.364 105.88]
+/A << /S /GoTo /D (subsection.5.4.1) >>
+>> endobj
+1554 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 82.975 241.613 93.879]
+/A << /S /GoTo /D (subsection.5.4.2) >>
+>> endobj
+1555 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 73.031 265.134 81.878]
+/A << /S /GoTo /D (subsection.5.4.3) >>
+>> endobj
+1560 0 obj <<
+/D [1558 0 R /XYZ 84.948 699.082 null]
+>> endobj
+1557 0 obj <<
+/Font << /F46 1452 0 R /F113 1561 0 R /F76 1462 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1609 0 obj <<
+/Length 1424      
+/Filter /FlateDecode
+>>
+stream
+xÚíZËv£Fİû+´0ı¢»³Éñ3q23Ö±äÉ"Î‚A-›	 ‰=_Ÿî¦iöø•Ä6+IcëŞª[U·z¶³{ q0Í#Â<ŸÀQÀ@:šÍG¿N?Í>Í¦Î³_vqĞºÈóùÕ_Õ-#cùJF.¤òNTıŒxÄqOüñDä‹4_…I$ÊÓõjæ7K}8ö—øş›~Áœ?å×„tğŠÚ¦ÃØãKà‘Ç)¯€ìò7?¤ÑŸqr©)Â’gÊHÍÜJ‘Ç0OEà†F†ÆiŞ¨çi
+÷–±‰ @Æ’U
+Ş‘/HrÍ5’)QÑ3‚Ğã : ¥Cåí‡"œ/%Él üé€û[¡ïAƒõ‡V¸W˜«,“¹Q´2Ì¿ª;Â2NÇå„ª%U‹À¶‚`Ï“…$’qˆ¢ÈA6Äğ£ f}PcõI"*F/|F±H"Í²
+€ÈŸ ¹»!ÔV< ©›3‡ùã›L•T¤‹êU•gy‰ù|(™ÏFEwÉ„¶d]GËu±Ñº´¸àoµ}9™i¢İ–Ê3Ù–ˆÜşØı-Kù¶1!` ÷»ÅÚ:¹/´Z§uÇq7Ê¯³ÿx,’„¼CŒ-Èˆq=i°NVÙR¬DRš®M_+Šµ’j„‡ m¡Ëüm}µ¹¬¾NCi…ä–Öº÷‚¿ÂÄw}i¯LWqdŸx&—òù8x~Úßs+‘•·ÓòªN¶}C••¼ò$3ğô$n%™Ûâòè:.JaíŸŸÖa&¥PiF|·ù¥GOÖ3z’MÁúA*’“~yjòÃÄàgG¦B¼\†qò£¼ÂÈĞ1ŞÃğ>'—Ìi‡aV`Ÿşˆ¼¸Š3kªùˆÕ¦C}¦šÏo¥
+µ¦ÚÇõ²Œ­dNò4’S°JĞa x½¨KÁ©Ç&J©Ã¼ŒÃez½›îNV^å²İ*Ô?¼Cê€Õ°ÖÕñ:‰šB>• fU!dpˆã§„3îçºÖŠ"¾LÂ²®µ3ªJ?ø ø3 nİn³rÓğUnï7Ó¾"ÆßûäßşÀpÑêÅÏ‹Û[§®p€{àïè…Xİ‰…Ès°q-8ıI÷-ím#AmŒh_cD$¥Ô2Û©?ÔÌé:)uAÁpp«Î5¥††Îµ¶Š]syR–·áC³#ëj«.Ó<ÖS@ÿo°ªàï4İØÆÖ/Y_×a¯â²5ëõY†,KóŠŞ¸%ÿÍöÁ¤§Rú ©ıHıÅjñ=ÍJ‰Î·Úç ò¯‰3û×DÌÎ%Sñ×º‰ãã¾/±{±>Â0°ÎÈ›p.%-S›èÓOds%júı…¼çìà\¾H‘¤œx÷ï¨1M|’”y:_·ÆÒØZf	1„¨}Ønq³ySàÁjŸ‡º†/Õ*¡!T{QúPE·Q=/B½{ÀdPá¾P‰4ğa×d­ Æ·¡Ö—û«ê¶DãÔíMN—2 )Ñ~_àƒæ„H>Iu]“qKd;7T ÷‡j'éƒ3¸œG×z È£X{¤ƒÜ²œ@åÚe7 ê1Â6ìnì†=¥ Y¶l+*y>±€¼Ód@rfpSqxc2Ô”Z«bÎTT6ªûÙr–	ó8ü²í•æT¥LQÆQ½E0óêÙ)~lé°¯`ë<7Å7+—Y‰ï°•zí6¨ûÛ€ÃƒAdn“ô¶£;Œ‹h]X€!†3ºã(·®Æ¶Â6B©>-êsgb•ª²ZíU¾Ôñ“İSãæm½Å‘^SşV f>”Xj»mçh¶ó8ş“=
+endstream
+endobj
+1608 0 obj <<
+/Type /Page
+/Contents 1609 0 R
+/Resources 1607 0 R
+/MediaBox [0 0 612 792]
+/Parent 1454 0 R
+/Annots [ 1556 0 R 1562 0 R 1563 0 R 1564 0 R 1565 0 R 1566 0 R 1567 0 R 1568 0 R 1569 0 R 1570 0 R 1571 0 R 1572 0 R 1573 0 R 1574 0 R 1575 0 R 1576 0 R 1577 0 R 1578 0 R 1579 0 R 1580 0 R 1581 0 R 1582 0 R 1583 0 R 1584 0 R 1585 0 R 1586 0 R 1587 0 R 1588 0 R 1589 0 R 1590 0 R 1591 0 R 1592 0 R 1593 0 R 1594 0 R 1595 0 R 1596 0 R 1597 0 R 1598 0 R 1599 0 R 1600 0 R 1601 0 R 1602 0 R ]
+>> endobj
+1556 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 655.011 189.04 665.915]
+/A << /S /GoTo /D (section.5.5) >>
+>> endobj
+1562 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 631.166 108.871 642.045]
+/A << /S /GoTo /D (chapter.6) >>
+>> endobj
+1563 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 617.839 151.581 628.743]
+/A << /S /GoTo /D (section.6.1) >>
+>> endobj
+1564 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 606.704 166.964 615.551]
+/A << /S /GoTo /D (subsection.6.1.1) >>
+>> endobj
+1565 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 593.512 223.88 602.358]
+/A << /S /GoTo /D (subsection.6.1.2) >>
+>> endobj
+1566 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 580.319 171.845 589.166]
+/A << /S /GoTo /D (subsection.6.1.3) >>
+>> endobj
+1567 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 565.07 175.97 575.974]
+/A << /S /GoTo /D (subsection.6.1.4) >>
+>> endobj
+1568 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 551.877 158.087 562.781]
+/A << /S /GoTo /D (section.6.2) >>
+>> endobj
+1569 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 540.742 194.52 549.589]
+/A << /S /GoTo /D (subsection.6.2.1) >>
+>> endobj
+1570 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 527.55 212.96 536.396]
+/A << /S /GoTo /D (subsection.6.2.2) >>
+>> endobj
+1571 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 512.3 246.295 523.204]
+/A << /S /GoTo /D (subsection.6.2.3) >>
+>> endobj
+1572 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 499.108 222.534 510.012]
+/A << /S /GoTo /D (section.6.3) >>
+>> endobj
+1573 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 485.915 415.609 496.819]
+/A << /S /GoTo /D (subsection.6.3.1) >>
+>> endobj
+1574 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 472.723 298.838 483.627]
+/A << /S /GoTo /D (subsection.6.3.2) >>
+>> endobj
+1575 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 461.588 233.573 470.434]
+/A << /S /GoTo /D (section.6.4) >>
+>> endobj
+1576 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 446.338 200.666 457.242]
+/A << /S /GoTo /D (section.6.5) >>
+>> endobj
+1577 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 422.493 144.009 433.372]
+/A << /S /GoTo /D (chapter.7) >>
+>> endobj
+1578 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 409.166 172.452 420.07]
+/A << /S /GoTo /D (section.7.1) >>
+>> endobj
+1579 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 395.974 243.396 406.877]
+/A << /S /GoTo /D (section.7.2) >>
+>> endobj
+1580 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 382.781 170.809 393.685]
+/A << /S /GoTo /D (section.7.3) >>
+>> endobj
+1581 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 369.589 172.433 380.493]
+/A << /S /GoTo /D (section.7.4) >>
+>> endobj
+1582 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 358.454 147.327 367.3]
+/A << /S /GoTo /D (section.7.5) >>
+>> endobj
+1583 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 343.204 219.745 354.108]
+/A << /S /GoTo /D (section.7.6) >>
+>> endobj
+1584 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 319.359 159.67 330.238]
+/A << /S /GoTo /D (chapter.8) >>
+>> endobj
+1585 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 306.032 176.866 316.936]
+/A << /S /GoTo /D (section.8.1) >>
+>> endobj
+1586 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 292.839 330.897 303.743]
+/A << /S /GoTo /D (subsection.8.1.1) >>
+>> endobj
+1587 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 279.647 324.87 290.551]
+/A << /S /GoTo /D (subsection.8.1.2) >>
+>> endobj
+1588 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 266.455 219.834 277.359]
+/A << /S /GoTo /D (subsection.8.1.3) >>
+>> endobj
+1589 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 253.262 161.922 264.166]
+/A << /S /GoTo /D (section.8.2) >>
+>> endobj
+1590 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 240.07 203.058 250.974]
+/A << /S /GoTo /D (section.8.3) >>
+>> endobj
+1591 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 228.815 211.257 237.782]
+/A << /S /GoTo /D (subsection.8.3.1) >>
+>> endobj
+1592 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 215.623 207.66 224.589]
+/A << /S /GoTo /D (subsection.8.3.2) >>
+>> endobj
+1593 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 200.493 176.657 211.397]
+/A << /S /GoTo /D (subsection.8.3.3) >>
+>> endobj
+1594 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 189.358 224.278 198.204]
+/A << /S /GoTo /D (subsection.8.3.4) >>
+>> endobj
+1595 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 174.108 245.219 185.012]
+/A << /S /GoTo /D (subsection.8.3.5) >>
+>> endobj
+1596 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 162.973 189.788 171.82]
+/A << /S /GoTo /D (subsection.8.3.6) >>
+>> endobj
+1597 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 137.07 137.125 147.949]
+/A << /S /GoTo /D (chapter.9) >>
+>> endobj
+1598 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 125.681 325.805 134.647]
+/A << /S /GoTo /D (section.9.1) >>
+>> endobj
+1599 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 110.551 157.011 121.455]
+/A << /S /GoTo /D (subsection.9.1.1) >>
+>> endobj
+1600 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 97.359 191.88 108.263]
+/A << /S /GoTo /D (subsection.9.1.2) >>
+>> endobj
+1601 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 86.104 172.512 95.07]
+/A << /S /GoTo /D (subsection.9.1.3) >>
+>> endobj
+1602 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 72.912 284.412 81.878]
+/A << /S /GoTo /D (section.9.2) >>
+>> endobj
+1610 0 obj <<
+/D [1608 0 R /XYZ 57.052 699.082 null]
+>> endobj
+1607 0 obj <<
+/Font << /F113 1561 0 R /F46 1452 0 R /F76 1462 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1657 0 obj <<
+/Length 1447      
+/Filter /FlateDecode
+>>
+stream
+xÚí›KsÛ6ÇïşºUœ)âE'$Ûµ;±‰Ôx:M4	YœP¤Ë‡çÓ  …zĞo;ªÄ%Z¿]ìwÆ{ï°Ûa=æB·3t<ÒcØë¸ÛvÆaçŸîMdı;şóİ ¨61”’£ÏÏÆ‡gã‘JësÚf¨©¸‰ÔÀ±lâ8İOƒ]?B¿ˆÒD>ŞÁõâš©BjV¼8+òz À` ffí1/qºùe”ñĞ²¡øv%aÎùJ·ÛSoŞ’fìm^D!5¶¦YÆö±…H7óƒ(¹²l’-ƒ½†X°n°Röèç9ÏäÊÊÅH½Öom¬ì0*D|T0ê'~|›GÂ"ÂşÀ'ğ‰‚?LC®Ğä$BÑªËW¡nÁKÛÂxÕRš©~’ä×<¨äŞF[g€Mq}©È’ö…å9"ÁúRL³´¼šJ ¸¥üÊ°)È#Oìº_»¸…û8¸vCØpUÿ¥—şeGÅ­
+å~¢sûcå<¹´ Ó-¯*÷&-óFØî]!Ú5!ºJWr‘±äŠñ$ÍÔ‡ƒ(2^h9[Ôér1NfûÌİ%¨”Jš´!úº&úö•_æ!HFa°e•/zôĞ=n8L¦LË|.ŒvÃïaˆÃåğ¸;‡÷‹¹oöT{y<#l;ü¬I`¨	÷šùI —à¡p§™êJ‰ï´M™E»	¶Q¡çŸÆJ:Ş¸u²u)”·>?¥F†¢‰¬x'<ãbû±òğ¸k7]îh#ÚóˆWEè69 êÉ¿ğÔgeP”™<¡Më[Ûìá­m`ZÛï…$æòe»Ô]İ„UÆÖj-0½ïa:».‹J1Ì
+“·bn‰ŠäÛjá² 8Œá­ÌñØºÈL{ú€çÑUbr¸jë ä©ŠUÂÅ)k÷U<Ï‹êÂt,ˆÇÚÈñÖvĞêAT,gæƒÛBh†\·5ÇëÛA7™ı,üja†ŒÏÍ<
+yæë=4¼öƒ(/çL ÷Æ:gò4y¨ì‡7u¡„ÚıG·I0­2§4‰¾ë*Ai$€Áš¤ÉL¿`XhR¦¾Eq÷FÖ´iÎëİ÷iğEÚ”Âvq=ëâ9Ğ˜eeqA“òYšéhàgYÄ3)ñi©?ŸúÚr[ 7åvşy&Ú|Ìg½}¢ÛBï/5µòÉD3P—#™½§qœV[ÆZ¦û¿/7Òî<Ğƒ/¦éjÀ)Ï“ßd|+î˜@¿lÿéfxUXÇ°‘œn×~²  B;#ÿ2æúÇ}Şû2üŞÈß§µõ45*;šQç‰¾¥çŠKYAöÿu>Å5²ÓmÚ‹©_,û[ ‚UÖË£2/öõ†À¦æ‹a1QŒ—OH¬éäg.0‰'²jŸñ¤0iÚ„şï«érÓFïtõ6–Nur£¨êm¨s5eµà)`­_>/5»„y‘ùA±*Äı àynâeÈcyŒìAµ¤½Ftîlë5mvmÎ¯kÓhFËÑ2…öÒÏü¤àÕÊ&°ÍÏ_³<¤¿o¢u¹ø¾\úîj;qš1…qAÁeßF„Ô(‘5Ï­g®"%ÍH¡BªÜĞÖ¨·Å¿ùR÷åA+Lw;á$n3A¤§æ4Ş€L§×$…1üğ—) yÏEl‡¸* ¬)ƒØÄJnbäÁR};ã<ä¡œm1/»¡û£7ÙÎÒÄÄõè¨º«µÎê¯å³qÛuîjª¡ù)ÉZt6Y6£ MBÚYY·ãıï~fvÌS!èº-IZÄÏF¬ûvı"™NZ=¾RmC:´%û ¤º÷Bt*t<p-Bx¬ìÔ»U§~ïp¼÷Éíà
+endstream
+endobj
+1656 0 obj <<
+/Type /Page
+/Contents 1657 0 R
+/Resources 1655 0 R
+/MediaBox [0 0 612 792]
+/Parent 1454 0 R
+/Annots [ 1603 0 R 1604 0 R 1605 0 R 1606 0 R 1611 0 R 1612 0 R 1613 0 R 1614 0 R 1615 0 R 1616 0 R 1617 0 R 1618 0 R 1619 0 R 1620 0 R 1621 0 R 1622 0 R 1623 0 R 1624 0 R 1625 0 R 1626 0 R 1627 0 R 1628 0 R 1629 0 R 1630 0 R 1631 0 R 1632 0 R 1633 0 R 1634 0 R 1635 0 R 1636 0 R 1637 0 R 1638 0 R 1639 0 R 1640 0 R 1641 0 R 1642 0 R 1643 0 R 1644 0 R 1645 0 R 1646 0 R 1647 0 R 1648 0 R 1649 0 R 1650 0 R 1651 0 R 1652 0 R ]
+>> endobj
+1603 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 657.049 145.813 666.025]
+/A << /S /GoTo /D (chapter.10) >>
+>> endobj
+1604 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 642.492 196.472 653.396]
+/A << /S /GoTo /D (section.10.1) >>
+>> endobj
+1605 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 629.973 155.437 640.877]
+/A << /S /GoTo /D (section.10.2) >>
+>> endobj
+1606 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 619.511 166.864 628.358]
+/A << /S /GoTo /D (section.10.3) >>
+>> endobj
+1611 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 604.935 184.856 615.839]
+/A << /S /GoTo /D (section.10.4) >>
+>> endobj
+1612 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 594.473 178.261 603.32]
+/A << /S /GoTo /D (section.10.5) >>
+>> endobj
+1613 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 579.897 198.186 590.801]
+/A << /S /GoTo /D (subsection.10.5.1) >>
+>> endobj
+1614 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 567.377 212.333 578.281]
+/A << /S /GoTo /D (subsection.10.5.2) >>
+>> endobj
+1615 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 554.858 217.553 565.762]
+/A << /S /GoTo /D (subsection.10.5.3) >>
+>> endobj
+1616 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 542.339 234.739 553.243]
+/A << /S /GoTo /D (section.10.6) >>
+>> endobj
+1617 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 529.82 274.14 540.724]
+/A << /S /GoTo /D (subsection.10.6.1) >>
+>> endobj
+1618 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 517.301 310.195 528.205]
+/A << /S /GoTo /D (subsection.10.6.2) >>
+>> endobj
+1619 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 504.782 286.892 515.686]
+/A << /S /GoTo /D (subsection.10.6.3) >>
+>> endobj
+1620 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 492.263 326.454 503.167]
+/A << /S /GoTo /D (subsection.10.6.4) >>
+>> endobj
+1621 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 481.801 221.369 490.648]
+/A << /S /GoTo /D (section.10.7) >>
+>> endobj
+1622 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 467.225 191.561 478.129]
+/A << /S /GoTo /D (subsection.10.7.1) >>
+>> endobj
+1623 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 454.705 240.278 465.609]
+/A << /S /GoTo /D (subsection.10.7.2) >>
+>> endobj
+1624 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 433.885 169.494 442.861]
+/A << /S /GoTo /D (chapter.11) >>
+>> endobj
+1625 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 421.266 144.179 430.233]
+/A << /S /GoTo /D (section.11.1) >>
+>> endobj
+1626 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 406.81 303.689 417.713]
+/A << /S /GoTo /D (section.11.2) >>
+>> endobj
+1627 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 394.29 193.643 405.194]
+/A << /S /GoTo /D (section.11.3) >>
+>> endobj
+1628 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 383.709 165.758 392.675]
+/A << /S /GoTo /D (section.11.4) >>
+>> endobj
+1629 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 369.252 182.923 380.156]
+/A << /S /GoTo /D (section.11.5) >>
+>> endobj
+1630 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 358.671 226.241 367.637]
+/A << /S /GoTo /D (section.11.6) >>
+>> endobj
+1631 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 334.01 216.467 344.889]
+/A << /S /GoTo /D (chapter.12) >>
+>> endobj
+1632 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 321.356 188.343 332.26]
+/A << /S /GoTo /D (section.12.1) >>
+>> endobj
+1633 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 308.837 193.693 319.741]
+/A << /S /GoTo /D (section.12.2) >>
+>> endobj
+1634 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 296.318 317.707 307.222]
+/A << /S /GoTo /D (subsection.12.2.1) >>
+>> endobj
+1635 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 283.799 399.899 294.703]
+/A << /S /GoTo /D (subsection.12.2.2) >>
+>> endobj
+1636 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 273.337 326.753 282.184]
+/A << /S /GoTo /D (subsection.12.2.3) >>
+>> endobj
+1637 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 260.818 242.948 269.665]
+/A << /S /GoTo /D (subsection.12.2.4) >>
+>> endobj
+1638 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 246.242 302.564 257.145]
+/A << /S /GoTo /D (subsection.12.2.5) >>
+>> endobj
+1639 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 233.722 239.182 244.626]
+/A << /S /GoTo /D (subsection.12.2.6) >>
+>> endobj
+1640 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 221.203 286.444 232.107]
+/A << /S /GoTo /D (subsection.12.2.7) >>
+>> endobj
+1641 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 208.684 230.853 219.588]
+/A << /S /GoTo /D (subsection.12.2.8) >>
+>> endobj
+1642 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 198.103 201.494 207.069]
+/A << /S /GoTo /D (subsection.12.2.9) >>
+>> endobj
+1643 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 183.646 271.491 194.55]
+/A << /S /GoTo /D (subsection.12.2.10) >>
+>> endobj
+1644 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 171.127 237.767 182.031]
+/A << /S /GoTo /D (subsection.12.2.11) >>
+>> endobj
+1645 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 158.608 264.308 169.512]
+/A << /S /GoTo /D (subsection.12.2.12) >>
+>> endobj
+1646 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 148.026 277.339 156.993]
+/A << /S /GoTo /D (subsection.12.2.13) >>
+>> endobj
+1647 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 133.57 309.378 144.473]
+/A << /S /GoTo /D (subsection.12.2.14) >>
+>> endobj
+1648 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 121.05 249.603 131.954]
+/A << /S /GoTo /D (section.12.3) >>
+>> endobj
+1649 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 108.531 206.784 119.435]
+/A << /S /GoTo /D (subsection.12.3.1) >>
+>> endobj
+1650 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 98.069 220.592 106.916]
+/A << /S /GoTo /D (subsection.12.3.2) >>
+>> endobj
+1651 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 85.55 250.758 94.397]
+/A << /S /GoTo /D (subsection.12.3.3) >>
+>> endobj
+1652 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 73.031 215.063 81.878]
+/A << /S /GoTo /D (subsection.12.3.4) >>
+>> endobj
+1658 0 obj <<
+/D [1656 0 R /XYZ 84.948 699.082 null]
+>> endobj
+1655 0 obj <<
+/Font << /F46 1452 0 R /F113 1561 0 R /F76 1462 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1706 0 obj <<
+/Length 1428      
+/Filter /FlateDecode
+>>
+stream
+xÚíšQo«6Çßû)ò6F
+¶³—)I[©ÓîmÖÒõa*—¸‰u‰‰€ÜÛîÓÏÆ˜@ª´M§µá¡	¡M~>çïãs<Ïö‚~à¯>ô\Ü·]Ğó°×w€ß'½¿ŒÑÅ×ğôkxeşşv|†¼Zsäú}„{¶jø1ÕÆ¯·±ÊFğÅ=¨š:Ğ´\Û6NIFM¸¶‘<¨÷kqCt"º†âQ<İ·ãÁ-ã[â¾ã€å€¾]İyßİ‹Î.—Yş¤ú½ŠH\õ¤êb0>W'4cSnZÙF_=ÙçzCAğ–¯ûÀ×3 &d6P°¯fÄ¶°>UTóY	üáß§I^Î•¾×±~õº'9¨ $<	ô¨ù#õÍĞt°Áæ+âdJç”ç•3¹.Z9“_Ü¶ôıf®êq”ğ[Û†,Ê«ıÓ„¾Á2–ğ¬éµÕTŸ-óe*E|†¶=1X°ÅsõOi˜’«ı6lt·¦£ñµºMß6h4ãIœLK70ş“¾´´›)¯X^éË¤|æD½Eÿ.ú¦¢Œ£ Ús8[Jˆ¾h~ÍÙ"M"šeZïn!D÷T‹_ÓLâÆÇ­ juój<âùeç,Ÿ¥”L´		7cDô‚NÃ6ˆúöÖõB…%Ñdİ·+¹"óBAünhÃ6˜VÌHa¥$›•Îr>g´ï«˜ˆOZÛ×‚¸Z·é<IKa½1±m8“?²:«!–+ç.C—Ğ„®‘±Ø%œÄÍßşœf¸WkTN[›€^›Î/â‹MI®
+ß:Ì;b†-Nôju9m|Ğ¡}ÚšVTËV!Ö²XTêÙ°c€n­G­öˆZ£§5Õ-V¥àÀc&·•£«8>æ)±Z¬A$Ã}¹¾ 8»ºãzŠ]A­Ú#ŸĞ˜<	T8ğ?õ²óéµZ©¯HÿDß
+mDÎAÀ}Ô;Çåz/…5•	8ë&e¹Şå×&txP_õ[Å"P@Ç4ÍX–S	½ğ]§³ß=pnlla¢¢éÉ's•öÊø·*¨"|¢­˜LŠ»08<±Åí’ ½—¿œNHx•¾
+uĞ*
+P¨«Ì45×x”/4ºµ][ü9eZåI¨Æ¼ÌU«Œ‰çv´[17,*Ì—£kÃ"tx±Ã»7¶Û©£RGX-3YŞ"â9ç×äcñóGXKS:±êÖ±’
+Å ±®~ñÆönœ&ÓTçláÿo‡÷º-nK`#…j¬ŠXÖT¥»—¢ú<æW#¶Kux Ã0lœÏIš^Ö@ÿXÒLe\¶´À»Ÿ´È|.†¸ª³$º¼p ”EƒÁƒØˆH'Õ	ÿUæÔ;Ei×êËÿCABsğhVÔİÎş)‘ÚØœåÌtlã»|‘“®Äß±.?,fCã¢aj
+ßkRêç\FâêŸŞçÉ­ìc×©o­UáŞ±ÅlfóÅ$u\ù‹ô{·[ß€|ër<”ÅiØa‘—.Cvq)÷çêhX.£ÚÊØG	ÏÓ$–ãá·]PÙn$ñÑ;•é_mŒ¼ +¡î*ş[7üCUÚ«ôA¾c5Æ8è¨¾îJd`^À}HÒ;J¢Ù†	CØFy½í¢u¼é’so`Fò\èÂĞ-ş‘aù¦ÊØ©ìôÀ[‡-v›%ğlE<À¨cürKöK¸§d¾Ğçò¯32—uÃ_ØÚ”AÜV%@ïk±ï?	Ùr4»Ò¸Úà-¿‹Å¼4¶y²PàtÀ_DzC[à*JÖë»n½gÚ°N;OŸšÀ!Dé·®‰ª“^ò&h„ÜôLÚí‚“ı>:şÛ¶}
+endstream
+endobj
+1705 0 obj <<
+/Type /Page
+/Contents 1706 0 R
+/Resources 1704 0 R
+/MediaBox [0 0 612 792]
+/Parent 1708 0 R
+/Annots [ 1653 0 R 1654 0 R 1659 0 R 1660 0 R 1661 0 R 1662 0 R 1663 0 R 1664 0 R 1665 0 R 1666 0 R 1667 0 R 1668 0 R 1669 0 R 1670 0 R 1671 0 R 1672 0 R 1673 0 R 1674 0 R 1675 0 R 1676 0 R 1677 0 R 1678 0 R 1679 0 R 1680 0 R 1681 0 R 1682 0 R 1683 0 R 1684 0 R 1685 0 R 1686 0 R 1687 0 R 1688 0 R 1689 0 R 1690 0 R 1691 0 R 1692 0 R 1693 0 R 1694 0 R 1695 0 R 1696 0 R 1697 0 R 1698 0 R 1699 0 R 1700 0 R 1701 0 R 1702 0 R ]
+>> endobj
+1653 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 657.049 122.689 666.025]
+/A << /S /GoTo /D (chapter.13) >>
+>> endobj
+1654 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 642.926 207.59 653.83]
+/A << /S /GoTo /D (section.13.1) >>
+>> endobj
+1659 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 630.841 208.228 641.745]
+/A << /S /GoTo /D (section.13.2) >>
+>> endobj
+1660 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 608.84 154.331 619.719]
+/A << /S /GoTo /D (chapter.14) >>
+>> endobj
+1661 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 586.706 212.372 597.585]
+/A << /S /GoTo /D (chapter.15) >>
+>> endobj
+1662 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 574.486 325.149 585.39]
+/A << /S /GoTo /D (section.15.1) >>
+>> endobj
+1663 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 562.401 227.835 574.943]
+/A << /S /GoTo /D (subsection.15.1.1) >>
+>> endobj
+1664 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 552.372 213.179 561.219]
+/A << /S /GoTo /D (subsection.15.1.2) >>
+>> endobj
+1665 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 540.287 200.448 549.134]
+/A << /S /GoTo /D (subsection.15.1.3) >>
+>> endobj
+1666 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 526.145 327.24 537.048]
+/A << /S /GoTo /D (subsection.15.1.4) >>
+>> endobj
+1667 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 514.059 187.586 524.963]
+/A << /S /GoTo /D (section.15.2) >>
+>> endobj
+1668 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 501.974 188.273 512.878]
+/A << /S /GoTo /D (subsection.15.2.1) >>
+>> endobj
+1669 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 489.889 193.822 500.792]
+/A << /S /GoTo /D (subsection.15.2.2) >>
+>> endobj
+1670 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 477.803 248.597 488.707]
+/A << /S /GoTo /D (subsection.15.2.3) >>
+>> endobj
+1671 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 467.775 238.285 476.622]
+/A << /S /GoTo /D (subsection.15.2.4) >>
+>> endobj
+1672 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 455.69 246.564 464.537]
+/A << /S /GoTo /D (subsection.15.2.5) >>
+>> endobj
+1673 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 441.547 179.626 452.451]
+/A << /S /GoTo /D (subsection.15.2.6) >>
+>> endobj
+1674 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 429.462 161.992 440.366]
+/A << /S /GoTo /D (subsection.15.2.7) >>
+>> endobj
+1675 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 417.377 221.817 428.281]
+/A << /S /GoTo /D (subsection.15.2.8) >>
+>> endobj
+1676 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 407.229 173.608 416.195]
+/A << /S /GoTo /D (subsection.15.2.9) >>
+>> endobj
+1677 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 393.206 251.924 404.11]
+/A << /S /GoTo /D (subsection.15.2.10) >>
+>> endobj
+1678 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 381.121 172.862 392.025]
+/A << /S /GoTo /D (subsection.15.2.11) >>
+>> endobj
+1679 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 369.035 222.285 379.939]
+/A << /S /GoTo /D (subsection.15.2.12) >>
+>> endobj
+1680 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 359.007 149.27 367.854]
+/A << /S /GoTo /D (subsection.15.2.13) >>
+>> endobj
+1681 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 346.922 172.512 355.769]
+/A << /S /GoTo /D (subsection.15.2.14) >>
+>> endobj
+1682 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 332.779 297.373 343.683]
+/A << /S /GoTo /D (section.15.3) >>
+>> endobj
+1683 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 320.694 290.18 331.598]
+/A << /S /GoTo /D (section.15.4) >>
+>> endobj
+1684 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 298.694 162.828 309.573]
+/A << /S /GoTo /D (appendix.A) >>
+>> endobj
+1685 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 288.531 202.609 297.378]
+/A << /S /GoTo /D (section.A.1) >>
+>> endobj
+1686 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 264.474 189.568 275.353]
+/A << /S /GoTo /D (appendix.B) >>
+>> endobj
+1687 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 252.254 218.977 263.158]
+/A << /S /GoTo /D (section.B.1) >>
+>> endobj
+1688 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 240.169 173.07 251.072]
+/A << /S /GoTo /D (subsection.B.1.1) >>
+>> endobj
+1689 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 228.8 265.692 238.987]
+/A << /S /GoTo /D (section.B.2) >>
+>> endobj
+1690 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 216.371 189.08 226.902]
+/A << /S /GoTo /D (subsection.B.2.1) >>
+>> endobj
+1691 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 203.913 194.639 214.816]
+/A << /S /GoTo /D (subsection.B.2.2) >>
+>> endobj
+1692 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 192.201 200.149 202.731]
+/A << /S /GoTo /D (subsection.B.2.3) >>
+>> endobj
+1693 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 179.742 236.124 190.646]
+/A << /S /GoTo /D (subsection.B.2.4) >>
+>> endobj
+1694 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 168.03 182.356 178.56]
+/A << /S /GoTo /D (subsection.B.2.5) >>
+>> endobj
+1695 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 155.945 201.175 166.475]
+/A << /S /GoTo /D (subsection.B.2.6) >>
+>> endobj
+1696 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 143.486 191.591 154.39]
+/A << /S /GoTo /D (subsection.B.2.7) >>
+>> endobj
+1697 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 131.401 130.112 142.305]
+/A << /S /GoTo /D (section.B.3) >>
+>> endobj
+1698 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 119.315 192.438 130.219]
+/A << /S /GoTo /D (subsection.B.3.1) >>
+>> endobj
+1699 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 107.23 174.166 118.134]
+/A << /S /GoTo /D (subsection.B.3.2) >>
+>> endobj
+1700 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 95.145 185.235 106.049]
+/A << /S /GoTo /D (subsection.B.3.3) >>
+>> endobj
+1701 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 83.059 184.129 93.963]
+/A << /S /GoTo /D (subsection.B.3.4) >>
+>> endobj
+1702 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 70.974 191.591 81.878]
+/A << /S /GoTo /D (subsection.B.3.5) >>
+>> endobj
+1707 0 obj <<
+/D [1705 0 R /XYZ 57.052 699.082 null]
+>> endobj
+1704 0 obj <<
+/Font << /F113 1561 0 R /F46 1452 0 R /F76 1462 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1759 0 obj <<
+/Length 1388      
+/Filter /FlateDecode
+>>
+stream
+xÚí›ßsâ6ÇßóWğhÏÔD?-éé† ™Ği.HóĞë0.(ÄS°©äÚ¿¾’-› v’ã’^zÈØ860Ÿ]í~wµœNNÏ‰_uá#¿6¸­qZ„×|î×!bµÁ¸ö»s†¡ûÇàçÓsñ£{	T73ZÙmÍ«ÏƒöçA?»uã]=``XóSqöÀY¸çØéÊÄEÀñw‰Æ®‡(p~s!„N„ÁŸS¹p=F¡Sw=
+À‡?!ŞøbäB[¢†P]@Ró ª òuèz`ì´ÚçÏía·İ.zíFë @ı©ÿsq¬ìHÙ]l¨ÀÖü¥Ñ+çF9±Àr`Ø ›Ëd¸LøÜ.ê×ÅMîáp"—øğŞETÅÒ5xBËøÛáR7ŒÂå°Ì¡"–ëŞx}ƒ÷zLd&Ú_ƒÙ|ª^âÛàğM€½òÌOÍu'³ )¸˜Œ¸zof8=gJ%°•Q¬ArVO0îÜÜ¹:ÿd)gqbÎÏ‚$	e²ø”Ú•P\ç ç²
+Xª¸1¯s*6­ßÔªO[¿ŒîÌ
+ë/“Õh¹JÔKŠ©µÿw8@¹A¶\SKÇ‚½×Œïd"ÓÕ§­ĞMâe<Š§ªÒÁXÄ•‹
+W5
+pQÔ\¶ûÜ½ƒ¥®CÖ÷A½ëÆE´¦œ»o»:ƒk_ÆÄJÊ'YârÍN[a0I‚™ÖëÈ:ê.URE•<ã¡…¬ô}fQj”´Z36µ“êÌÕ_Æ‰^Õš`O.VÓevFÙñ:ŠäH¯ı\¸(Wê”†89Z¿}Œ·‚n‘¶RÀFó­nuÑ~«dŸöRj5Ø>ÀÁ.k´Ëú\ëî8yp!p‚dFı=¹…üd¿
+2~Æ¡õ… W—:ZJû˜FÇJâ-Ê’GñÖDRù÷JWûD_Ğ‘Ì¼O<S×ûÈ%ÀÉ: Óp\h«_Wr•JTÈìBj°K½òÆ‚¯º¹1ú+ŠõÕ‡©ORuöaİ²„Ş‡Uyp$”ÒZF <%?MË²Wltn’0§W
+QqìëY÷¤¨èIùÚ¢Z“ôÄüƒ!=N z"ãøEÆ¹JÆ2Q"Ò»ˆË0§ÚHFwÊYM«ÕgÇJo×‹$²á…Š¦ Ôv _5.C,êıQã*Ô¤5¶¨¿u…H`Y&+K^h‘nr…q´Ø¨øMn›ËQøE•_£ìu³{­%‡%±ÈÉ‹É«1ßêIêÛ­À×c¿Ù(Akìyêk\¶|0ÈG.Fßo¦y³ò ÌŠü×è]Ş3¯qÚÓB–ò+áÍs^§¡½ùğ2İ"¼Šz>–Öur^¯Ó×%”[êo‚;Së^¹˜:7í^&NÍFcÖÁ’I·©/ØY=³|û óè^Ót½/¯~2ûùYÑ
+ô¯ôûŠ££(ª(rCñ+÷u88ìÙ¾’!¨b/ûûRÕ!z;ËGü«¯¨yV6’gzÂE(u¬¾×ç2ù¤ ™E¿nÃŠ¦±0˜Ç÷a>¿¸Œ³ãEŒÍ>z>Ã$á$ÊÆ ¶x·ñ¾d@¸•ë¯ÏG_Ï×{GİbšÉhä]•Ä%ÃÁùG<¶j+FÜéO¥œëİ™œÛ¼.û%î>v+f©z"U1ÕT…2]¿’£™ÁÖ–Tah¢lËŞ_z;z¥#|Ú×èv¶$ŸùÇÄfÊ— ÅÒm<„¦Óÿ%?ü*¶dÛ]û«Ù,ÅaDX®ÏqåÕ²®•şpBe¦%ß½‹:
+¦[ÉéÊh¸û0Utêm…¥^Â9-OÚƒ“ÿ ËHnì
+endstream
+endobj
+1758 0 obj <<
+/Type /Page
+/Contents 1759 0 R
+/Resources 1757 0 R
+/MediaBox [0 0 612 792]
+/Parent 1708 0 R
+/Annots [ 1703 0 R 1709 0 R 1710 0 R 1711 0 R 1712 0 R 1713 0 R 1714 0 R 1715 0 R 1716 0 R 1717 0 R 1718 0 R 1719 0 R 1720 0 R 1721 0 R 1722 0 R 1723 0 R 1724 0 R 1725 0 R 1726 0 R 1727 0 R 1728 0 R 1729 0 R 1730 0 R 1731 0 R 1732 0 R 1733 0 R 1734 0 R 1735 0 R 1736 0 R 1737 0 R 1738 0 R 1739 0 R 1740 0 R 1741 0 R 1742 0 R 1743 0 R 1744 0 R 1745 0 R 1746 0 R 1747 0 R 1748 0 R 1749 0 R 1750 0 R 1751 0 R 1752 0 R 1753 0 R 1754 0 R 1755 0 R ]
+>> endobj
+1703 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 656.949 208.975 665.915]
+/A << /S /GoTo /D (section.B.4) >>
+>> endobj
+1709 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 643.384 267.367 653.914]
+/A << /S /GoTo /D (subsection.B.4.1) >>
+>> endobj
+1710 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 631.383 277.887 641.913]
+/A << /S /GoTo /D (subsection.B.4.2) >>
+>> endobj
+1711 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 619.008 205.917 629.912]
+/A << /S /GoTo /D (subsection.B.4.3) >>
+>> endobj
+1712 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 607.007 232.786 617.911]
+/A << /S /GoTo /D (subsection.B.4.4) >>
+>> endobj
+1713 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 595.006 224.188 605.91]
+/A << /S /GoTo /D (subsection.B.4.5) >>
+>> endobj
+1714 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 583.005 219.486 593.909]
+/A << /S /GoTo /D (subsection.B.4.6) >>
+>> endobj
+1715 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 572.941 175.701 581.908]
+/A << /S /GoTo /D (section.B.5) >>
+>> endobj
+1716 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 549.144 204.662 560.023]
+/A << /S /GoTo /D (appendix.C) >>
+>> endobj
+1717 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 538.946 188.712 547.912]
+/A << /S /GoTo /D (section.C.1) >>
+>> endobj
+1718 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 526.945 235.745 535.911]
+/A << /S /GoTo /D (section.C.2) >>
+>> endobj
+1719 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 514.944 206.774 523.91]
+/A << /S /GoTo /D (subsection.C.2.1) >>
+>> endobj
+1720 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 501.005 257.961 511.909]
+/A << /S /GoTo /D (subsection.C.2.2) >>
+>> endobj
+1721 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 489.004 240.248 499.908]
+/A << /S /GoTo /D (subsection.C.2.3) >>
+>> endobj
+1722 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 477.003 254.644 487.907]
+/A << /S /GoTo /D (subsection.C.2.4) >>
+>> endobj
+1723 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 465.002 265.931 475.906]
+/A << /S /GoTo /D (section.C.3) >>
+>> endobj
+1724 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 454.938 209.832 463.905]
+/A << /S /GoTo /D (subsection.C.3.1) >>
+>> endobj
+1725 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 441 226.44 451.904]
+/A << /S /GoTo /D (subsection.C.3.2) >>
+>> endobj
+1726 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 428.999 298.091 439.903]
+/A << /S /GoTo /D (subsection.C.3.3) >>
+>> endobj
+1727 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 416.997 306.598 427.901]
+/A << /S /GoTo /D (section.C.4) >>
+>> endobj
+1728 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 405.37 228.243 415.9]
+/A << /S /GoTo /D (subsection.C.4.1) >>
+>> endobj
+1729 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 392.995 344.377 403.899]
+/A << /S /GoTo /D (subsection.C.4.2) >>
+>> endobj
+1730 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 380.994 316.501 391.898]
+/A << /S /GoTo /D (subsection.C.4.3) >>
+>> endobj
+1731 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 368.993 258.708 379.897]
+/A << /S /GoTo /D (section.C.5) >>
+>> endobj
+1732 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 356.992 273.094 367.896]
+/A << /S /GoTo /D (section.C.6) >>
+>> endobj
+1733 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 344.991 277.03 355.895]
+/A << /S /GoTo /D (subsection.C.6.1) >>
+>> endobj
+1734 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 332.99 199.571 343.894]
+/A << /S /GoTo /D (subsection.C.6.2) >>
+>> endobj
+1735 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 320.989 199.571 331.893]
+/A << /S /GoTo /D (subsection.C.6.3) >>
+>> endobj
+1736 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 308.988 199.571 319.892]
+/A << /S /GoTo /D (subsection.C.6.4) >>
+>> endobj
+1737 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 296.987 316.69 307.891]
+/A << /S /GoTo /D (section.C.7) >>
+>> endobj
+1738 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 284.986 181.031 295.89]
+/A << /S /GoTo /D (subsection.C.7.1) >>
+>> endobj
+1739 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 275.042 189.888 283.888]
+/A << /S /GoTo /D (subsection.C.7.2) >>
+>> endobj
+1740 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 263.041 209.265 271.887]
+/A << /S /GoTo /D (subsection.C.7.3) >>
+>> endobj
+1741 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 251.04 177.156 259.886]
+/A << /S /GoTo /D (subsection.C.7.4) >>
+>> endobj
+1742 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 239.039 193.962 247.885]
+/A << /S /GoTo /D (subsection.C.7.5) >>
+>> endobj
+1743 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 227.037 236.343 235.884]
+/A << /S /GoTo /D (subsection.C.7.6) >>
+>> endobj
+1744 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 213.696 276.443 223.883]
+/A << /S /GoTo /D (subsection.C.7.7) >>
+>> endobj
+1745 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 203.035 171.626 211.882]
+/A << /S /GoTo /D (subsection.C.7.8) >>
+>> endobj
+1746 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 190.915 185.454 199.881]
+/A << /S /GoTo /D (subsection.C.7.9) >>
+>> endobj
+1747 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 176.976 248.467 187.88]
+/A << /S /GoTo /D (section.C.8) >>
+>> endobj
+1748 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 164.975 247.81 175.879]
+/A << /S /GoTo /D (section.C.9) >>
+>> endobj
+1749 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 143.115 257.961 153.994]
+/A << /S /GoTo /D (appendix.D) >>
+>> endobj
+1750 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 130.979 252.093 141.883]
+/A << /S /GoTo /D (section.D.1) >>
+>> endobj
+1751 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 118.978 283.834 129.882]
+/A << /S /GoTo /D (subsection.D.1.1) >>
+>> endobj
+1752 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 106.977 245.509 117.881]
+/A << /S /GoTo /D (subsection.D.1.2) >>
+>> endobj
+1753 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 94.976 219.775 105.88]
+/A << /S /GoTo /D (subsection.D.1.3) >>
+>> endobj
+1754 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 82.975 223.94 93.879]
+/A << /S /GoTo /D (subsection.D.1.4) >>
+>> endobj
+1755 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 72.912 238.385 81.878]
+/A << /S /GoTo /D (section.D.2) >>
+>> endobj
+1760 0 obj <<
+/D [1758 0 R /XYZ 84.948 699.082 null]
+>> endobj
+1757 0 obj <<
+/Font << /F46 1452 0 R /F113 1561 0 R /F76 1462 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1811 0 obj <<
+/Length 1413      
+/Filter /FlateDecode
+>>
+stream
+xÚí›KwÚ8Ç÷ı,í…]ëeK³éI	´™™¶LCÚÅÌ,T£›#›6O?’eCp-s¦­lÃOÿ{u_~9}ö| °Å0L/„†ƒ˜Æ!€É`:üéß½ŞNÏı¿§¿>ã¸s9£b6ˆì•òÚ\30„!b`ÀD_Šì›§!°„zï…‰÷EÖ‡¯~ Iä—öø~xaOÆ«|Æ"¯xVúfÄı€DÑA0c?òñ&¬¦ Ã(7¡ÅøRIÑP{÷ÅÄj7ÓaÆËR¦[€ÏËLÔ€+Yäú+8T÷ÀAÆÚ¿y*J9ŠW\¿è!©è‘ŒúÈbKvêS--+3y\ÍJKšÛÃ›B	{vòŒÊÄ=ÂÃ	;$f4‚šè£DFé•"ê4 ƒ—Uêã[^çú/7ByÃÓ¹ÌëàI›ë`¼½˜‹ù¢l y)´"Qñ~Ho Ç}Àië’Èe%ó+mÎ0:>Úû…èItf¡‹<ÍVeíBc†åï‘6²@ ƒyğ6kdÔL½×R‡VJûk½ÕoíeÃbÖøšf/äÙçj®ŠÕÕ\ò×äûÖ†fÌ63:­ÃÔ:vªÔ*­VJ´aC>³'¿™˜B¨\4¼'&òçJ§J•PúbFÙSWGZh3Ò‚7Ìš4ht­ÿxŞÊï,×¯.ë+5ìbê,½_”ñnGŠÚ,ê,—•ä™ü§GZqı„^´–/}ˆ›tj8iüåë¢Zf+%½4òctŒqä&{#ËTdÏE±*×õ¥Ôˆº4ÀéÑ»Wá¤c“¤½RÚ©¡d1Nõ†“Z·°Í3BOšÙ=°šTëô[^Éôsp6k+ DgÇ7LPÌ&›(§PiF–¬¤Ğ6Wm¸Ä+³İ;S6@{ÕÉÖÛN ¡eY[%]sBÜNs{{÷q™&õ&EYÊuµsœq#Ù¯ÛáûpÎó«:0%øøˆÖÆ£»KlË‰b±¬äfù˜ÄÀP¢FßC¾ÍBMùD,«ÕFJ#æ¸>ï­\·¹êİ}ºİš7''ÙU¡d5_èŸKèq=A;n“Ï> ÀÓÙçŒß„™w³b 97š Û‘Oºù %!%T;W2†-Ó‘v©yïŸÃbùÍ»XÎÖ-ÙĞı]æ«k?@€a ïìèù2¼å;FµçĞb-Ø‹’_­«Xß šoİÆÔù“{¢¸dg7ª½I—öè‹µid«&‚Ìm{£¿k³ÙaQæÁ0a²©í­:-Äñ}¸º¾oĞR‡öñ{íC‹ºh™C»G´¸ƒ‡öñhÙ®ğyd‡jnĞB‡öGÑvTwÑ"‡vh“.ZìĞî-í¢%íÑ².ÚØ¡}4Zõ¡5¥bÒ¢u)Ã^Ñ‚Z—2ì-ì u)Ã^Ñ"‹öãœWíÔÜ¢ù:¹¬Úq‹ş…ùZxÜËòÎª'±|Çv\iläY¨EÛÌøàıuBÉ¿t†‘ÚÊ²YLP‘¸}–	R´£ø`Dµ«›+96ó¶”àÎZòöAˆ‰Ò«šñ­VàùRæ/L¿•ºÜíuŞ9`IÃ†ôÖÑ57Oübª×‘÷¶Èƒ“ªX´O=å©ª¬0#ïäé7îÂ‡îÇ×ƒÁ£kVÓ¸·ÜĞ¬Bl\÷'™óªP²u6£ëeVØ9t|È“)û4ì¸¿ûo‰âFŸ¯‹N´*ÚÆÒ¶O¥1qıj¯5½á#&"]e’+YI£à9Æ·º4é÷¼õÀm®Ãb¶k›úˆxJ¦Ÿ`ÙlëÊû³ÑôÙ¿hÑCB
+endstream
+endobj
+1810 0 obj <<
+/Type /Page
+/Contents 1811 0 R
+/Resources 1809 0 R
+/MediaBox [0 0 612 792]
+/Parent 1708 0 R
+/Annots [ 1756 0 R 1761 0 R 1762 0 R 1763 0 R 1764 0 R 1765 0 R 1766 0 R 1767 0 R 1768 0 R 1769 0 R 1770 0 R 1771 0 R 1772 0 R 1773 0 R 1774 0 R 1775 0 R 1776 0 R 1777 0 R 1778 0 R 1779 0 R 1780 0 R 1781 0 R 1782 0 R 1783 0 R 1784 0 R 1785 0 R 1786 0 R 1787 0 R 1788 0 R 1789 0 R 1790 0 R 1791 0 R 1792 0 R 1793 0 R 1794 0 R 1795 0 R 1796 0 R 1797 0 R 1798 0 R 1799 0 R 1800 0 R 1801 0 R 1802 0 R 1803 0 R 1804 0 R 1805 0 R 1806 0 R 1807 0 R ]
+>> endobj
+1756 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 656.949 250.878 665.915]
+/A << /S /GoTo /D (subsection.D.2.1) >>
+>> endobj
+1761 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 643.01 321.253 653.914]
+/A << /S /GoTo /D (subsection.D.2.2) >>
+>> endobj
+1762 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 633.066 194.36 641.913]
+/A << /S /GoTo /D (subsection.D.2.3) >>
+>> endobj
+1763 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 619.008 318.284 629.912]
+/A << /S /GoTo /D (subsection.D.2.4) >>
+>> endobj
+1764 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 607.007 292.541 617.911]
+/A << /S /GoTo /D (subsection.D.2.5) >>
+>> endobj
+1765 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 597.063 186.061 605.91]
+/A << /S /GoTo /D (subsection.D.2.6) >>
+>> endobj
+1766 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 585.062 170.012 593.909]
+/A << /S /GoTo /D (subsection.D.2.7) >>
+>> endobj
+1767 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 571.004 157.977 581.908]
+/A << /S /GoTo /D (subsection.D.2.8) >>
+>> endobj
+1768 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 560.94 174.176 569.907]
+/A << /S /GoTo /D (subsection.D.2.9) >>
+>> endobj
+1769 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 547.002 246.903 557.905]
+/A << /S /GoTo /D (section.D.3) >>
+>> endobj
+1770 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 537.058 283.316 545.904]
+/A << /S /GoTo /D (subsection.D.3.1) >>
+>> endobj
+1771 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 525.057 204.203 533.903]
+/A << /S /GoTo /D (subsection.D.3.2) >>
+>> endobj
+1772 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 513.056 179.705 521.902]
+/A << /S /GoTo /D (subsection.D.3.3) >>
+>> endobj
+1773 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 498.997 183.312 509.901]
+/A << /S /GoTo /D (subsection.D.3.4) >>
+>> endobj
+1774 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 489.053 228.133 497.9]
+/A << /S /GoTo /D (subsection.D.3.5) >>
+>> endobj
+1775 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 477.052 265.742 485.899]
+/A << /S /GoTo /D (subsection.D.3.6) >>
+>> endobj
+1776 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 462.994 221.488 473.898]
+/A << /S /GoTo /D (subsection.D.3.7) >>
+>> endobj
+1777 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 450.993 228.253 461.897]
+/A << /S /GoTo /D (subsection.D.3.8) >>
+>> endobj
+1778 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 440.93 210.978 449.896]
+/A << /S /GoTo /D (subsection.D.3.9) >>
+>> endobj
+1779 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 426.991 241.822 437.895]
+/A << /S /GoTo /D (subsection.D.3.10) >>
+>> endobj
+1780 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 414.99 168.029 425.894]
+/A << /S /GoTo /D (section.D.4) >>
+>> endobj
+1781 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 402.989 197.14 413.893]
+/A << /S /GoTo /D (subsection.D.4.1) >>
+>> endobj
+1782 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 390.987 296.078 401.891]
+/A << /S /GoTo /D (subsection.D.4.2) >>
+>> endobj
+1783 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 378.986 254.145 389.89]
+/A << /S /GoTo /D (subsection.D.4.3) >>
+>> endobj
+1784 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 357.127 194.39 368.006]
+/A << /S /GoTo /D (appendix.E) >>
+>> endobj
+1785 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 344.991 200.836 355.895]
+/A << /S /GoTo /D (section.E.1) >>
+>> endobj
+1786 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 335.047 158.983 343.894]
+/A << /S /GoTo /D (section.E.2) >>
+>> endobj
+1787 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 323.046 209.335 331.893]
+/A << /S /GoTo /D (subsection.E.2.1) >>
+>> endobj
+1788 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 311.045 209.335 319.892]
+/A << /S /GoTo /D (subsection.E.2.2) >>
+>> endobj
+1789 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 298.924 209.335 307.891]
+/A << /S /GoTo /D (subsection.E.2.3) >>
+>> endobj
+1790 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 286.923 209.335 295.89]
+/A << /S /GoTo /D (subsection.E.2.4) >>
+>> endobj
+1791 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 274.922 209.335 283.888]
+/A << /S /GoTo /D (subsection.E.2.5) >>
+>> endobj
+1792 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 262.921 209.335 271.887]
+/A << /S /GoTo /D (subsection.E.2.6) >>
+>> endobj
+1793 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 250.92 209.335 259.886]
+/A << /S /GoTo /D (subsection.E.2.7) >>
+>> endobj
+1794 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 238.919 209.335 247.885]
+/A << /S /GoTo /D (subsection.E.2.8) >>
+>> endobj
+1795 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 226.918 209.335 235.884]
+/A << /S /GoTo /D (subsection.E.2.9) >>
+>> endobj
+1796 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 215.036 209.335 223.883]
+/A << /S /GoTo /D (subsection.E.2.10) >>
+>> endobj
+1797 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 203.035 209.335 211.882]
+/A << /S /GoTo /D (subsection.E.2.11) >>
+>> endobj
+1798 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 190.915 209.335 199.881]
+/A << /S /GoTo /D (subsection.E.2.12) >>
+>> endobj
+1799 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 178.914 235.865 187.88]
+/A << /S /GoTo /D (subsection.E.2.13) >>
+>> endobj
+1800 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [57.056 157.019 157.14 165.995]
+/A << /S /GoTo /D (appendix.F) >>
+>> endobj
+1801 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 142.98 210.898 153.884]
+/A << /S /GoTo /D (section.F.1) >>
+>> endobj
+1802 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 130.979 267.116 141.883]
+/A << /S /GoTo /D (section.F.2) >>
+>> endobj
+1803 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 118.978 246.643 129.882]
+/A << /S /GoTo /D (section.F.3) >>
+>> endobj
+1804 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 106.977 229.249 117.881]
+/A << /S /GoTo /D (subsection.F.3.1) >>
+>> endobj
+1805 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [72 97.033 179.944 105.88]
+/A << /S /GoTo /D (section.F.4) >>
+>> endobj
+1806 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 85.032 213.737 93.879]
+/A << /S /GoTo /D (subsection.F.4.1) >>
+>> endobj
+1807 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [94.914 70.974 221.419 81.878]
+/A << /S /GoTo /D (subsection.F.4.2) >>
+>> endobj
+1812 0 obj <<
+/D [1810 0 R /XYZ 57.052 699.082 null]
+>> endobj
+1809 0 obj <<
+/Font << /F113 1561 0 R /F46 1452 0 R /F76 1462 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1860 0 obj <<
+/Length 1528      
+/Filter /FlateDecode
+>>
+stream
+xÚí›Kw›8€÷ı^Â^Ì¦Çu^Ó¤iâvÓY¨ Ä:µÁ#CÒô×„±3à:mÜÖ1›ğÆñwß÷Ê¯Ç/^AÜ‹úpo|Õ£¨AÚÃ÷A@zã¤÷·óÅıgüçË# Â¥!PwÔóÍ=Ã·gãÃ³ñ¥¹uå•ôAßAÏˆ:š\ê;}äzÀ'Ğ9—ÙŒO™ëÈw¿°Ù|Êÿp½øÎ›,ş,Òku§ïzÈ÷wi£hËŸ@â”jòJ ı¡eÈøÛß]ß»^qG¸•pT‚~`#æ>P ƒ :Eš–*«Açnvã%öZ,ûÇ1
+Öhj?°O27@Î­áuÊR çÎ]p–p¹0,MÌÎûyÂòúô@òúæéÔ>xÆyÂ“W®‡Ãß×hB‹f0Uß3e¹Ğ„n4û]ó¹ÌX<±6­Ì=»2Wªí0“’ÇyÊŠ¤pwËğ
+×ñ‚äušUJ3dsöijÆúuY6UÄ0ˆ1¼J=’Ø¹A$ü1³ôß‚KEŒ çAÌk÷û¤)¼kjLj5²°’»4ñç‡~ë\r>›ç¢Ö·2JĞ Üù°Œo½:jÒ\fIç"KmèÌÖ1ZÁxO—úx÷”¶;2RÇÄ. ÀaS¡"]^<ŠdçS
+¯VEÊ7*Îe©µ¸>ò/¸úŞp&S®àÀŸåv)A}ÔàñV"µïR¨4VÄ"·	ÖÀU'oÜ@ÅK‘XìGÚfrÆ¦æØ(1—â£ï13Æ#²GÌ—)·;FZ;ÆË\e¶Ëô˜:°XÂW™4;Fš+·–°s”ƒåòÊU±ˆÅê}d{õô“Ç‘Ğ_cğ´ö‡úÖ®±v€ÊàµRŞÔW*.Ş(©ÜæiVf1$|&êµ–Wå ÏNG•™ªäål  ûà
+	ÑøÈ:|ğ>cáRó|sˆ!÷[U^'Ü¶ô–D“ÃzW¾ˆyš[ÿ¦ı ¾Áç
+h{QFËî¦v q±X”ñ’â]l…ş¢¤¦õšj.ªr›b6cR%6<Ö¿Ÿ8"3/ +ó ûTÂ	”p 5Â9ÖOÎ ]ÜÖM¾ª<Tn"ş\ï~ıª|„2DaŸúa5¡hN„´OQ´ª
+Ç:÷¢}P“"w:ğ„ê•XÆŒcÓi	œ0™Ü–9«|ØeUÜ=aŸÌ>¦6³<€š©‡†úRÓs¹\Ï2ÆnˆÉÊ´°3ƒÊ™ i–4’fEjº=!] Ú’
+Zœ2B°İÜ\è8ğÿúòò.'R]ùÊî›—|!®S]6íÛcš2ÙcÃjŒõ(ƒ}Rå_’Z…°Y£‰ÅËí¤âímª2ª‰˜«ÿ0€ =mFO-z~Å¥äõü'‹¹*ëÊ. vÄ¿‡8ô›‰G†ø`>ŸŞÕnÛØ0îtüÇÁ£/|¥ÍŠüÊÈª,¡hÔ¹üm	£%§WV)ŒAr£çõ,y[â‚A·¬5SG¤9»á{È|µ^z¯O`;]r]Zt=4²féGßE|?)ÿàbßºÚVÕy¡»($]“@AÆ-a@y4›g2gUş]Áy…wêı¤È‘AŞXjK1Ë«µ”	;Ø¦Œå¿&n½Üô”Ï2i÷_3)…ª–^é¶WĞéôf]ÜÒ ÄĞÖz½a6×]Ş»åÕ¼vÙ‚^+=ãiÎ¬sAíW£·a‹ŞRCr³Å6¸K=¾‹>Á›N«NÌ´êxš-zˆØ4¢Æ*¼ê¼yıÉÍÈUV¢JP‡'z¼Ñğèo0Ó²ö62ë‰ qE>Éô´kÃmÕ÷Y=´Ø‘Y±¤dqÁÍêrcF›(ˆ:©üdq„V§,ˆ”/wFÕ“tĞ· Zèo¥¸i³Î‹OSW±“ £ı˜(¥òÒfÚÈÒ>×EıCiB‹
+B—Ù¾p¥ğù„Wkv‹¹®¡ŸÿÚ’ŸÚ‚~™(¿8¿ø!J»
+endstream
+endobj
+1859 0 obj <<
+/Type /Page
+/Contents 1860 0 R
+/Resources 1858 0 R
+/MediaBox [0 0 612 792]
+/Parent 1708 0 R
+/Annots [ 1808 0 R 1813 0 R 1814 0 R 1815 0 R 1816 0 R 1817 0 R 1818 0 R 1819 0 R 1820 0 R 1821 0 R 1822 0 R 1823 0 R 1824 0 R 1825 0 R 1826 0 R 1827 0 R 1828 0 R 1829 0 R 1830 0 R 1831 0 R 1832 0 R 1833 0 R 1834 0 R 1835 0 R 1836 0 R 1837 0 R 1838 0 R 1839 0 R 1840 0 R 1841 0 R 1842 0 R 1843 0 R 1844 0 R 1845 0 R 1846 0 R 1847 0 R 1848 0 R 1849 0 R 1850 0 R 1851 0 R 1852 0 R 1853 0 R 1854 0 R 1855 0 R 1856 0 R 1857 0 R ]
+>> endobj
+1808 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 655.011 234.978 665.915]
+/A << /S /GoTo /D (section.F.5) >>
+>> endobj
+1813 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 643.056 229.448 653.96]
+/A << /S /GoTo /D (section.F.6) >>
+>> endobj
+1814 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 631.101 273.743 642.005]
+/A << /S /GoTo /D (subsection.F.6.1) >>
+>> endobj
+1815 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 619.146 374.564 630.05]
+/A << /S /GoTo /D (subsection.F.6.2) >>
+>> endobj
+1816 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 607.191 331.186 618.095]
+/A << /S /GoTo /D (subsection.F.6.3) >>
+>> endobj
+1817 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 595.235 329.841 606.139]
+/A << /S /GoTo /D (subsection.F.6.4) >>
+>> endobj
+1818 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 583.28 329.284 594.184]
+/A << /S /GoTo /D (subsection.F.6.5) >>
+>> endobj
+1819 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 571.325 320.337 582.229]
+/A << /S /GoTo /D (section.F.7) >>
+>> endobj
+1820 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 559.37 342.922 570.274]
+/A << /S /GoTo /D (subsection.F.7.1) >>
+>> endobj
+1821 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 547.415 324.382 558.319]
+/A << /S /GoTo /D (subsection.F.7.2) >>
+>> endobj
+1822 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 535.833 241.613 546.364]
+/A << /S /GoTo /D (subsection.F.7.3) >>
+>> endobj
+1823 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 523.504 276.76 534.408]
+/A << /S /GoTo /D (section.F.8) >>
+>> endobj
+1824 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 511.549 350.543 522.453]
+/A << /S /GoTo /D (subsection.F.8.1) >>
+>> endobj
+1825 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 499.594 325.817 510.498]
+/A << /S /GoTo /D (subsection.F.8.2) >>
+>> endobj
+1826 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 487.639 287.012 498.543]
+/A << /S /GoTo /D (subsection.F.8.3) >>
+>> endobj
+1827 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 475.684 302.504 486.588]
+/A << /S /GoTo /D (subsection.F.8.4) >>
+>> endobj
+1828 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 463.729 318.135 474.633]
+/A << /S /GoTo /D (subsection.F.8.5) >>
+>> endobj
+1829 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [122.809 453.831 200.408 462.677]
+/A << /S /GoTo /D (subsection.F.8.6) >>
+>> endobj
+1830 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 439.818 163.546 450.722]
+/A << /S /GoTo /D (section.F.9) >>
+>> endobj
+1831 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 418.324 213.408 428.914]
+/A << /S /GoTo /D (appendix.G) >>
+>> endobj
+1832 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 408.003 174.057 416.849]
+/A << /S /GoTo /D (section.G.1) >>
+>> endobj
+1833 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 396.047 221.259 404.894]
+/A << /S /GoTo /D (section.G.2) >>
+>> endobj
+1834 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 384.092 197.529 392.939]
+/A << /S /GoTo /D (section.G.3) >>
+>> endobj
+1835 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 370.08 161.893 380.984]
+/A << /S /GoTo /D (section.G.4) >>
+>> endobj
+1836 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 358.125 287.092 369.029]
+/A << /S /GoTo /D (section.G.5) >>
+>> endobj
+1837 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 346.169 158.007 357.073]
+/A << /S /GoTo /D (section.G.6) >>
+>> endobj
+1838 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 334.214 189.818 345.118]
+/A << /S /GoTo /D (section.G.7) >>
+>> endobj
+1839 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 322.259 205.857 333.163]
+/A << /S /GoTo /D (section.G.8) >>
+>> endobj
+1840 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 310.304 185.414 321.208]
+/A << /S /GoTo /D (section.G.9) >>
+>> endobj
+1841 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 300.406 165.758 309.253]
+/A << /S /GoTo /D (section.G.10) >>
+>> endobj
+1842 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 286.394 232.736 297.298]
+/A << /S /GoTo /D (section.G.11) >>
+>> endobj
+1843 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 276.376 172.383 285.342]
+/A << /S /GoTo /D (section.G.12) >>
+>> endobj
+1844 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 262.483 255.939 273.387]
+/A << /S /GoTo /D (section.G.13) >>
+>> endobj
+1845 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 250.528 206.435 261.432]
+/A << /S /GoTo /D (section.G.14) >>
+>> endobj
+1846 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 238.573 233.164 249.477]
+/A << /S /GoTo /D (section.G.15) >>
+>> endobj
+1847 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 226.618 219.924 237.522]
+/A << /S /GoTo /D (section.G.16) >>
+>> endobj
+1848 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 214.663 270.803 225.567]
+/A << /S /GoTo /D (section.G.17) >>
+>> endobj
+1849 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 204.765 202.41 213.611]
+/A << /S /GoTo /D (section.G.18) >>
+>> endobj
+1850 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 180.924 139.526 191.803]
+/A << /S /GoTo /D (appendix.H) >>
+>> endobj
+1851 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [84.951 160.909 133.25 169.885]
+/A << /S /GoTo /D (appendix.I) >>
+>> endobj
+1852 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 148.974 156.901 157.821]
+/A << /S /GoTo /D (section.I.1) >>
+>> endobj
+1853 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 137.019 166.356 145.865]
+/A << /S /GoTo /D (section.I.2) >>
+>> endobj
+1854 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 125.064 193.135 133.91]
+/A << /S /GoTo /D (section.I.3) >>
+>> endobj
+1855 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 111.051 209.762 121.955]
+/A << /S /GoTo /D (section.I.4) >>
+>> endobj
+1856 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 99.096 182.086 110]
+/A << /S /GoTo /D (section.I.5) >>
+>> endobj
+1857 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [99.895 87.141 181.529 98.045]
+/A << /S /GoTo /D (section.I.6) >>
+>> endobj
+1861 0 obj <<
+/D [1859 0 R /XYZ 84.948 699.082 null]
+>> endobj
+1858 0 obj <<
+/Font << /F46 1452 0 R /F113 1561 0 R /F76 1462 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1866 0 obj <<
+/Length 2154      
+/Filter /FlateDecode
+>>
+stream
+xÚuXIoë8¾çWø(	[$µçİ@÷ez0ƒ>0m±£Å-J/Ïÿ~ªXEÅvlˆÉâVËW›¾½>ıôKYìT&Êª”»×Ã.¯Dš«]‘J¡t±{mw$¿Ï{Y%ö`»ÿóõ·Ÿ~ÉŠ]-êBx"uµKáOî
+8,ó]K!U¾{àğkg÷/JËä´Î§Éód:ĞïÒ9O£·izÇ‘J"e™è·³ı‰Fçi¥Á:¶vö‹[Ş2íU| w;)RÅü°0¹®…,‰¼T—Yrš§ãlœèÄwf¶íË`‡i>óº™MßÛ6¦éÜh=­}¸¥›ÖåÑkªJ²ô³óïn<Â¹4Eögy3ºå¼/²Dl-….•FJ¾Pêø†‹u**-éFyÇLÈ¬R^3ñíL¯¶Ö7³{ÛøY‚iê:1ıqšA¨ÁÓêõp2ø&^×¹ãˆGÀhKg-Ì^ÖÉ÷½ÌK”}Lóû^¦‰m™dûº1^À»OÆ/Ï0Ì5ì¢µn:ñÌ‡Œ]`.2–j¡S˜“§Œ˜DÜ«˜‚“k™´ĞŞÂ‹DòÓ`‰ šGÁÒÉ-” Páã’ácßN"#åÍzû Y-…Îjbõg*¨üË6‹h‡,ù¶†ò(FHÖ¾¥1øÎøNë["y¢°;Í0Å;7¼”µĞuF¼&ğ+³¸idŒ$ÌGçšeX>xu}ûLôÙ€¢æM/|Ğ°¦ı4ÓpêA-ağ@7E)2ÍºiğÒôêÈê"ù/è¿LØ‰êdpŞ¯ˆp~w jP•C5İÂƒ×Ã¯i{Zâ	Ob*Ës‘UÙ¦@ªÁ”ivXgA‚QÅzO3ÇjØ0d!?·DÊÿÒTÙIV¬?1ñ@G™¹Šø¡86ÀÁiÔ:Øè—:8&§ƒU7°×ÍCj<ªá·¥¾y\K‘—¬“20Ê›ŸÀ´6 ·L~GA/]^òIj™ŒÓBÂiÎé&iibx—{èL²…¬ˆŸpg­@˜ÓºXÄ¦NuBYÈ_ªå¶ÃJK$öåZE‚K«hq°çã¼ÓbÎ§Ï;Şõ­´E¡‰5ˆ1.:Èaš·è$nåâªë\”ishÀjyÒ¥„Kú²d#OC;>BZ =v!Ø–hywXh5¾”m±öò@¿ºÒ¢Ìõ°‘Y¾Ï4;ÌÓ€£Âß¶å4»ÁÌ®?Ó
+ûB™´Ó`ÈAJ~„Ûíó¥eÍjğ³ccŸÉK ãÖÌM÷ÌHÙ‹€Ã±}i:k<ZZ•f[l><¯E•m‚oB`äÀø¦Uv?BU`gÊ¨°Ğ:àñÔ!‡ ûëH'äv\xcñéb_£ÎJQU\®\½  
+û|å7…%Æ+Œ>fWQÄ1`1KÒ?üÉ6í×D>ê[è\ÔZÅdÏh‡×O§„áhoü{ó¹m³öÎÌ4JFêgÀÙU¼BÊE±ñÅJ‹º,·r«ÎÏ±âÛ,0v¦¥Áœ£y™0Åünxê Hpâğ9H[mo[†Lïyµ–
+°ÂZqœ)?ëU.} ^¼²Ş3jPºéyÁxë9šu€˜õ0¤©H‹ò*è:ÆEÊr‹™È¿\\Õ[%Uo‰¡¾Æ&o¾ïªª ¸Tw ™Ué4iŠôş¼­û²¯÷‡ä‡ºãkè1¯Ÿ+¡–Í‹»±§¸ré<Bè‡ÙÚXñÂh7¨ÉÑv5ÎV9È–4Â *2¡R.Á#œ˜i¨˜=8Âˆ<­Pğ~È2Hšè×÷„Ş ‘"f(œ $B[óNğyÀJ®pÌıD°½åö,š%åy( ;k{
+ƒ"Á«±ö2-í:LÍêÙê]7Óª;¾ã™æÑC¿Æ*•¥R"—k³5èWEò›ˆN5•ª
+6(‚`:¸ÊBµP%ÿè±Ÿ:v´JzS[<ƒQˆpø;.X¦lñBŞ²£*¡uñ%fX„¤oûÃ‹_Ö6ô_ÏDt\hSUR$½#³nikŠ‰~¡Q´—€êÙ\wT$¡9­ŞúƒÔEò+>©4§·jDe±Q:FwEmdêH³ôK÷ò‰‰vAmñL6xÜÍ©4YlÔ9 ¤1Z¤!{dÉø8æ]¢M\g_4Èiuí¸LLâèm¾—d!Ç¥z'k%2jT¸CIb¸ Vì:rX±ÊÏ –Û*h‹ˆ‰Á}pßEÒMn¡ygü½ˆ.«Tä±WAğ‰ï®ÆØ:@ŠÑİ4sKC»‚×Í7ûÎP–øÇŸ~~}úûéö9%Ú5ÃÓ¦»–6pó6»
+:ûº†a¿û÷Ó¿¾áWpøsaè÷!'Ô†¥ÌDUVô‘F^|H¨ËTŞ|(a+¬I)¡,ë?g@°rgNá€dxã:¦â%:yî@h/™	FG ¡‰€	~ù 5_’>D'Én”’*èi8ğ×Pf›I…’ğ4“} Óåã4¾\Öù%(Ñçdü;ÙgZm8g±Ä¤¼f«ÖğSDÿàv»â¤ñháâspÇn¡!÷3‡
+(´Ì™sV…™ƒ+–=Â‘«Ô 7N?»ØLV\ÉF)”§Ä?÷ƒg[ávÃ5”ìyë6HÊ«÷Ö_*Øœ§i^L,ãş^­Ç¬ècËOŸêö£ÿ°öfæã=u¹@‚ ¼ºËzjk~ïøÀPªòË§¸†å¯¾!„ë™s,BÚ0×ûÅÏaJ§áû#ìŠ¼ã‡‹şøAü‰
+endstream
+endobj
+1865 0 obj <<
+/Type /Page
+/Contents 1866 0 R
+/Resources 1864 0 R
+/MediaBox [0 0 612 792]
+/Parent 1708 0 R
+/Annots [ 1862 0 R 1863 0 R ]
+>> endobj
+1862 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [136.174 524.062 142.351 536.826]
+/A << /S /GoTo /D (Hfootnote.1) >>
+>> endobj
+1863 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [276.548 90.334 284.335 99.456]
+/A << /S /GoTo /D (appendix.A) >>
+>> endobj
+1867 0 obj <<
+/D [1865 0 R /XYZ 57.052 699.082 null]
+>> endobj
+1868 0 obj <<
+/D [1865 0 R /XYZ 58.052 561.088 null]
+>> endobj
+1869 0 obj <<
+/D [1865 0 R /XYZ 72.399 121.45 null]
+>> endobj
+1864 0 obj <<
+/Font << /F76 1462 0 R /F46 1452 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1872 0 obj <<
+/Length 84        
+/Filter /FlateDecode
+>>
+stream
+xÚs
+áÒw31S°Ô³432SIS°0Õ³4±P0³0Ó342WIQˆÖ¨ÈÌÔŒñÒw344FRjbTknª` QåìïâêRÊåÂ ÆÂf
+endstream
+endobj
+1871 0 obj <<
+/Type /Page
+/Contents 1872 0 R
+/Resources 1870 0 R
+/MediaBox [0 0 612 792]
+/Parent 1708 0 R
+>> endobj
+1873 0 obj <<
+/D [1871 0 R /XYZ 84.948 699.082 null]
+>> endobj
+1870 0 obj <<
+/Font << /F46 1452 0 R /F113 1561 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1879 0 obj <<
+/Length 3474      
+/Filter /FlateDecode
+>>
+stream
+xÚZK—ëÄŞó+¼C>±õC/²Âä„p`Ñ–{FÊÈ’#ÉóïS¯–%_;'›q?Ôêêêª¯¾*ÍWOŸıùCmtg™N7OÏ›´ˆ“To²ÄÆIo›_¢¯kwü°İë4‰Ôö·§¿ó*çE®pU²ÙÛ2.”áßuÓ°UEÔ/ÕÔô/±Ù¦ŒËLg¸BÅ‰†eÉFm2ØR¥›¶T©İ<à·*ÜàÚÖ·°o®£óĞ¿îtjº¨İÈï†Î¹íøgğçË´U‘£İyFî;âl’¸,”H ‡¶¥UY²ı37¦ÚcÃF§~œxèØ<ouıš$z»WQui'~Ä¶gÔ®zİª$bíÙ¨r¼&Zo÷FexÚ,rg?„Åİ‘d\()ˆX$±¶†Eœ<jééĞ÷¯tº4zÃÍ@Ø³|†<œ`‹¦•GyÒFGïm_½î [è¨m¶ÚF¿ã›ıbxp•$\ .
+–©ê»cƒZa¡UyÔõİşèÁ|àæšñ$£_®n?ß‚JÆı?îöº(ìj¦‘ÛS?_ÕÍ–i#j+×‚U  ¦ İAÃF¬œÊcƒ·Å'â)¸¦vjNÒkİä»ªñ#ŞFRF_†7€ÚFyF÷@ÖÆ&€ ^‹è?—f¢fNûıš¥ŞdÖ]¦º§û†Ní¶:¹JˆÓUu9]P²#\ºª¿tØ½•!‹Äl¬Ñ±Õ¢‘wp	T!¬Ã[Æ_ÖÎêq¬Ä›iÉ£°ÿÖL5?'ç›R¬O_\¿­êB PÀ*XêÑ®¶	ŞÖ€¶a2½$Ö;ÏÔ®™gxWSÒ O·ı8òØT»‰Ç^zş%ÉI–A’"N•;¹T5c;ar£”8[™¯‘É .d¥¼åÛ~«S¼FøË76lA‚¿±£ñ7ì(ğÏªîú¶Ûâ‘›‹FQZôXvÛwyêà½HH“ÒÊÜW·PÈM. €*Q:º é¼À‰ å È¨e]D”æ"ókÙxÅ´ı;Jà†ÆÚw?øª?ÉÛğöÄõå…¨­!,ÁzpØÅFa=\ÏÂµÀÉ^Æ=>ô‡;[¿ãÍÀâÈ»`’56rÇ]_„-°äš4Xş/#5€!#òÚCÓ6/Õ¬Bø=,ä!Ç?`ÃØ0W1“A ¶Æ×¦mwì\‡­*Y×)i–~O`‰â ¸Ÿß?ğnC¡eØ|&lÈ@D°atepæfä ›*
+C]gzãA¸ÇSß[WQ(4~ÂµS*QØb1D×
+£CUµë^P÷Eº¡[€QwèñÀØ|¦K…Æô¶-Á¨}pcxNˆ_ îcdMTv]‹ Sf¢ŠÀNÛ“7‡vU{Œ¨Üá `3âƒÌÃÇ-šæñrØĞ›ÇÇ	qB(²7²$eœ$¢yŠ£ÃÅ¶×:òàL&úó¹¦KG6‡ ÍáDë9z/†ÈÉg²ˆC¦ÑÉQUz©ª›KÓe¿kMåMºØÀ´)ü‚u}v|=Ç‹_OCøêÃıãğàº‡8 ‹4NÊTÔ@<fv€´x:xU÷L—x>¿'7 •«!~¸	îğÁ¾¹‰•ğI8â°@.Ö€´Mğ|@Š=Â ÀãÈŸá§&â‡-Š|ø‹@ÄÍ+Æ¹‚ÀÍbU¤ŸŠ>|òİ4Æ·âKÔÑ6M&ŸĞpŒ¦k3ÚCãÈ4\d„ÄÓŒCĞ¹a€'Ì,7®ZÄ&<·EPÚÏ°¼9„1±FÔ^LÂ!@€ ÓFâª¢˜ïè;ty[2à`Hì¹ßö C“ÈËÜğÎSléI0:t³óßŞ«V±‰›è8RÍşŠøŠ¿ıpdÈx’<‚¸^ıëŒ80ÖŞO‚!@súÃ¡K¬?xş­ àù6äÈsC"DŞÎ.üâ%uüq\fŸ‡ş4ãB2„Y£2ãæ°¯ì5*d¥İ(ğíÔŠ"(õ—V€®H¦ab‘3ñX+Ş¸Eé BŞÙWê‘’…'Ÿ}ˆĞ9|ıø€ƒ¹Çi!zq/½ğê~€Dßj´ !4$­2šNî[¦£ØgvFñŸYûæûñ2 +‚gï;¿çÏŒè†=ãvº“ \!z€İ
+B\7hAº¦É©bQq ¹•P­“$‘¨yèKUàûYH„ÕÙ9“D":b>Jö~Œå®ŒvúX›dĞŸ¬¹ŒÍ0gP‘ç!#ø/H·¿ˆiulçû	à‰±GØw~b£^Åß1&õ-åIò¤GDA™<ÎıÀÕ»‰›1c³i¤Ê¬ØñĞrhÍ·C¼ÎŞ-zc9¯É©.šùy†Eÿz…”N¹@A© \%íZX„ûŠxJı²‚pHcÀWk¿é^²âveóØ&7»ü¶ãœ<¥š] ìá&Ş˜] &¼–“tè”0û«Ö¦m^áÜÜ½è¢”‰‹TTıÓ‡G[0ø¢{É%„{$ÑÏ5'¦Ğü¶§4×PŞÁ¾ö—¿M’ü6G&U¬CS	?!ßxBNô.P¦æ™¯ç½¿ğÀ[3ÖkvTz¹ø¹¢Î×ŠÏ©]h‘ÅIÈ.¤*ŞøÆ„Üvğ'Gq •âŒQ>e¹rs-Ü\çé7Ò¯.Ã¬†!<U>1¢÷EËm¬´è‡Ü:OT‹.Ì£R ©¯ĞÎ0ÑHu†Õoõü¨°·`98F	¹n]ÓÕõÏ»9š§"IÉ·*µqõçY…¬4…J=òˆ˜Î2_Á:öe˜“[®˜I:aDÛ/0|\ÙoeUskÄTÿ„ÌÓ3INd‡„îÏ·Çq=ê;,hP«µ¶oã¹Z©lll¦¥Zilœ–Š«•ÀÏ¶{€}Q¯ˆl;üÈ #I#\Õœëx HŠt^nö*K#õÏ¿6Ï!eoøÜ«Ÿ&I(˜[xA’İûräÂ Ü@#ĞoTN¶DÃT ƒ©™89¦jU#£Xä''tš'Š €BÎá'Ï³§%·c“4e°-WÕÓ‹èGÇ”’X\í$Àa$oÙùÈIh1${ëÂ†ğ@æ â YÏ'øä1%PûÀgÈH—Eâ4šn®säN°Jˆ²SD°4$¢ØAßÛÚèıR<KQ¨8 ¨åŠ]àëj5g³D ëÁw<*é´x_½bäÌ$UTûö<t+OVÆ:¸õì³Hp™w‡”RG‹dàZ¸ù(ë·H•!ë\b-V„xÙgwŠ³x@LtpuÙË$úV%„'°æ†Ââ“òAË÷›J5Ğ—õ8*5&X¥á
+ùK/Åv©ı] 2˜n2-9Îô$Dö\oöZÇ™!c6MŞƒ%	àz\]i×S-1®‘…{/’¨TÌ~‘uÇP˜hø,O4
+88½¯©úlr«ó9Tr%aã;XÿIRÍ½Ò”?íñ³.øDú“44¼H—ÉœFs
+8½Ÿ)á¥$5TIJå‡Ï·h)Ä»á‰óàª‰>Ğ–(€tT¯Ü‚3İ;…ÎÈe÷Û6ú×¬±µtÀäÿ8±kNôŸ/:»KÕÜ†šóåĞ6U+£®¢ï	‡ÖßÛ³ê¡ˆ¼ŞÊ>V®ÉâR+k	jÁV@DÇ?oÍÑ·s nVÕK^à»À3PA é±+d–ûûšÕ~ÅNÏuù›ƒ¯¶À³{*-ùœéãs&öê]|ÎÌ?ÈlğƒL¾YÑÈ	Yñ¥Ã Èy@fï9G&l*³Iò[B,+nDQÀ8LÈNá\t£/è“ÀŒ#BF)™@XÉcJä8@i´ÇÚA^½?ùS?¼ßU¶*’Ø†ltÎğãÛüÙ(EüZa
+²ˆïgÎI©òş€ŸØ¼böî#7/¦Â4>ôæ¹±…Š•÷ñ3ò)BF?ù àR\Î‰ÇÁ‹Ñ¥sdÉ$²HÈøĞ€©J†°>gçè{v£ÄëçùC
+t¤Ü°ù‚çeÕ²6s‹çÊ˜¸LÌúcîÒ¨Ó€ÜáÏÉ)Õ6ğå¦s‘fÅà±‡Š%ZKİ«Áİ†=L"K[„°Ç¹N>ƒ¸xv-™˜Í¯iÿ<vöİzYxQ±~Qß}$àG
+SF»@½\÷:~RÄ¥L€–æúiU®vG¾ÒN>t³>-+¡škŞ3èÂ§7_µñÛw(îà.Óuš[¦™(–0º	#ÍsA«²\	İ¯?ş4Ê— ÆÉÇš´SJ5~¹¨ó€Q-sL'¬²•Œ[ëb1@oR³ZóÃ?¿eö¯
+<Â1xŞ€E¤3˜8Sò/º“$d±†Æ~ñl|+h‚ŞÔjS*;€xß}õ}HèøË›´Á‚?f¾H;½TƒkğÊ¸o±Ìh§š¾„0Ã$M¬á’aI¸¾÷LhÊèã[“F?ó#w™Äæ
+XH°¤¶“Œ!üÿƒH¡‹2N3üï–"}ğøì›§ÏşÁ	v
+endstream
+endobj
+1878 0 obj <<
+/Type /Page
+/Contents 1879 0 R
+/Resources 1877 0 R
+/MediaBox [0 0 612 792]
+/Parent 1887 0 R
+/Annots [ 1874 0 R 1875 0 R 1876 0 R ]
+>> endobj
+1874 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [120.393 122.66 148.398 133.564]
+/A << /S /GoTo /D (cite.DouglasEngelbart1968) >>
+>> endobj
+1875 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [220.711 112.762 245.946 121.609]
+/A << /S /GoTo /D (cite.ScottGriffen2000) >>
+>> endobj
+1876 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [336.257 84.867 376.017 94.978]
+/A << /S /GoTo /D (cite.Olukotun96) >>
+>> endobj
+1880 0 obj <<
+/D [1878 0 R /XYZ 57.052 699.082 null]
+>> endobj
+2 0 obj <<
+/D [1878 0 R /XYZ 58.052 514.116 null]
+>> endobj
+6 0 obj <<
+/D [1878 0 R /XYZ 301.052 473.56 null]
+>> endobj
+1881 0 obj <<
+/D [1878 0 R /XYZ 301.052 336.858 null]
+>> endobj
+1882 0 obj <<
+/D [1878 0 R /XYZ 301.052 304.275 null]
+>> endobj
+1883 0 obj <<
+/D [1878 0 R /XYZ 301.052 271.691 null]
+>> endobj
+1884 0 obj <<
+/D [1878 0 R /XYZ 301.052 251.063 null]
+>> endobj
+1885 0 obj <<
+/D [1878 0 R /XYZ 301.052 218.479 null]
+>> endobj
+1877 0 obj <<
+/Font << /F76 1462 0 R /F46 1452 0 R /F183 1886 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1904 0 obj <<
+/Length 4529      
+/Filter /FlateDecode
+>>
+stream
+xÚ¥Z[“ÛÆ±~×¯X?¬aÌ·¼¸Å¥bY‰V•:åø$Á%, Ğë=¿ş|=İXrUÉyØå`0˜ééë×=ó—ûW_g“»<ÌÜİïï²8Ìmv—dI¨tzw¿»û9Ğ«_îÿöõwJ™É@ct¨Õ]ÄCŞşğæÃı·ÿ\­u*\­ã$
+Ş½¿ÿçÊFÁOıôöşİOïyšÙr*Œ4æˆîÔ¸rœ…*±w÷GL{<×Cµm»’'®üÚ<ĞQDk•ïš¡¬¹·j†®İ·åGVqğt*»áĞ•Å®jü$CK”ÜEa«Åâ6	u”óâÕĞÓ:Ø¶Çc»«†'zTÁ‡²ªó‘ßÕUSrË‡×ïÛ•Šƒßé_yÜ”¿ÉÑknÍ›v8Œ”äJâ,¿KŒu,lxóã_™vùTÛæıÌ¶½;õúÂ³·>õîá[;îEÁÇsã¸"ñæÂ‰}[×íJÇÁ#-bHw­áPrc”Õ×®µf¶ûŞWÅäQt?W7VQh¬l¼.šİÆè$²Ø;wíWyPlpÕ¤¼;˜ù®»ª7%$éô€vÕ~¥mğï(Ò+lA3õ'ÁE;²9eq…&–ĞgNĞï‚zL]—k0œU°+ûÏC{’—OıPI¬îM¾qY—ãÌbq¤5†ß”£6we]’ª9æ^°÷Û”Ã¦m?÷3í‰œ^îv£Â”$Úß«mÙ‡K¡äX]İÅ©½H>‚‰Í8Q8áë\Å
+oX=ë İs?©±Á^Ş0h8£¬Ÿäû•Êa3 £¨êbƒ=]×¸•Ğfñ3ï`Ïbj«àXMÏİÃ¡|«ä·m³-×]á?,‰ô?à)ª/n­l³0şÓîŒRÁ	ê\×dˆFéàÔµ]q<VP'§dèsª‡‘óŠ•h³vÜ¬ë&¡¹×õÑq‹¾Çô£6.	2I§ÂŠ®ìË¢ÛÊÎÉ:ö²N@l„Hª¶ÁëÑoòëıŠVtVäF;¢I˜£~Æ®¼eÚ†‰fBh£	mT›î¢¦™Lâ4Şùô²Ò sC|8ïÊŸÒ`@?œwĞ¤{y'è>´›ÍSÕ½8¯­2Œ4åKö(&‰°g[¸íZ»+÷âmàL’ßüúJ98ÄCÕlñØ³™Ø bÂÎØ¯×=÷9ŠİPŠsü®!FßR¢(
+S_ÜÆLJ‘\ƒ
+²ş»Ï]îºöÜpè2©™ê½fé@r¦(³Ö÷ë‚²Y¦>¨L·g"Q„cUWEÇ¡0
+|PKÑĞ3TÇ’[ÇâóJ‘­µÎÙ¸ÀâMµs”_ç„M“0Í'Î´¬‰~eÅ¸â™qÙ‹q±eYÿöÀìĞ·'Ş‘ü¨Ÿ8rÅ“ÚÄ†™÷f.´7§ºØ–á’iìûl…Y¬xøı¡êÈ÷é(I•Vk•'.öĞ¯ÓljèhÄ:iY‡ud^•a‘„Ä6´IÊ33X £	1*ËC%sr¶P¶s÷´J’@ˆª‹<éƒĞ10=cé÷P=À£r1Y˜å	Ï?A¦‚¾İ$hvœ0¾Ç’[Ÿ…^øò Flæ±O=ØÖm_:Ñ`ÈÃ¹è(şÜ A'øºö©¶¹¶Ö}	µœÖç€¨[«—8§N”&
+ãXŞ/ÃQ¥afÒ1ßnÅCÑ{ŠÊ†[ÍùX:ş¯oíLYˆTœR{&Ö¤ĞøSÙ¬ûöÜm‰›i{ˆ#±gÚ¢w:oêjëxˆ§g!_)ş~”Û*"FÊBrâø¯pˆÄaƒ7QŸÅá-ÇP4ş^5ç?¨™Ÿ!ì²kœàñç™Õé4´³EïW<J™í’B€'ùlô/¯oìÃäèópWÅîvE“È•æ‚T¢C•™ù×Ú>Ê–Ë(`®ØêùÈ×óÉğ*×v>äÇÏçÒ
+ËsıBV›eâ@ö±ìûâ¡\ŸŠ¾}çbÓ)ÛË.‘şü|(ô¥‡OíÛ(û%dQÁkÉƒÜÏÖŞ’B¶Í ıêˆ pÓ?˜$Ez&ôï»öÈ±ø™Z ƒé…S%Š÷ĞØóÀ™ …sÁ¥Ú•Üá];E–¨¬¨¯2"/¹Z®FR„h}¸qîa ëš1.oAÃ§¬É…Û[¸×X…Wœáwô1Œt8`;
+Éqàç$Ü»Zç„»íùáàÛ%7œONá“×ı¶¨¥Ó›è-OatCP£¼?K@@l”ŸÈ±[ùKn¨<‹äS-îË¹Ï²Û¾±¬‚÷ŒdÇŞ©Çiâ€(éÜ!Ó›‰¿Hbç Èe(Şôì¹ã È—8v‹ ¤yÆÇ7xVN #å5L¹}nD¡GÉD#‚Õü¾Øu2ÔA‰HùÇ­[ÃÛHvß.¹™Ó¡sÁğÍ ˜Zíğcó€ü*Êé˜ARÙo«“/
+àòßÎUWúïZşl7…’È=É‚†L!íºè ’|ÒÖõoÈğ¥¡gˆJ»2d0ô†³ıcñk+5ˆÓ¹;µ½”+ºjì¥ºšpÂ_2-ñTDèçæ‰2—õ9•÷¯Œ‰&Œ¹à¬tflÈ1B›‹gûÔÀ†‡sû¯G|û„¬$È¸wY4ñ“RùØõQõB=Ü%¹hl„Ôs\yÄR¬AŞ—úŒ³—ÁÌEö§‹ká^æ’Ì“Z¼"!"Ë&×şÚOp,ª¦çç(28Š›ŞWÆ™ö Â[BŞnë„§Á›Ú» z#ò@ë‡\¯ƒ0ÔØ8C­®Ü–¼!]Jèv}­JåèQ92?aK'ø+„•b$’ªT7¾b™ Ñ8»|äH=ê²iªóQbX±EnÿB
+A-I….yNòàãP´zø#Ûgæ·Æ@Îõ›j§şT:?ƒ¦óø­¡/×‘Š%L¸Ğ¢j¢ Ä©NC{¬¶´‹4€
+Ÿ¹¸“²à÷HÌé8àrhN±ÇK—}âÙ)‘ë?R‹š.@}ø‰‹¡ÙÅ€Ÿç{€9aêƒ ªà€xlŒ!ØÙàï‹.J—³*£a¡ñ|ä™4ŒÿØ¶‘y6W‡Y¢ç#°X	µÏì_§^£#®h4¶Æ×N£oÉ*Uaæƒ³Q¬ˆ›PbßUM¥I].¸¾–‘­æ,}úAAU†#›€d:SŸçI‰óK:·pšúY4áİÅÚ#ÏR³ç‘ÃÕÀŒE©¹tÌÚ—Û™·òDÅ¢lzÉû¡£­S‰±*¥$øŠr ¤ÛBnTÃ¬¸„Äd·«hÿ¯ùñ€¤ï’kp ì«ªJ¢ZPbè÷¢À^ó½«ñÆ"vœzbk‚GÜw}.Yt©ˆFUv‡â$6µ?;c½îo”6.F;bæ{1Æz@kt¥0af…	Ã0€z'é5z™ŞW3 ç˜‘‚œûŞWr+q¶ËíÅóêĞ„œê¦ÓT×µîÖÊ¸çqşq®¶ŸÉ5ÿ—Z:P¡úóË™²J2Ùòt‰|Ûºâ"’##O|ô«¯¾‚'³à¡±vÉro!b$c‘}G	N¹aùÂòà³,%Î‘ºüË5¿-¾W 7M·ãë6åbEC#o…âÔò™C	ĞIÕóulâà Ä™%=š0ì‘[Nìøuê¡	‘4ÃX+ÖÆª1¢ò¿=ÿ6­tô2‘Î”Ãè,´i>?>û— äÃğ¦Üb(ñÁQ¦ÂŸ=Ù×ÕÅøó-òêÛûW¿½ò+!ƒ@&«Æ•¶ÇWô"	óÔÊÿ®¼Û¿úÇ«¿<;]œ c2B}‰Er3¦8îVVRšö>qÙ–Ó1ÛZ®“yÂDGæÔ$f.«`;{2&ÌFÌ+eù¢çR<«È´Ç÷¹ˆÈeGÍG!DûPÁ0]ê›±D'ŸÀÖHA—óKQº#@­Â\İ9†¶ûìqvÑÌáx<ƒbMQ{X>2àšñÓ›V°~8Ï­?³ŞúÑBşûë§’VØD€‚Q|‘$w ?nÛ³«í¦É¬€Î¤äÖĞø~²ÈB:q¼'8#şúq…¶@,ñÓ¯á>1)ú§yÏ¬»¢ıqOFbşåŸ*+_b´D”w®|šM(èÑ×{~D²ÕËçOğ»m›¾Ú¤§¢´lfYI?¿¡÷qŠd7}^óMæz´NÀD´“Œº£³Â×Şsá;§çY"‹&j‘öğQW–¾DJ‚œW§ZEß6ÅÆ™V<Ûiœ_J(ÏŞğrÉKlğYL²°´Ø"×1P=¡=K‚xIüGLö|UŸû?´EÍgS	—Ü–FÍ§v@ÛŞL†öäÒ„‰!2Ä_FtIcéD×…/ïÖ9Ğ_LÆh,ÅÁ×ŞĞQ1oXòj­"ä@dŒî=.ïœm'
+¾§í\?”È§»JL˜ÁqjHRú2IWJs¬B›¦ù÷¼†a‚gŒ¥røäR…Ì³<Şñ¶	ìĞGæb3ùĞ³Rj —Xø‚à¢ú,FzÇq¹Ñ;y—"Riª\& —Lb<gÂ8hz$ĞKûqRåáœ*q0ÿ@óF>ø¾|ærºğõ”³Í‰òqI<=Z*4_ôôˆIr×#Âş‰ª¡ÆR%"|úæ›o„U WóÕ(»»¾*7ƒŒSË12làµÔ
+à$ü›ÊoSŞt-Ÿ ÷ÃdøxÉ¡—
+UÛ\uãt*aÆE¿àÇgçmbF±±S
+Ké†ÄõE–ÒQ ½Ìånûği ò•=ÿ
+Ûü&óô9Olğú–G¥"v”§“3gÏ;ªÆ3ï¤FÓ6"G E«#ÜiáÎv>¨®úAî2=ºKVşóÑzD‡-ëğUië<TV/¨zµùŠÌLnBIøOÿ™©$ÌT:“™Õ^fÔRaüE™%X>¿Ìåê%Õì,  Hà¼d»'v.=*§›#‹"ëJ$Rytg"™q8”ƒ½d’™PÄÍQ—(Œs€‘ZãÙíÔçÉcæ¥R ÍaÉ^õ’Eó¥®Êeøèä@Xï¢Ev¦¼WAŞd5xO Ş|¾Z·2ià|Ëu±\¾FşiãtşõÆWÆb™¯ç@‡¯é˜ß°;£ÿ¯tL#Nt6÷Ğmñî~drMÇRºø6×Kî&”š¿{iÉQÊ­÷ç«nNÇad/4ı§¹Ú¯"}
+¯=|[lÓ[0v,µ 9y+È†N^°‘ÎßQ³ÁùÄ
++ '¾«Hd¥kC‹CĞQ>–€Næ‰¶—S<†AÈœâx„AQ„7Â P@HÓ¥+Ip~Ùôıê*· ©¢b“ĞÎıuC®5ÛDÎTŸ¸—8Ãİ›òP¹Ê2Úr{ÂÆ·ÇÅ3Dtïæ×b°)ô!İ'€`mğfïJÍôó¾–‘{î9Íh×rU¿RqÀ7ËÂíHÔ5öf¶¥K?ótÙË£x"m4Gt<µç®/ë=?ü’/Éµ8Jt}ŞÙDç1ø±s{jN¼×²²:Üû˜Jçbr"4âmJ_Ä<#æ¸{Cïî—#rŒÜù$Á¦•úÉ<T’œT,Æ•¬«ª\Ëğ•M;§>ñ¨/ğsÃIÇÄaÏ€9¸ÖxÏ÷7ò4õMøRÆtIp Z*L¿ 2}]Qöç/o\\qç‰¥o6-ÿn‹Şå àÕãåíì’Ê5Ó ÕÙ<' pq^E_œ#ºúöXÒ-CÑ%<Hê%èœ(üŞ_·ıÿÌî§õĞ÷­ÓÜÜWù¨õo­Í„<ZÆno9İ*„éº’]&: c?Í¦k‹İósB¿ƒi±”XNvo¢Ùe€ºÀPï‰û(Ùš»eˆmÜxûá“\3Röf6-–—Sº]ËU§°´ĞxQƒ³ÚâxªKÁñ3¤ƒ\$"$ôBü?„è“t
+endstream
+endobj
+1903 0 obj <<
+/Type /Page
+/Contents 1904 0 R
+/Resources 1902 0 R
+/MediaBox [0 0 612 792]
+/Parent 1887 0 R
+/Annots [ 1891 0 R 1892 0 R 1893 0 R 1894 0 R 1895 0 R 1896 0 R 1897 0 R 1898 0 R ]
+>> endobj
+1891 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [277.297 401.934 307.265 410.781]
+/A << /S /GoTo /D (cite.Torvalds2.6kernel) >>
+>> endobj
+1892 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [161.187 389.979 187.538 398.826]
+/A << /S /GoTo /D (cite.PostgreSQL2008) >>
+>> endobj
+1893 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [190.927 389.979 217.278 398.826]
+/A << /S /GoTo /D (cite.MySQL2008) >>
+>> endobj
+1894 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [122.299 378.024 149.746 386.871]
+/A << /S /GoTo /D (cite.OpenMPI2008) >>
+>> endobj
+1895 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [152.723 378.024 183.498 386.871]
+/A << /S /GoTo /D (cite.BOINC2008) >>
+>> endobj
+1896 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [106.602 182.666 133.491 191.512]
+/A << /S /GoTo /D (cite.BryanGardiner2007) >>
+>> endobj
+1897 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[0 1 0]
+/Rect [136.084 182.666 166.858 191.512]
+/A << /S /GoTo /D (cite.GordonMoore03a) >>
+>> endobj
+1898 0 obj <<
+/Type /Annot
+/Subtype /Link
+/Border[0 0 0]/H/I/C[1 0 0]
+/Rect [168.248 110.935 182.694 119.781]
+/A << /S /GoTo /D (section.2.3) >>
+>> endobj
+1905 0 obj <<
+/D [1903 0 R /XYZ 84.948 699.082 null]
+>> endobj
+1906 0 obj <<
+/D [1903 0 R /XYZ 85.948 111.931 null]
+>> endobj
+1907 0 obj <<
+/D [1903 0 R /XYZ 328.948 619.773 null]
+>> endobj
+10 0 obj <<
+/D [1903 0 R /XYZ 328.948 517.995 null]
+>> endobj
+1909 0 obj <<
+/D [1903 0 R /XYZ 328.948 458.054 null]
+>> endobj
+1910 0 obj <<
+/D [1903 0 R /XYZ 328.948 438.709 null]
+>> endobj
+1911 0 obj <<
+/D [1903 0 R /XYZ 328.948 415.249 null]
+>> endobj
+1912 0 obj <<
+/D [1903 0 R /XYZ 328.948 387.5 null]
+>> endobj
+1913 0 obj <<
+/D [1903 0 R /XYZ 328.948 363.22 null]
+>> endobj
+1914 0 obj <<
+/D [1903 0 R /XYZ 328.948 326.985 null]
+>> endobj
+1915 0 obj <<
+/D [1903 0 R /XYZ 328.948 280.952 null]
+>> endobj
+14 0 obj <<
+/D [1903 0 R /XYZ 328.948 228.016 null]
+>> endobj
+1916 0 obj <<
+/D [1903 0 R /XYZ 328.948 144.44 null]
+>> endobj
+1902 0 obj <<
+/Font << /F46 1452 0 R /F113 1561 0 R /F76 1462 0 R /F205 1908 0 R >>
+/ProcSet [ /PDF /Text ]
+>> endobj
+1933 0 obj <<
+/Length 4483      
+/Filter /FlateDecode
+>>
+stream
+xÚ¥ZK“Û8’¾ûWè°#E”h‚ _sq¸½İ½5a¯=¶':b{ú@IP‰mŠTóÑ5å_¿_"|¨JsÙ¨ˆ"˜‰D"_fê‡¯¯^ÿ¤”^åADÉêëqgAG«$K¥«¯‡Õ¯kDÁf'áúÓ&Öo?¿}ÿşÇ÷›mƒòycÂõÇŸ?¿ığáş~fâÏ7:^¿}ÿeóÛ×¿½şÉ$³L¢ƒPå«¿­iÊ«¿¾R „+µJ¢ 6ÙÊ¤a¦Ùj~õÇ«0È£Lk7c>vı‹ÏÛ8ğ…­ŠT Rzöúş¬VÿÕ¼ú»ûçÉ’ÛÙš?d|cİÌÈ"$£³ Ë!¤36òSù0´–öo 0õ×ÍV«xıáşÓ—×ïªfÿmûSkÿl½ß€üÄó¾nt²nm}àÛcÓòà¾îmÅÃwŸşÑ‘ˆV*#/",¯â•	ã Q/ÿõTôx#Õë®(wfjİŸ,ÓÍ~èhhÖÍ‘IÛb½sQïeÎ©İ©<öö o¶ÍÙ­Oû_n_ç:HÍëŸŠöğ¸QáºpBĞéºoèš­/E[T•Û¨]sìı¼€d¤ÀzÙñÃı©¨,¿VÖLó¬I¦{‹¥Li("aR‘}Ê­»ï=¹QQõ§fx8ñİ‡¦ií_6q²–åŞtdÂbS÷e=Øn¾I°d«r%ë?iªmo±—äA‹ÄÊzßÚ¢s_2	ï×¾-ê®ìz§&Æ—qÛ?m’dM§j †Ÿğá•=}æ ¯7|½´±ògy°<›¤ \åWz¬ÉP¼cıCÙ—M]8Të®¬*»íOàöà–q©= Œ»!&ãhíx}_Ô×êëW5q™ˆWİÑgr¨‡µ$‡\Î”Ñ®0†]£KIFšLÓ²2i`’_Îçüeõ‚š1£â$ĞZ-¹ÄŠg‹Ó`†D_@|l! úA8fñÜÚ¤ÖA–yÑN"L3h’;šúW©+Ï—ê‰Çl$~!
+¾<Ù¢å×œ†€ÂöÔğÍq¤Êy¿Àüa®e«Î¿l!§9ZG8±~bÒpáë¹xâA-sªvÚ2®8hwm.¤=.`èõÏ°Š˜¬Â¬íMEq2é(#Jbà÷¶&'Ğ]ò‘Ó›Zh~"üK/üî†	çâw'7¬‡ã&'ó‡:µ£OUWÌà¤Á`4z(–“h0¿óPõå>âµÍ»§®·çN,Õ»¾²;‹év7d!Ş†I²’•I!’ˆ-Ä¹òI'äå›n|;¬Eg5}©ØD!!2P©j|vîlÅ«ã5 AÇßs©	”Rsæäƒ3FWÎ äƒÀsË–‡"˜Àï?Ì–Á±›ı‘™r1GÈqòÒ ü3£¶ë™úĞ8Or)'´äÚ¯¶ş#…ÿî¾¨nÙ-1â½c§Ø••sÁ†\°‰rÈëb÷%Î–ìè¡$Ñ\‰İ,àKÛ	u<[„Q¶=‹¾/Ê[v‚8$‘ˆ¨*kç4â"mÄóèeÇW6é¶töVh',¤D:5ºÚöƒ…#Õ£ë hÖ¿.”&ƒ²dùrê×M­hCuı]"ôµœıœ‡AìX:·TÁ—c3´¤ÑÛ‘Ö/á O%¹0¢³oªÃ³¥AêU¤tzõÔø@Ù´öhÛ7ğaeo=­yh‹3İxğ dbmÇÏTò#ÊápàoÚ}Àâ1ÔÅ¹T(Rg34¿#ZÁ·n˜„Íßñh·QùzèùæĞ0'1ÜµHCä%æÛ9É77˜ÂñA6"“Ä“ŠÜú¸LRPÊKÉ,…Z³ @T!_ràéV¾*;õN!¾b$Å!y¼ÔˆÙb½"³ h´#­úÉÀ^åNÛí¾¯ŞŠäñÏ}I>îÎ‡+v`„\ä¤rS•ßHËìŒ¿a±ïÙçä4]˜ MPÅ!²×İ£wOçòá$ÌöPòš™X¹,¥s¸	+p6¼\lÍhM@!®eÅ¤S–	¼'N=^WÃşÛ˜ $ë£%PûÈ7ˆu<«Øïm×ß~!d(ŒáqOÁ!@Gb®c8|ò7%mş}¬—Å”Šıú[¸:àIACúnæy%ÍsÊ#«Õds>c‹	K8”‡È’#¼«ÈÚhIegğ1OqÀK4ˆ@—„éŠ2F/°`
+¥­—bŸò÷ßî)¿ã9GIòJ+/	t²î+·Œ»hd0HáÂÉ‹T$Náh_\ŠSı<âD¡/´J#9`´|=7Œ¡5pu×·ƒ7FzæŒ‘nÎ…Á¤ RËoÒVn°"ƒ 4ÕÁY7Şp‰Q¿ É‹DqàéRIhtKË\†˜Oå_.¦î‡ŞÇĞEH icxuè™â«·˜dÉ%ÒÕ0N|ò5JÁe¡‰8„˜€gÑ9_3ÏÈûâ—Æ¬d8ŒÂ…Ğ™j|¢àFòÍÚ±Í‡/Iı_nÈ2ÓAœGKàd^ğ_¦Y”8lË·“iÒÕéfşt³hÔR¼SÊ³şé"jçn«ò\râ›İÓKvMH0³>[hÕÓ–Mù^Î»B-DüpÀ/Á—UbUrRÅÀğ÷¡âÎî‹¡)¾.„¯cpKŠÂ”™Lp'¦†Q)WŠ‹>Î=?ˆÄ®òe’ 
+eÕ–]Ñ–NDô…š¯l3¨[öÀÒ27)R(¡ÉsOè[fW•l”På3@:ò¥M İPúS¯±'‘Xï²pJ¢0>Ø©ŞÉNp½´¥ƒÉ™â½d">ç«ç02EA”‹€FX
+§ *ñĞ¬Ò”µ„µQ5üD×³$=zw’)|4*G›·×yäI!6Eğ3[«É¦¤ -Ïş Mæ£ôUª¹ìõ\~/È‚î|x†&z„r­.1òE‰4
+Y«ö'÷r*Åš‰öÌxpizMÉ¹Ër]¡y"˜cA"ıßŞyÊÁà«RÓÈ2J£=²ô¨-
+ÅúÃHÊaÎ¶pgkA&˜áöë~h‘y÷Nf˜Bu0M;Sš”Ìù Ù©<@÷Ğ³é¨ô5cğ!&õ(ª©—u+‘ƒ½ã[[úÌ-!ä*YcVı]9)'îÆ©	9èê‰fİ0ª˜J¿‘ÉËQYì:a4‡K=œwº§Gó¹s‘_îñx~¢İ¿+[!rY’™$P>^pŸ/rq"Âüx×Şü5pJq¶BjØ$İáé˜£öNTe[µ®šFB·EO/\—Âp^Óğ>ôÚc‰Ò3£ Š`ÍÁ+M•x„ˆı¦Z
+2S),bsòš èeYU7Í J„ïÎíaæ„c7ço=¯üMQ=4PøÓ¹[¾2V!vÖ§3_ò˜±2Aú˜>~vYş¥ÌÆ‘ƒ ’TV»æ,üíÁé}y•m¸õAF\ëè2n©=ğZj$Œ_†]à!C
+ óP3\L}™ºóSÁı¾èäÉ#Ÿ&uQ=}ííjU“‡Aê¡ÍXFºY<š†‹’“Øœe ã(F‚îLcYÑÇSÇ*Úl‘‰‡ëO Lğ¦BE$­?	QùOÌŒkµUH{SÃ_øûPZÒIHÃï4Rølö×_NÖ)RD„'jåF,à—ÓÆùèñÁÆxÌ@RÇ*^ô}ÅØ8æ'‘‹]ã’zBM½½‰Y”<Ï|ÛÃîO5Á:)Ìwİ`»7o(ï…×~[KßÕhàà•ÛT„ü{ámÆ…„«½\¨¨Ÿ^vRÓk&"m–¯ÑN^âñîe¥Qqú0æ³û¸¥i‘ñ]ÅK»A à3ŸÎ{Á'§rË½à•®ğ5MœMıĞ½a\óË©™,°{ó<k5)4NMÜ"m¥Ø5ô‰ÿ·vuœ¥©/{uÁÄöiŒD‚O­è.µ—8Ğ¾[‡Á;&no&®;òª’È+HšxkJ®¥†…šÜŒİ
+A±öæŠ,–}50	6ò”ÎZï¡Kîiê–uåÓ=&FT	mQÓ”óöYcd(Í¦ªğI`+U‡}Ã9A²>Ãù‹ë¢Ê†4MU~r!Sƒğ#åñ\Ùú¡Dth½ï"-¯™A|3QÅ®À÷9Ë‡^<Zï­û9áóºÔİ˜1ÌX}ÈsM°pUì^´ñ`Î3OL=;±ØI”Íê,p+Ö!=È–¥A”š	~›>SõG7ø¶`ÂImYKòú¸A”r%TNsÏ¾·¸AÚloÅm¢©¢‹ìˆR‹äÊÛg1#5<Pá’ÎäÉØ4ÀÃ™³dVÊu·®˜•Qÿü‚\ñEç¡u8wÏ¾£3ÈøÍ¸Æ-ô#x¶%1K­ªj1$øÂÂÃ’,µ+õ¸{.ñw<Ë¼ûrÿùíFçëww‹'ÊUN\{€¾ÚC¯o&ƒ:TLs_Ëè]S;Æ¨olÛïz8ŒC¦CkbÉ˜ŠƒÌ§,®F™Ÿ­Œ7Ê‘†F"•›œ›£Ë€Ò ¤ªş|ò‡¡Í³ÏBS•.g^E‚$pÎW³U˜<ûR0³œéš	óN¤¤É³®ï,a0)>nNÅ¾¼î“@3Šk"d€‰Gšdœ±¾}ÃF’¶Ïo?,ùSßª+’…2Ö$ÊÓØµêM0×x¸˜æE¿…ä$Ğ3Ü=úcXY76òù
+Ë#Üô`·Ò<`,:ızC~Ğ6¿Û}/òƒ³ËµÏŠb¤Ìñ"øMÇ—`Z.ºEc¡-òÇğj~˜Ê@/LâŒ¶GO€Ôz(«é¯
+Éb`B3ì±i§:Àşùï2¨XÓÒs(¥:5-é©ÄÙy¡¢»úCDú“®Øoo
+J#S6"¨a §İ÷Ãe™uëÄG¿NáÚ¼â ‚¯öax¼úá‘’º?nÕ·ÿşî>Å¡z8ÛÃMf"`’\$¤Ão¿Ğv¤şl€`×)€—1!ÿP%–"™!µ(NVn¤môØŠÜ/#„x¶}[î…ì3ç—@RD?ğ…º{ùMÌ<F‰ô#ä»`z=È
+Öû¡’ùãÏe†vâŒ†çË¤Pfì~¸_Ò°ÁÆëªìGı¬&¥òé‰SŞ‚Ä‹ñ4³²°Z;¼å+]ù/‡õtŞ*{?ûŸ!Ò¸0ÌpU’:o„•Å™Ï²¯Ô…;NcSí
+ôì$©OX!Û“ÅÎÊ¯Pô:Ûîœ¾ƒjÏ;{Ÿ³àXË}ÛÌktarÍAj|Óv]ÓŠ±¸J!WúÏ—ª¤cò‰:Wrò)_óÛùößÿf!–QÈ¤Q'f¹î/¤Ÿå·0{Æ¦ÉsÄ½œşÛXÙœ~º¡t¡Oo¸Åe|ôÀ »‹Å›tæDº©¸Èƒ}!u?ùyúÎ»zÑN™*ÑyŞâY¡´Æ§K¤ŒçÄ¥êu%}»Èhÿñõ_øÊLjvmZ‚‚^+r^Û‰şÇ@¿6éKÛ7õ™°òå¾ûš7ÖõEû‡ôƒº–«&Ÿ¸İt‰–Ü«³´=ÌÚAUs9[InĞÈ×ù(wğğÛ»yÁ†.ë“^ÃØIveÿ®|¨bî‹ZˆG
+Fİ„"ŞtWJé ñ©ÊµƒF­ßI¡Í©ÃTÃE¹§
+]8û½—–ÂzÇcşÉ$'¸Ğ´i·ççùê(*!şÿ´YiƒÔgÍA¢œõ°¨^.Ú¬³æOŠEô¢%÷Q’}3´õ±õ8oöPUn<1¾?5»İSéDòS(×. zÿØ¶Ærï4øßñİˆxóNÜ¬.uğ#ª`)<äbxâã\˜zSÃh*²§S{(”ê7hSi[^}ÄgíõK¯OqŞ”»Fh³>ÙHñÒğĞ¤¬ÇFüÿH××&
+endstream
+endobj
+1932 0 obj <<
+/Type /Page
+/Contents 1933 0 R
+/Resources 1931 0 R
+/MediaBox [0 0 612 792]
+/Parent 1887 0 R
+/Annots [ 1900 0 R 1901 0 R 1924 0 R 1925 0 R 1926 0 R 1927 0 R 1928 0 R ]
+>> endobj
+1899 0 obj <<
+/Type /XObject
+/Subtype /Form
+/FormType 1
+/PTEX.FileName (./SMPdesign/clockfreq.pdf)
+/PTEX.PageNumber 1
+/PTEX.InfoDict 1939 0 R
+/BBox [57.78 121.170021 290.466 333.755981]
+/Resources <<
+/ProcSet [ /PDF /Text ]
+/ExtGState <<
+/R7 1940 0 R
+>>/Font << /R8 1943 0 R >>
+>>
+/Length 11201
+/Filter /FlateDecode
+>>
+stream
+xœå}MÏ&¹’Õ¾~Å»„5şşØÎF !ÍÌ½,X¢R÷Œ t¡ÿ'q"âøyn	6ÜVuWÙéÇ9vØp:óùÓGúš?ÒóGÿıöıË_ıÃüøÇÿş%§ş’>şöKÎ3}¼şOß¿äR«¤ùRÖØ¸^V¸ş‡—Ô?~ùÓSÁóGÿùöıã¯ÿøª{=şøóQ—?vûZKÎyŒ¯c~üñû—ñ€ù—üÏ_şõ¿ü=´ïq´§,iÓ~®—U®Ëı»4»ÿIã~¹.÷Ëu½m¿ÿ•¶ûÏu½ÿ\?÷—T¬5NZï×ë§5ôúşì–È©|ã °–¸ÚáÕPÖ'½rıàÔëriÖ'ûåºÜ/×åşš¬N÷Ëu¹_®ëıÍÛáIÛıÍÛA®ÿùí°ç×œÒQäí®†hÕâIC±\ r]îïÃâIã~¹.÷Ëu¹oˆ'ûåºÜ/×õşáñ¤íşá!× !ò×ŞşĞwCÌîñ¤¡X®P¹.÷¯åñ¤q¿\—ûåºÜ¿›7Ä“Æır]î—ëzÿò†xÒvÿò†ë~C¬şu¯üTØbK\MQÓ´¦8iU­×T½.÷—dMqÒ¸_®Ëır]ïÛïÛïÛïÖµú”yÒ¸¿ú”©× )Ò×VrQS¤{Âİ’õÆ$|êü³t?zÿÕàEıë3ÿ×õô‡*ß³»îºŠé–´è~ÒĞ}Ò?®»½FÃ›îx÷İM·¤E÷“†î“şqİ¯¸ŞuŞ+MÓ-iÑı¤¡û¤\÷j_Ó›îí¼Ï:ƒeXÒG÷IÃÖNú‡u—Ô?éïí¼K©ÖßšİOºOúÇu¿üîïíüµl5Ó-iÑı¤¡û¤\w›_ç»îÀ{tëoM‹î'İ'ıãºÇ~ëï×Œx“ÛuÒ¢›æ–3/ı°î¾–wİı“¹%ıÒ<^©_:ßóçşV¿şŸı?S:æËÆ¿ëeè¹—£õoşî?|üÍ/ÿíÛùø7¿şô§ÿñÓıö??şêãßÿÛ¿ûÃÅ¦×Y_d.sáüé?ıjh;Øúòˆòªík?óÏÉ½¼Œ~Z'—õä5ÎêQÛDî”¶ÒŸ±¾DöÉ½FE†lİõk7w°õÜ)}„RJYÉšNi?^Åó”„œÈ®'×TïÉÕlzG?z‹,¶3äNé|ß²TïçÌôÎôTóªíè£!'¥­<.$dOnºl>(sÙY‘“ÒW/Ù“²µGÙ½>‘}½Ë®}Ëöe_9)›i²'d›0Ù×,ŒœË¶Ô‚ló’UoSeÅ¯|•®òjÖTïÉõäz÷i«6E¯ôØ“ÙqzEõ\K¦wUé#ñhÖnÈIéñhYr#ÈÖé‚yKowÃ¼·}ª]\kfWë˜IiùØÕ>wr.km%¹ WeU¯ÊBï.5´ÕÉ…¶Z;‡¶Ú½Q[íòXC5Ù'·ƒ¬ØÆPÙ…œÊ>áÈX=1‚ó•1Ød…Ş2›úd*{n1ÙsÉJ¤ ÙüÁ4õ(»×-;f”:ö3Ú{K*ûäFªİbI}–³²ËØrAvî(ÛÊ%;^·Ë>¹§ô5qÒ9ò‘.iI¹áÆrÅï	ªãLáœî;râ;f½ïX“ï(í¾£4¾cM»ãˆ×ñøpWzêÀVGŞ/ï¡ôşr£Xÿï|îï²uğrƒ‘‹¥r(ïó–·úå¨áèŸ)ê¯õ’©DéT¸´VÖ?ßğOFè·ãa„¾~rÃ×¾}&‘ï)=“ÈÉQi‡-Iy÷õOïğúµ† áXoƒ“›ã¶åÖ£-·«t¯Tïq„úí áh,+êßù–—Ò#qéÎ\{Y·|Y|Çö±TO‹ß““¥^äe|\ƒ§tdäb©ÜÊ{½å­~¹Ã5¼4à{r³::Yy3*Ø´Ò
+şR.µÅ;¼~­!håa„1şäf›¡uï)İ9*m˜C¤\j‹wxıZCĞpôÛ\wô|ë¯)J×Ä¥6—î0s’~«‡Ù÷Ü!îĞÑóÏËCxıw¼íüñï¾ïç5i®3u!-»¯OinRYûL´½¼İ:µ´‹ŠÏ3WşLôq½˜ï!D…ôY‘ßE_í·ÊQM»èö/¶|&úŠ¾ËË?¢H»¨¸¡«|øå­¿ŠúlilR—,¾Ò%úó£%ıFA?³æªó.¿QğDÑŸKˆÁ¯^şˆòÑÿïÄÙ\óî>Ö¸ö›r¬›yI?X Uít£ÒFÜù­ueÛåM‡cû,g¬\Ş$ÄéŞí­@ºvï7T§às·ß((w[•³ºÔÔŞ$NåU&…Ï
+Ş$$àùßTÕo5	ªyë@Uïy‚uH¬7T*±Kâ½ >~XÍé7Ştœ)²¦|w-
+ŞÛJn‚gş¨'yUw&Dä^vó,xOcÖg¹I´>ÒßnN_GöÂ6HT³¯zŸ{›˜İótçy#¢eŸ<õjúÛ(E¡@2Ñ€÷›Ms—0°´Íõ4á«û§0lh%a˜„¡DN¯%éIïÂP[&QÍ¾ê=%÷‚wŠ¨›S¯¦Ã$¥T4à«1°´3[CÍ)ÌZzdø²ÚÈp'bèô0Ô¬2Ôî>õ:CUj…
+	¯1\è£u3Ô6©#öa¯Ü‡czyõ¡j7AT³uÄ>Ì+ö¡ÎpZojÔ‡(¤¼¨ë¸û°ïÃ­´ÈPs
+³¾¦ÒÀğu=2|Ål‘áqœ¡f•¡æÀ¢ ÑCSª…
+	oèÃØGıaãêÂPr£Ã—ã]åqÕ!±-}f©…‡¨‰"ÛtVšj[ÊPEsõzOúa¥RH*ğzya`é·>ÃAÑœBBÚÇNb¨İ†šU†š3†32”z!”‚
