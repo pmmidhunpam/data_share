@@ -1,0 +1,373 @@
+input事件android层的处理。
+1. systemserver.java
+   Slog.i(TAG, "Window Manager");
+   wm = WindowManagerService.main(context, power,
+           factoryTest != SystemServer.FACTORY_TEST_LOW_LEVEL);
+   ServiceManager.addService(Context.WINDOW_SERVICE, wm);
+            
+                        
+2. WindowManagerService.java
+   WMThread thr = new WMThread(context, pm, haveInputMethods);    //里面new WindowManagerService(),然后进入了loop循环。
+   thr.start();
+        
+        
+3. WindowManagerService.java
+   WindowManagerService(Context context, PowerManagerService pm, boolean haveInputMethods) {
+   	mInputManager = new InputManager(context, this);
+   	PolicyThread thr = new PolicyThread(mPolicy, this, context, pm);
+        thr.start();
+        //等待PolicyThread进入运行状态
+        mInputManager.start();
+   }      
+   
+
+4. InputManager.java
+   nativeInit(), nativeStart()
+   
+   
+5. InputManager.cpp
+   InputManager::InputManager(
+        const sp<EventHubInterface>& eventHub,
+        const sp<InputReaderPolicyInterface>& readerPolicy,
+        const sp<InputDispatcherPolicyInterface>& dispatcherPolicy) {
+    mDispatcher = new InputDispatcher(dispatcherPolicy);  //做了一个inputDispatcher
+    mReader = new InputReader(eventHub, readerPolicy, mDispatcher); //通过dispatcher做了一个inputReader，在inputReader里面添加inputDevice的时候就关联到了这个inputDispatcher
+    initialize();
+   }
+
+   void InputManager::initialize() {
+       mReaderThread = new InputReaderThread(mReader); 
+       mDispatcherThread = new InputDispatcherThread(mDispatcher);
+   }
+   
+   status_t InputManager::start() {
+       mReaderThread->run("InputReader", PRIORITY_URGENT_DISPLAY);          //这个线程不断读取input事件并且放到dispatcher队列
+       mDispatcherThread->run("InputDispatcher", PRIORITY_URGENT_DISPLAY);  //这个线程处理inputReader线程产过来的事件。
+       return OK;
+   }
+   下面按照逻辑关系依次说明inputReader和inputDispatcher线程。
+
+
+6. InputReader.cpp   
+   bool InputReaderThread::threadLoop() {
+    mReader->loopOnce();
+    return true;
+   }
+   
+   void InputReader::loopOnce() {
+	RawEvent rawEvent;
+	mEventHub->getEvent(& rawEvent);  //获取一个RawEvent事件，就是通过EventHub来poll所有的input设备文件并且读取数据。
+	process(& rawEvent);              //调用相应的InputDevice的process方法处理一个事件，然后又调用了所有的InputMapper对应的process方法。
+   }
+   
+   如果是EV_KEY类型的事件，会调用到KeyboardInputMapper::process方法。
+   void KeyboardInputMapper::process(const RawEvent* rawEvent) {
+    switch (rawEvent->type) {
+    case EV_KEY: {
+        int32_t scanCode = rawEvent->scanCode;
+        if (isKeyboardOrGamepadKey(scanCode)) {
+            processKey(rawEvent->when, rawEvent->value != 0, rawEvent->keyCode, scanCode,
+                    rawEvent->flags);
+        }
+        break;
+    }
+    }
+   }
+   //processKey会找到该InputMapper所属的InputDevice相关联的InputDispatcher，并且调用notifykey将事件压入到队列等待inputdispatcher线程进一步处理。
+   getDispatcher()->notifyKey(when, getDeviceId(), AINPUT_SOURCE_KEYBOARD, policyFlags, down ? AKEY_EVENT_ACTION_DOWN : AKEY_EVENT_ACTION_UP, AKEY_EVENT_FLAG_FROM_SYSTEM, keyCode, scanCode, newMetaState, downTime);
+   
+   //notifyKey除了将事件加入到队列还将调用了policy的interceptKeyBeforeDispatching方法。明显policy是NativeInputManager的对象。最终这个方法会做android自定义的home、search、menu等特殊按键的处理。
+   //notifykey同时也会wakeup通过pollOnce正在睡眠的
+  
+  
+7. InputDispatcher.cpp
+   bool InputDispatcherThread::threadLoop() {
+     mDispatcher->dispatchOnce();
+     return true;
+   }
+   void InputDispatcher::dispatchOnce() {
+    nsecs_t keyRepeatTimeout = mPolicy->getKeyRepeatTimeout();   //500ms,触发长按事件的超时事件
+    nsecs_t keyRepeatDelay = mPolicy->getKeyRepeatDelay();       //50ms，长按事件的重复执行频率
+
+    nsecs_t nextWakeupTime = LONG_LONG_MAX;
+    { // acquire lock
+        AutoMutex _l(mLock);
+        dispatchOnceInnerLocked(keyRepeatTimeout, keyRepeatDelay, & nextWakeupTime);
+
+        if (runCommandsLockedInterruptible()) {
+            nextWakeupTime = LONG_LONG_MIN;  // force next poll to wake up immediately
+        }
+    } // release lock
+
+    // Wait for callback or timeout or wake.  (make sure we round up, not down)
+    nsecs_t currentTime = now();
+    int32_t timeoutMillis;
+    if (nextWakeupTime > currentTime) {
+        uint64_t timeout = uint64_t(nextWakeupTime - currentTime);
+        timeout = (timeout + 999999LL) / 1000000LL;
+        timeoutMillis = timeout > INT_MAX ? -1 : int32_t(timeout);
+    } else {
+        timeoutMillis = 0;
+    }
+
+    mLooper->pollOnce(timeoutMillis);  //睡眠timeoutMills，使得长按事件按时间正确的执行。或者没有事件时睡眠一个很大时间知道在inputReaderThread中通过notifyXXX来唤醒。
+   }
+
+   dispatchOnceInnerLocked()方法最终会将该事件发给相应的所有connections，并且执行pokeUserActivityLocked()
+   -->pokeUserActivityLocked()
+   -->android_server_PowerManagerService_userActivity()
+   -->调用java方法。PowerManagerService::userActivity(long time, boolean noChangeLights, int eventType, boolean force)
+   
+   
+   
+   
+
+   ****************************** input框架初始化和input事件接收流程 ***********************************
+SystemServer.java:
+public void run() {
+             Slog.i(TAG, "Window Manager");
+            wm = WindowManagerService.main(context, power,
+                    factoryTest != SystemServer.FACTORY_TEST_LOW_LEVEL,
+                    !firstBoot);
+            ServiceManager.addService(Context.WINDOW_SERVICE, wm);
+}
+            
+WindowManagerService.java            
+    private WindowManagerService(Context context, PowerManagerService pm,
+            boolean haveInputMethods, boolean showBootMsgs) {            
+                    mActivityManager = ActivityManagerNative.getDefault();
+		...
+                    mInputManager = new InputManager(context, this);
+            	...
+} 
+ 
+ InputManager.java
+ public InputManager(Context context, WindowManagerService windowManagerService) {
+	 nativeInit(mContext, mCallbacks, looper.getQueue());
+ }
+
+-----------------------------------------------------------------------------------
+    { "nativeInit", "(Landroid/content/Context;"
+            "Lcom/android/server/wm/InputManager$Callbacks;Landroid/os/MessageQueue;)V",
+            (void*) android_server_InputManager_nativeInit },
+
+static void android_server_InputManager_nativeInit(JNIEnv* env, jclass clazz,
+        jobject contextObj, jobject callbacksObj, jobject messageQueueObj){
+                gNativeInputManager = new NativeInputManager(contextObj, callbacksObj, looper);
+}
+
+NativeInputManager::NativeInputManager(jobject contextObj,
+        jobject callbacksObj, const sp<Looper>& looper) :
+        mLooper(looper) {
+	...
+    mInputManager = new InputManager(eventHub, this, this);
+}
+
+-----------------------------------------------------------------------------------
+InputManager::InputManager(
+        const sp<EventHubInterface>& eventHub,
+        const sp<InputReaderPolicyInterface>& readerPolicy,
+        const sp<InputDispatcherPolicyInterface>& dispatcherPolicy) {
+    mDispatcher = new InputDispatcher(dispatcherPolicy);
+    mReader = new InputReader(eventHub, readerPolicy, mDispatcher);
+    initialize();
+}
+
+void InputManager::initialize() {
+    mReaderThread = new InputReaderThread(mReader);
+    mDispatcherThread = new InputDispatcherThread(mDispatcher);
+}
+
+
+
+bool InputReaderThread::threadLoop() {
+    mReader->loopOnce();
+    return true;
+}
+void InputReader::loopOnce() {
+    int32_t timeoutMillis;
+{ 
+    size_t count = mEventHub->getEvents(timeoutMillis, mEventBuffer, EVENT_BUFFER_SIZE);
+    ...
+    processEventsLocked(mEventBuffer, count);
+}
+size_t EventHub::getEvents(int timeoutMillis, RawEvent* buffer, size_t bufferSize) {
+	...
+        int pollResult = epoll_wait(mEpollFd, mPendingEventItems, EPOLL_MAX_EVENTS, timeoutMillis);
+}
+
+
+
+******************************input设备注册流程**********************************
+EventHub::EventHub() {
+    //将/dev/input目录添加到要监听的fds中，当有input设备增加或移除时，InputReader::loop_once可以收到事件然后进一步处理。
+    mINotifyFd = inotify_init();
+    int result = inotify_add_watch(mINotifyFd, DEVICE_PATH, IN_DELETE | IN_CREATE); //DEVICE_PATH = "/dev/input";
+    result = epoll_ctl(mEpollFd, EPOLL_CTL_ADD, mINotifyFd, &eventItem);
+}
+
+...loopOnce()...
+EventHub::getEvents()｛
+        if (mPendingINotify && mPendingEventIndex >= mPendingEventCount) {
+            mPendingINotify = false;
+            readNotifyLocked();
+            deviceChanged = true;
+        }
+｝
+
+EventHub::readNotifyLocked() {          
+　　　//打开/dev/input/event*文件，新建Device对象添加到mDevices数组中，并且将该设备添加到poll监听列表中。
+      openDeviceLocked(devname);
+｝
+
+。。。
+
+InputReader::processEventsLocked() {
+            //添加
+            case EventHubInterface::DEVICE_ADDED:
+                addDeviceLocked(rawEvent->when, rawEvent->deviceId);
+}
+InputReader::addDeviceLocked()
+InputReader::createDeviceLocked() {
+    //新建一个InputDevice，这个对象和上面的Device对象是关联的。
+    InputDevice* device = new InputDevice(&mContext, deviceId, name, classes);  
+    device->configure(when, &mConfig, 0);
+    device->reset(when);
+
+    // Touchscreens and touchpad devices.
+    if (classes & INPUT_DEVICE_CLASS_TOUCH_MT) {
+        device->addMapper(new MultiTouchInputMapper(device));
+    } else if (classes & INPUT_DEVICE_CLASS_TOUCH) {
+        //我们的触摸屏走到了这里。。。
+        device->addMapper(new SingleTouchInputMapper(device));
+    }
+}
+
+
+TouchInputMapper::configure {
+	//触摸屏校准？
+	parseCalibration()
+}
+
+
+
+******************************input 事件(触摸屏)处理流程**********************************
+InputManager::InputManager(
+        const sp<InputReaderInterface>& reader,
+        const sp<InputDispatcherInterface>& dispatcher) :
+        mReader(reader),
+        mDispatcher(dispatcher) {
+    initialize();
+}
+
+void InputManager::initialize() {
+    mReaderThread = new InputReaderThread(mReader);
+    mDispatcherThread = new InputDispatcherThread(mDispatcher);
+}
+
+bool InputDispatcherThread::threadLoop() {
+    mDispatcher->dispatchOnce();
+    return true;
+}
+
+
+void InputDispatcher::dispatchOnce()->
+void InputDispatcher::dispatchOnceInnerLocked(nsecs_t* nextWakeupTime)->
+bool InputDispatcher::dispatchMotionLocked()->
+void InputDispatcher::dispatchEventToCurrentInputTargetsLocked()
+
+
+
+
+*********************************************************************************
+android2.3
+init.rc 的service的class都是default的，配置service的时候不需要指定class。
+
+android4.0
+init.rc 的service分为core，main，latestart 三类。init进行一般在on boot之后，会依次启动这三类的service。如果配置service没有指定class将不能自动启动，比如init_latestart
+修改如下：
+service init_latestart /system/bin/sh /system/etc/init.latestart.sh                                                                                    
+    class late_start
+    user root
+    oneshot
+
+wpa_supplicant也是类似。
+
+
+
+
+************************************************************************************
+LOGD之类的最终会调用到liblog.so的__android_log_print
+out/target/product/greenridge/system/lib/liblog.so
+    20: 000017b0    95 FUNC    GLOBAL DEFAULT    7 __android_log_print
+    70: 000017b0    95 FUNC    GLOBAL DEFAULT    7 __android_log_print
+   
+__android_log_print最终会调用__android_log_write，这个方法在两个so里面都有定义。    
+work@ubuntu:/work/intel/oaktrail_ics$ readelf -s out/target/product/greenridge/system/lib/libcutils.so | grep __android_log_write
+   222: 00004440   365 FUNC    GLOBAL DEFAULT    7 __android_log_write
+   358: 00004440   365 FUNC    GLOBAL DEFAULT    7 __android_log_write
+work@ubuntu:/work/intel/oaktrail_ics$ readelf -s out/target/product/greenridge/system/lib/liblog.so | grep __android_log_write
+    49: 00001550   365 FUNC    GLOBAL DEFAULT    7 __android_log_write
+    99: 00001550   365 FUNC    GLOBAL DEFAULT    7 __android_log_write
+但是，libcutils里面本身代码并没有这个__android_log_write的实现，只是libcuitlis.so依赖了liblog.so,不知道为什么,所以libcutils.so的__android_log_write应该就是指向的liblog.so的同一个__android_log_write。
+为什么没有编译错误呢，我觉得是一般的程序只需要重定向到liblog.so的__android_log_print这个方法，显然是没有问题的，自然而然的同样在liblog.so里面的__android_log_write也没有必要重定向了，所以没有编译错误。但是为什么libcutils里面有这个符号还搞不清楚。
+
+init进程的日志打印。
+1.  如果需要打开0,1,2标准输入输出，注释掉open_devnull_stdio()方法。如果需要init子进程（比如service）也能通过0,1,2打印日志，可以在rc文件配置service时增加need console选项，或者注释掉init进程service_start方法中的zap_stdio().
+2.  init进程需要static编译（不依赖任何动态库，init运行的时候system分区还没有挂载）.
+3.  在/dev/log/main等log驱动设备文件还没有建立之前，在init进程调用LOGD，将导致init进程整个无法使用LOGD打印。反之可以使用LOGD打印日志.
+
+
+
+
+
+
+
+**************************************设置自动旋转过程**************************************************
+进入settings进程：
+DisplaySettings.java
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+                IWindowManager wm = IWindowManager.Stub.asInterface(
+                        ServiceManager.getService(Context.WINDOW_SERVICE));
+                if (mAccelerometer.isChecked()) {
+                    wm.thawRotation();                                                                                                                      
+                } else {
+                    wm.freezeRotation(Surface.ROTATION_0);
+                }   
+
+   }
+
+-------------------------------
+进入system_server进程：
+
+SystemServer.java注册WindowManagerService服务。
+            Slog.i(TAG, "Window Manager");
+            wm = WindowManagerService.main(context, power,
+                    factoryTest != SystemServer.FACTORY_TEST_LOW_LEVEL,
+                    !firstBoot);
+            ServiceManager.addService(Context.WINDOW_SERVICE, wm);
+            
+WindowManagerService.java
+thawRotation() {
+	mPolicy.setUserRotationMode(WindowManagerPolicy.USER_ROTATION_FREE, 777)
+}
+
+PhoneWindowManager.java
+setUserRotationMode() {
+	//触发SettingsObserver继续处理。
+ 	ContentResolver res = mContext.getContentResolver();
+ 	Settings.System.putInt(res,Settings.System.ACCELEROMETER_ROTATION,1);
+}
+
+PhoneWindowManager.java
+SettingsObserver::observe() {
+	            updateSettings();
+}
+->updateOrientationListenerLp()
+->mOrientationListener.enable()/disable()
+->mSensorManager.[un]registerListener(mSensorEventListener, mSensor, mRate);
+当sensorservice通过hal层poll到数据时，就发送给所有注册的listener进行回调onSensorChanged()处理。
+
+   
+
+
