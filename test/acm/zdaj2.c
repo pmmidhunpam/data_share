@@ -46,7 +46,9 @@ long long common_multiple_s(int *p, int cnt) {
 		res_mul *= p[i];
 	}
 
-	res_mul /= res_div;
+	for (i=0; i<cnt-1; i++) {
+		res_mul /= res_div;
+	}
 	printf("common_multiple_s res = %lld\n", res_mul);
 }
 
