@@ -1,1 +1,0 @@
-cmd_/root/ldd3/scull_pipe/scull_pipe.o := ld -m elf_i386 -m elf_i386  -r -o /root/ldd3/scull_pipe/scull_pipe.o /root/ldd3/scull_pipe/scull_pipe_main.o /root/ldd3/scull_pipe/scull_pipe_fops.o /root/ldd3/scull_pipe/klog.o

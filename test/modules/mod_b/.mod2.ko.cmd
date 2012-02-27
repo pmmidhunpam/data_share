@@ -1,1 +1,0 @@
-cmd_/home/work/Desktop/test/modules/mod_b/mod2.ko := ld -r -m elf_i386 -T /home/work/linux-2.6.38/scripts/module-common.lds --build-id  -o /home/work/Desktop/test/modules/mod_b/mod2.ko /home/work/Desktop/test/modules/mod_b/mod2.o /home/work/Desktop/test/modules/mod_b/mod2.mod.o
