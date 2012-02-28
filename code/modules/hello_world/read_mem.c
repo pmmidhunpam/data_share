@@ -10,9 +10,8 @@
 #include <linux/sysfs.h>
 #include <linux/string.h>
 
-#include <asm-generic/uaccess.h>
 #include <linux/fs.h>
-#include <linux/syscalls.h>
+#include <asm/uaccess.h>
 MODULE_LICENSE("GPL");
 
 struct kobject *read_mem_kobj;
@@ -23,8 +22,7 @@ unsigned int mem_len;
 
 static ssize_t cmd_attr_show(struct kobject *kobj, struct kobj_attribute *attr, char *buf) 
 {
-	printk("cmd_attr_show start\n", (char *)start_addr);
-//	printk("[%lld]\n", *(long long *)start_addr);
+	printk("cmd_attr_show start, [%s]\n", (char *)start_addr);
 	memcpy(buf, (char *)start_addr, mem_len);
 	return mem_len;
 }
