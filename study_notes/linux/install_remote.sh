@@ -2,9 +2,9 @@
 
 args_num=$#
 if  [ $args_num -ne 1 ];then
-	echo "use format:  $0 <remote_ip>"
-	echo "   example:  $0 192.168.0.136"
-	exit 1
+        echo "use format:  $0 <remote_ip>"
+        echo "   example:  $0 192.168.0.136"
+        exit 1
 fi
 remote_ip=$1
 
@@ -42,5 +42,9 @@ sudo mkinitramfs -o /boot/initrd.img-${kernel_version} ${kernel_version}
 echo scp /boot/initrd.img-${kernel_version} root@${remote_ip}:/boot/initrd.img-${kernel_version}
 scp /boot/initrd.img-${kernel_version} root@${remote_ip}:/boot/initrd.img-${kernel_version}
 
-ssh root@${remote_ip} "sync"
 
+#update grub.cfg
+ssh root@${remote_ip} "sed -i 's/vmlinuz-2.6.38[^ ]* /vmlinuz-${kernel_version} /g' /boot/grub/grub.cfg"
+ssh root@${remote_ip} "sed -i 's/initrd.img-2.6.38[^ ]* /initrd.img-${kernel_version} /g' /boot/grub/grub.cfg"
+
+ssh root@${remote_ip} "sync"
