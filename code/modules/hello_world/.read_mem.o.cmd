@@ -516,25 +516,6 @@ deps_/home/work/Desktop/data_share/code/modules/hello_world/read_mem.o := \
   include/linux/aio_abi.h \
   include/linux/uio.h \
   include/linux/file.h \
-  include/asm-generic/uaccess.h \
-  include/linux/mm.h \
-    $(wildcard include/config/swap.h) \
-    $(wildcard include/config/debug/pagealloc.h) \
-  include/linux/debug_locks.h \
-    $(wildcard include/config/debug/locking/api/selftests.h) \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/pgtable.h \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/pgtable_32.h \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/pgtable_32_types.h \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/pgtable-2level.h \
-  include/asm-generic/pgtable.h \
-  include/linux/page-flags.h \
-    $(wildcard include/config/pageflags/extended.h) \
-    $(wildcard include/config/have/mlocked/page/bit.h) \
-    $(wildcard include/config/arch/uses/pg/uncached.h) \
-    $(wildcard include/config/memory/failure.h) \
-    $(wildcard include/config/s390.h) \
-  include/linux/vmstat.h \
-    $(wildcard include/config/vm/event/counters.h) \
   include/linux/fs.h \
     $(wildcard include/config/dnotify.h) \
     $(wildcard include/config/quota.h) \
@@ -564,42 +545,10 @@ deps_/home/work/Desktop/data_share/code/modules/hello_world/read_mem.o := \
   include/linux/fcntl.h \
   /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
-  include/linux/syscalls.h \
-    $(wildcard include/config/event/profile.h) \
-    $(wildcard include/config/ftrace/syscalls.h) \
-    $(wildcard include/config/mips.h) \
-    $(wildcard include/config/have/syscall/wrappers.h) \
-  include/trace/syscall.h \
-  include/linux/ftrace_event.h \
-  include/linux/ring_buffer.h \
-    $(wildcard include/config/ring/buffer/allow/swap.h) \
-  include/linux/kmemcheck.h \
-  include/linux/seq_file.h \
-  include/linux/trace_seq.h \
-  include/linux/hardirq.h \
-    $(wildcard include/config/virt/cpu/accounting.h) \
-  include/linux/ftrace_irq.h \
-    $(wildcard include/config/ftrace/nmi/enter.h) \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/hardirq.h \
-    $(wildcard include/config/x86/mce.h) \
-    $(wildcard include/config/x86/mce/threshold.h) \
-  include/linux/irq.h \
-    $(wildcard include/config/irq/per/cpu.h) \
-    $(wildcard include/config/irq/release/method.h) \
-    $(wildcard include/config/intr/remap.h) \
-    $(wildcard include/config/generic/pending/irq.h) \
-    $(wildcard include/config/numa/irq/desc.h) \
-    $(wildcard include/config/generic/hardirqs/no//do/irq.h) \
-    $(wildcard include/config/cpumasks/offstack.h) \
-  include/linux/irqreturn.h \
-  include/linux/irqnr.h \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/irq.h \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/irq_regs.h \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/hw_irq.h \
-  include/linux/profile.h \
-    $(wildcard include/config/profiling.h) \
-  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/sections.h \
-  include/asm-generic/sections.h \
+  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/x86/wp/works/ok.h) \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+  /usr/src/linux-headers-2.6.32-21-generic/arch/x86/include/asm/uaccess_32.h \
 
 /home/work/Desktop/data_share/code/modules/hello_world/read_mem.o: $(deps_/home/work/Desktop/data_share/code/modules/hello_world/read_mem.o)
 

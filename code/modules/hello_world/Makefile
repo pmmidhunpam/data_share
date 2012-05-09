@@ -2,6 +2,7 @@
 # kernel build system and can use its language.
 
 obj-m += read_mem.o 
+obj-m += hello_world6.o 
 obj-m += read_pci.o 
  # Otherwise we were called directly from the command
  # line; invoke the kernel build system.
